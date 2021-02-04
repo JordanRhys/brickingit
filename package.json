@@ -17,6 +17,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "core-js": "^3.8.3",
     "next": "^10.0.5",
     "next-slicezone": "^0.0.12",
     "next-transpile-modules": "^6.1.0",
@@ -26,6 +27,7 @@
     "react-dom": "^17.0.1"
   },
   "devDependencies": {
+    "@storybook/react": "^6.1.16",
     "prismic-cli": "3.8.7",
     "shx": "^0.3.3",
     "slice-machine-ui": "^0.0.44-alpha.2",

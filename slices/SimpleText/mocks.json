@@ -1,0 +1,25 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "SimpleText",
+    "primary": {
+      "text": [
+        {
+          "type": "heading1",
+          "text": "Brand mission-critical platforms",
+          "spans": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Labore veniam consequat enim. Nisi occaecat voluptate nostrud reprehenderit veniam.",
+          "spans": []
+        }
+      ]
+    },
+    "items": [],
+    "slice_type": "simple_text"
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "id": "simple_text",
+  "type": "SharedSlice",
+  "name": "SimpleText",
+  "description": "SimpleText",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "SimpleText",
+      "primary": {
+        "text": {
+          "config": {
+            "label": "Text",
+            "placeholder": "Text here...",
+            "allowTargetBlank": true,
+            "type": "StructuredText",
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          },
+          "type": "StructuredText"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

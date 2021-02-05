@@ -1,4 +1,4 @@
-import { styled } from 'styled-components';
+import styled from 'styled-components';
 
 export const Header = styled.h1`
   font-family: ${props => props.theme.fonts.heading};

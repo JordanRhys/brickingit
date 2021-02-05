@@ -1,0 +1,42 @@
+{
+  "id": "disclaimer_banner",
+  "type": "SharedSlice",
+  "name": "DisclaimerBanner",
+  "description": "DisclaimerBanner",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "DisclaimerBanner",
+      "primary": {
+        "disclaimer": {
+          "config": {
+            "label": "Disclaimer text",
+            "placeholder": "Disclaimer message, e.g. cookies",
+            "allowTargetBlank": true,
+            "type": "StructuredText",
+            "multi": "paragraph,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,embed,list-item,o-list-item"
+          },
+          "type": "StructuredText"
+        },
+        "position": {
+          "config": {
+            "label": "Disclaimer Position",
+            "placeholder": "",
+            "options": [
+              "bottom",
+              "bottomLeft",
+              "bottomRight"
+            ],
+            "type": "Select",
+            "default_value": "bottom"
+          },
+          "type": "Select"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "DisclaimerBanner",
+    "primary": {
+      "disclaimer": [
+        {
+          "type": "heading2",
+          "text": "Benchmark cross-media interfaces",
+          "spans": []
+        }
+      ],
+      "position": "bottomRight"
+    },
+    "items": [],
+    "slice_type": "disclaimer_banner"
+  }
+]

@@ -35,5 +35,26 @@
       },
       "position": {}
     }
+  },
+  "FaqSection": {
+    "primary": {
+      "text": {
+        "config": {
+          "patternType": "PARAGRAPH_WITH_HEADING",
+          "blocks": 1
+        }
+      }
+    },
+    "items": {
+      "question": {
+        "content": "What is BrickingIt?"
+      },
+      "answer": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
   }
 }

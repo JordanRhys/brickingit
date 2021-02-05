@@ -1,0 +1,46 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "FaqSection",
+    "primary": {
+      "text": [
+        {
+          "type": "heading2",
+          "text": "Mesh frictionless e-markets",
+          "spans": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Officia eu ullamco consequat incididunt ex in aliqua exercitation.",
+          "spans": []
+        }
+      ]
+    },
+    "items": [
+      {
+        "question": "What is BrickingIt?",
+        "answer": [
+          {
+            "type": "paragraph",
+            "text": "Laborum pariatur do nostrud commodo nisi quis fugiat elit reprehenderit tempor qui.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "question": "What is BrickingIt?",
+        "answer": [
+          {
+            "type": "paragraph",
+            "text": "Aliqua consectetur occaecat sit excepteur ipsum excepteur adipisicing elit est Lorem aute enim. Laborum ex velit minim officia eu tempor velit exercitation deserunt quis est.",
+            "spans": []
+          }
+        ]
+      }
+    ],
+    "slice_type": "faq_section"
+  }
+]

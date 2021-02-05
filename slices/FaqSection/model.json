@@ -20,6 +20,29 @@
             "multi": "paragraph,heading2,heading3,heading4,strong,em,hyperlink,embed,list-item,o-list-item,heading1"
           },
           "type": "StructuredText"
+        },
+        "image": {
+          "config": {
+            "label": "Optional Image",
+            "type": "Image",
+            "constraint": {
+              "width": 800,
+              "height": 600
+            },
+            "thumbnails": [
+              {
+                "name": "medium",
+                "width": 600,
+                "height": 450
+              },
+              {
+                "name": "small",
+                "width": 400,
+                "height": 300
+              }
+            ]
+          },
+          "type": "Image"
         }
       },
       "items": {

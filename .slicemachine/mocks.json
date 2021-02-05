@@ -43,6 +43,9 @@
           "patternType": "PARAGRAPH_WITH_HEADING",
           "blocks": 1
         }
+      },
+      "image": {
+        "content": null
       }
     },
     "items": {

@@ -1,37 +1,48 @@
 import React from 'react';
-import { array, shape } from 'prop-types';
+import { arrayOf, shape, object } from 'prop-types';
+import { richTextPropType, imagePropType } from '../../helpers/slice-prop-types';
+import { htmlSerializer } from '../../prismicKits';
 import { RichText } from 'prismic-reactjs';
+import { FlexColumn, FlexRow } from '../../components/containers';
+import styled from 'styled-components';
 
-const section = {
-  maxWidth: '600px',
-  margin: '4em auto',
-  textAlign: 'center',
-};
+const Image = styled.img`
+  height: 6rem;
+  line-height: 0;
+`
 
-const h2 = {
-  color: '#8592e0',
-};
+const Anchor = styled.a`
+  line-height: 0;
+`
 
 const MySlice = ({ slice }) => (
-  <section style={section}>
-    {
-      slice.primary.title ?
-      <RichText render={slice.primary.title}/>
-      : <h2 style={h2}>Template slice, update me!</h2>
-    }
-    {
-      slice.primary.description ?
-      <RichText render={slice.primary.description}/>
-      : <p>start by editing this slice from inside the SliceMachine builder!</p>
-    }
-  </section>
+  <FlexColumn>
+    { slice.primary.text && (
+      <RichText render={slice.primary.text} htmlSerializer={htmlSerializer} />
+    )}
+    <FlexRow as='div' withoutPadding={true}>
+      {slice.items.map(({image, link}) => (
+        link ? (
+          <Anchor href={link} key={image.url}>
+            <Image src={image.url} alt={image.alt} />
+          </Anchor>
+        ) : (
+          <Image src={image.url} alt={image.alt} key={image.url} />
+        )
+      ))}
+    </FlexRow>
+  </FlexColumn>
 );
 
 MySlice.propTypes = {
   slice: shape({
     primary: shape({
-      title: array.isRequired,
+      text: richTextPropType,
     }).isRequired,
+    items: arrayOf(shape({
+      image: imagePropType.isRequired,
+      link: object
+    })).isRequired,
   }).isRequired,
 };
 

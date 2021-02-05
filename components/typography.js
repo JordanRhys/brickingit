@@ -5,6 +5,7 @@ export const Header = styled.h1`
   font-size: ${({ fontSize, theme: { fontSizes }}) => fontSize ? fontSizes[fontSize] : fontSizes.xl };
   line-height: ${props => props.theme.lineHeights.heading};
   color: ${({ color, theme: { colors } }) => color ? color : colors.heading };
+  margin: 0;
 `
 
 export const Body = styled.p`

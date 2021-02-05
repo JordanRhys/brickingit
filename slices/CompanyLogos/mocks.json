@@ -9,7 +9,7 @@
       "text": [
         {
           "type": "heading1",
-          "text": "Target cross-media mindshare",
+          "text": "We have worked with",
           "spans": []
         }
       ]
@@ -18,12 +18,12 @@
       {
         "image": {
           "dimensions": {
-            "width": 900,
+            "width": 400,
             "height": 200
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?w=900&h=200&fit=crop"
+          "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8?w=400&h=200&fit=crop"
         },
         "link": {
           "link_type": "Web",
@@ -33,12 +33,12 @@
       {
         "image": {
           "dimensions": {
-            "width": 900,
+            "width": 400,
             "height": 200
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=900&h=200&fit=crop"
+          "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=400&h=200&fit=crop"
         },
         "link": {
           "link_type": "Web",
@@ -48,12 +48,12 @@
       {
         "image": {
           "dimensions": {
-            "width": 900,
+            "width": 400,
             "height": 200
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=900&h=200&fit=crop"
+          "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=400&h=200&fit=crop"
         },
         "link": {
           "link_type": "Web",
@@ -63,12 +63,27 @@
       {
         "image": {
           "dimensions": {
-            "width": 900,
+            "width": 400,
             "height": 200
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1547082299-de196ea013d6?w=900&h=200&fit=crop"
+          "url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=400&h=200&fit=crop"
+        },
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      {
+        "image": {
+          "dimensions": {
+            "width": 400,
+            "height": 200
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869?w=400&h=200&fit=crop"
         },
         "link": {
           "link_type": "Web",

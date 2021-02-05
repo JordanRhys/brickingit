@@ -28,7 +28,8 @@
             "label": "Logo",
             "type": "Image",
             "constraint": {
-              "height": 200
+              "height": 200,
+              "width": 400
             },
             "thumbnails": []
           },

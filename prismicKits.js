@@ -1,4 +1,5 @@
 import Prismic from "prismic-javascript";
+import { Elements } from 'prismic-reactjs';
 import Link from "next/link";
 import { Header, Body } from './components/typography';
 

@@ -1,17 +1,11 @@
-import { styled } from 'styled-components';
+import styled from 'styled-components';
 
-const StyledFullWidth = styled.section`
+export const FullWidth = styled.section`
   width: 100%;
   padding: ${({ withoutPadding, theme: { spacings } }) => withoutPadding ? spacings.none : spacings.md } 0;
 `
 
-export const FullWidth = ({ children }) => (
-  <StyledFullWidth>
-    {children}
-  </StyledFullWidth>
-);
-
-const StyledFlexColumn = styled.section`
+export const FlexColumn = styled.section`
   width: ${({ width }) => width ? width : '100%'};
   display: flex;
   flex-direction: column;
@@ -23,8 +17,3 @@ const StyledFlexColumn = styled.section`
   }
 `
 
-export const FlexColumn = ({ children }) => (
-  <StyledFlexColumn>
-    {children}
-  </StyledFlexColumn>
-);

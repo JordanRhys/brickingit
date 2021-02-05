@@ -8,5 +8,21 @@
         }
       }
     }
+  },
+  "CompanyLogos": {
+    "primary": {
+      "text": {
+        "config": {
+          "patternType": "_",
+          "blocks": 1
+        }
+      }
+    },
+    "items": {
+      "image": {
+        "content": null
+      },
+      "link": {}
+    }
   }
 }

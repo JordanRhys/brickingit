@@ -1,0 +1,49 @@
+{
+  "id": "company_logos",
+  "type": "SharedSlice",
+  "name": "CompanyLogos",
+  "description": "CompanyLogos",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "CompanyLogos",
+      "primary": {
+        "text": {
+          "config": {
+            "label": "Text above Logos",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "type": "StructuredText",
+            "multi": "paragraph,heading1,heading2,heading3,heading4,strong,em,hyperlink"
+          },
+          "type": "StructuredText"
+        }
+      },
+      "items": {
+        "image": {
+          "config": {
+            "label": "Logo",
+            "type": "Image",
+            "constraint": {
+              "height": 200
+            },
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "link": {
+          "config": {
+            "label": "Link to Company",
+            "placeholder": "",
+            "type": "Link",
+            "allowTargetBlank": true
+          },
+          "type": "Link"
+        }
+      }
+    }
+  ]
+}

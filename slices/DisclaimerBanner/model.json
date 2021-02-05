@@ -17,7 +17,7 @@
             "placeholder": "Disclaimer message, e.g. cookies",
             "allowTargetBlank": true,
             "type": "StructuredText",
-            "multi": "paragraph,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,embed,list-item,o-list-item"
+            "multi": "paragraph,strong,em,hyperlink,embed,list-item,o-list-item"
           },
           "type": "StructuredText"
         },

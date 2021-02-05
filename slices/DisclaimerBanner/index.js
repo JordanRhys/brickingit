@@ -1,36 +1,95 @@
-import React from 'react';
-import { array, shape } from 'prop-types';
+import React, { useState } from 'react';
+import { shape, string } from 'prop-types';
+import { richTextPropType } from '../../helpers/slice-prop-types';
+import { htmlSerializer, linkResolver } from '../../prismicKits';
 import { RichText } from 'prismic-reactjs';
+import styled from 'styled-components';
 
-const section = {
-  maxWidth: '600px',
-  margin: '4em auto',
-  textAlign: 'center',
-};
+const BannerTemplate = styled.div`
+  position: fixed;
+  padding: ${props => props.theme.spacings.sm};
+  background-color: ${props => props.theme.colors.muted};
+  border: 2px solid ${props => props.theme.colors.primary};
+  border-radius: ${props => props.theme.borderRadius.sm};
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+`
 
-const h2 = {
-  color: '#8592e0',
-};
+// width: ${({ position }) => position === 'bottom' ? '100%' : '25%' };
+// ${({ position, theme }) => position === 'bottomLeft' ? `left: 0; margin-left: ${theme.spacings.sm}` : ''}
+// ${({ position, theme }) => position === 'bottomRight' ? `right: 0; margin-right: ${theme.spacings.sm}` : ''}
 
-const MySlice = ({ slice }) => (
-  <section style={section}>
-    {
-      slice.primary.title ?
-      <RichText render={slice.primary.title}/>
-      : <h2 style={h2}>Template slice, update me!</h2>
+const Banner = styled(BannerTemplate)`
+  bottom: 0;
+  ${({ position, theme }) => {
+    switch(position) {
+      case 'bottomLeft':
+        return `
+        width: 25%;
+        left: 0;
+        margin-left: ${theme.spacings.sm};
+        `
+
+      case 'bottomRight':
+        return `
+        width: 25%;
+        right: 0;
+        margin-right: ${theme.spacings.sm};
+        `
+
+      case 'bottom':
+      default: {
+        return `
+        width: 100%;
+        left: 0;
+        right: 0;
+        `
+      }
     }
-    {
-      slice.primary.description ?
-      <RichText render={slice.primary.description}/>
-      : <p>start by editing this slice from inside the SliceMachine builder!</p>
-    }
-  </section>
-);
+  }}
+  margin-bottom: ${props => props.theme.spacings.sm};
+`
+
+const CloseIcon = styled.button`
+  color: ${props => props.theme.colors.primary};
+  cursor: pointer;
+  margin-left: ${props => props.theme.spacings.sm};
+  font-size: ${props => props.theme.fontSizes.lg};
+  outline: none;
+  border: none;
+  background-color: ${props => props.theme.colors.muted};
+`
+
+const MySlice = ({ slice }) => {
+  const [open, setOpen] = useState(true);
+
+  const { disclaimer, position } = slice.primary;
+
+  const handleClick = () => {
+    setOpen(false);
+  }
+
+  if (open) {
+    return (
+      <Banner position={position}>
+        <div>
+          <RichText render={disclaimer} linkResolver={linkResolver} htmlSerializer={htmlSerializer} />
+        </div>
+        <CloseIcon onClick={handleClick}>&#10005;</CloseIcon>
+      </Banner>
+    );
+  } else {
+    return null
+  };
+};
 
 MySlice.propTypes = {
   slice: shape({
     primary: shape({
-      title: array.isRequired,
+      disclaimer: richTextPropType.isRequired,
+      position: string.isRequired
     }).isRequired,
   }).isRequired,
 };

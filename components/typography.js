@@ -13,4 +13,5 @@ export const Body = styled.p`
   font-size: ${({ fontSize, theme: { fontSizes }}) => fontSize ? fontSizes[fontSize] : fontSizes.sm };
   line-height: ${props => props.theme.lineHeights.body};
   color: ${({ color, theme: { colors } }) => color ? color : colors.body };
+  margin: 0;
 `

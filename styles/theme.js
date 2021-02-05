@@ -34,5 +34,10 @@ export default {
     md: '1rem',
     lg: '2rem',
     xl: '4rem',
+  },
+  borderRadius: {
+    sm: '0.5rem',
+    md: '1rem',
+    lg: '1.5rem'
   }
 }

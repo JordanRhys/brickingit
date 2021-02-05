@@ -8,12 +8,12 @@
     "primary": {
       "disclaimer": [
         {
-          "type": "heading2",
-          "text": "Benchmark cross-media interfaces",
+          "type": "paragraph",
+          "text": "By continuing to use this website, you agree to our cookie policy.",
           "spans": []
         }
       ],
-      "position": "bottomRight"
+      "position": "bottom"
     },
     "items": [],
     "slice_type": "disclaimer_banner"

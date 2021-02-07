@@ -1,0 +1,58 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "ImageHero",
+    "primary": {
+      "image": {
+        "dimensions": {
+          "width": 800,
+          "height": 600
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1491947153227-33d59da6c448?w=800&h=600&fit=crop",
+        "medium": {
+          "dimensions": {
+            "width": 600,
+            "height": 450
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1491947153227-33d59da6c448?w=600&h=450&fit=crop"
+        },
+        "small": {
+          "dimensions": {
+            "width": 400,
+            "height": 300
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1491947153227-33d59da6c448?w=400&h=300&fit=crop"
+        }
+      },
+      "position": true,
+      "text": [
+        {
+          "type": "heading1",
+          "text": "Generate cross-media paradigms",
+          "spans": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Duis reprehenderit minim consectetur aliquip do quis. Dolore ea ut fugiat cillum qui eu reprehenderit.",
+          "spans": []
+        }
+      ],
+      "buttonLink": {
+        "link_type": "Web",
+        "url": "https://slicemachine.dev"
+      },
+      "buttonText": "drive next-generation schemas"
+    },
+    "items": [],
+    "slice_type": "image_hero"
+  }
+]

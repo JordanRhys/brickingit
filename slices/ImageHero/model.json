@@ -1,0 +1,79 @@
+{
+  "id": "image_hero",
+  "type": "SharedSlice",
+  "name": "ImageHero",
+  "description": "ImageHero",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ImageHero",
+      "primary": {
+        "image": {
+          "config": {
+            "label": "Image",
+            "type": "Image",
+            "constraint": {
+              "width": 800,
+              "height": 600
+            },
+            "thumbnails": [
+              {
+                "name": "medium",
+                "width": 600,
+                "height": 450
+              },
+              {
+                "name": "small",
+                "width": 400,
+                "height": 300
+              }
+            ]
+          },
+          "type": "Image"
+        },
+        "position": {
+          "config": {
+            "label": "Image Position",
+            "placeholder": "",
+            "placeholder_false": "Left",
+            "placeholder_true": "Right",
+            "default_value": true,
+            "type": "Boolean"
+          },
+          "type": "Boolean"
+        },
+        "text": {
+          "config": {
+            "label": "Text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "type": "StructuredText",
+            "multi": "paragraph,heading1,heading2,heading3,heading4,strong,em,hyperlink,image,embed,list-item,o-list-item"
+          },
+          "type": "StructuredText"
+        },
+        "buttonLink": {
+          "config": {
+            "label": "Button Link",
+            "placeholder": "",
+            "type": "Link",
+            "allowTargetBlank": true
+          },
+          "type": "Link"
+        },
+        "buttonText": {
+          "config": {
+            "label": "Button Text",
+            "placeholder": "Text on the button",
+            "type": "Text"
+          },
+          "type": "Text"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

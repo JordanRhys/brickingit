@@ -10,9 +10,11 @@ import styled, { keyframes } from 'styled-components';
 
 const MySlice = ({ slice }) => {
   const [submitted, setSubmitted] = useState(false);
-  const [input, setInput] = useState({
-    email: ''
-  });
+  const initialState = {
+    email: '',
+    body: ''
+  }
+  const [input, setInput] = useState(initialState);
 
   const handleChange = (e) => setInput({
     ...input,
@@ -21,7 +23,7 @@ const MySlice = ({ slice }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setInput({ email: '' });
+    setInput(initialState);
     setSubmitted(true);
   }
 

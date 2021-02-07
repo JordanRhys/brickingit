@@ -1,0 +1,49 @@
+{
+  "id": "image_slider",
+  "type": "SharedSlice",
+  "name": "ImageSlider",
+  "description": "ImageSlider",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ImageSlider",
+      "primary": {},
+      "items": {
+        "image": {
+          "config": {
+            "label": "Image",
+            "type": "Image",
+            "constraint": {
+              "width": 1600,
+              "height": 900
+            },
+            "thumbnails": [
+              {
+                "name": "medium",
+                "width": 800,
+                "height": 450
+              },
+              {
+                "name": "small",
+                "width": 400,
+                "height": 225
+              }
+            ]
+          },
+          "type": "Image"
+        },
+        "caption": {
+          "config": {
+            "label": "Optional caption",
+            "placeholder": "",
+            "type": "Text"
+          },
+          "type": "Text"
+        }
+      }
+    }
+  ]
+}

@@ -112,5 +112,15 @@
         "content": true
       }
     }
+  },
+  "ImageSlider": {
+    "items": {
+      "image": {
+        "content": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db"
+      },
+      "caption": {
+        "content": null
+      }
+    }
   }
 }

@@ -1,0 +1,133 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "ImageSlider",
+    "primary": {},
+    "items": [
+      {
+        "image": {
+          "dimensions": {
+            "width": 1600,
+            "height": 900
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=1600&h=900&fit=crop",
+          "medium": {
+            "dimensions": {
+              "width": 800,
+              "height": 450
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=800&h=450&fit=crop"
+          },
+          "small": {
+            "dimensions": {
+              "width": 400,
+              "height": 225
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=400&h=225&fit=crop"
+          }
+        },
+        "caption": "enhance ubiquitous technologies"
+      },
+      {
+        "image": {
+          "dimensions": {
+            "width": 1600,
+            "height": 900
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=1600&h=900&fit=crop",
+          "medium": {
+            "dimensions": {
+              "width": 800,
+              "height": 450
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=800&h=450&fit=crop"
+          },
+          "small": {
+            "dimensions": {
+              "width": 400,
+              "height": 225
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=400&h=225&fit=crop"
+          }
+        },
+        "caption": "whiteboard web-enabled bandwidth"
+      },
+      {
+        "image": {
+          "dimensions": {
+            "width": 1600,
+            "height": 900
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=1600&h=900&fit=crop",
+          "medium": {
+            "dimensions": {
+              "width": 800,
+              "height": 450
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=800&h=450&fit=crop"
+          },
+          "small": {
+            "dimensions": {
+              "width": 400,
+              "height": 225
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=400&h=225&fit=crop"
+          }
+        },
+        "caption": "morph customized deliverables"
+      },
+      {
+        "image": {
+          "dimensions": {
+            "width": 1600,
+            "height": 900
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=1600&h=900&fit=crop",
+          "medium": {
+            "dimensions": {
+              "width": 800,
+              "height": 450
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=800&h=450&fit=crop"
+          },
+          "small": {
+            "dimensions": {
+              "width": 400,
+              "height": 225
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=400&h=225&fit=crop"
+          }
+        },
+        "caption": "brand enterprise users"
+      }
+    ],
+    "slice_type": "image_slider"
+  }
+]

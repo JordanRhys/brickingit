@@ -10,6 +10,7 @@ export const FlexColumn = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  ${({ centered }) => `justify-content: center;`}
   padding: ${({ withoutPadding, theme: { spacings } }) => withoutPadding ? spacings.none : spacings.md } 0;
   margin: 0 auto;
   > *:not(:last-child) {
@@ -24,8 +25,6 @@ export const FlexRow = styled.section`
   justify-content: center;
   margin: 0 auto;
   padding: ${({ withoutPadding, theme: { spacings } }) => withoutPadding ? spacings.none : spacings.md } 0;
-  > * {
-  }
   > *:not(:last-child) {
     margin-right: ${({ reverse, theme: { spacings } }) => reverse ? spacings.none : spacings.md };
     margin-left: ${({ reverse, theme: { spacings } }) => reverse ? spacings.md : spacings.none };

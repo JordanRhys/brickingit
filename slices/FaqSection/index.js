@@ -1,38 +1,147 @@
-import React from 'react';
-import { array, shape } from 'prop-types';
+import React, { useState } from 'react';
+import { shape, string, arrayOf } from 'prop-types';
+import { richTextPropType, imagePropType } from '../../helpers/slice-prop-types';
+import { htmlSerializer, linkResolver } from '../../prismicKits';
 import { RichText } from 'prismic-reactjs';
+import { FlexRow, FlexColumn } from '../../components/containers';
+import styled, { keyframes } from 'styled-components';
 
-const section = {
-  maxWidth: '600px',
-  margin: '4em auto',
-  textAlign: 'center',
+const Image = styled.img`
+  width: 100%;
+  margin-right: ${props => props.theme.spacings.md};
+`
+
+const MySlice = ({ slice }) => {
+  const { text, image } = slice.primary;
+
+  return (
+    <FlexRow width={image ? '100%' : '50%'}>
+      { image ? (
+        <FlexColumn as='div' withoutPadding={true}>
+          <Image src={image.url} alt={image.alt} />
+        </FlexColumn>
+      ) : null }
+      <FlexColumn as='div' withoutPadding={true}>
+        <RichText render={text} htmlSerializer={htmlSerializer} />
+        {
+          slice.items.map(({question, answer}) =>
+          (<QuestionDropdown question={question} answer={answer} key={question} />)
+          )
+        }
+      </FlexColumn>
+    </FlexRow>
+  );
 };
-
-const h2 = {
-  color: '#8592e0',
-};
-
-const MySlice = ({ slice }) => (
-  <section style={section}>
-    {
-      slice.primary.title ?
-      <RichText render={slice.primary.title}/>
-      : <h2 style={h2}>Template slice, update me!</h2>
-    }
-    {
-      slice.primary.description ?
-      <RichText render={slice.primary.description}/>
-      : <p>start by editing this slice from inside the SliceMachine builder!</p>
-    }
-  </section>
-);
 
 MySlice.propTypes = {
   slice: shape({
     primary: shape({
-      title: array.isRequired,
+      text: richTextPropType,
+      image: imagePropType,
     }).isRequired,
+    items: arrayOf(shape({
+      question: string.isRequired,
+      answer: richTextPropType.isRequired
+    })).isRequired
   }).isRequired,
 };
 
+const Dropdown = styled.div`
+  width: 100%;
+  background-color: ${props => props.theme.colors.primary};
+  color: ${props => props.theme.colors.background};
+  border-radius: ${props => props.theme.borderRadius.md};
+  transition: all 5s;
+`
+
+const Question = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding: ${props => props.theme.spacings.sm} ${props => props.theme.spacings.md};
+  cursor: pointer;
+`
+
+const DropdownAnimation = keyframes`
+  from {
+    transform: translateY(-2rem);
+    opacity: .5;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+`
+
+const Answer = styled.div`
+  padding: ${props => props.theme.spacings.sm} ${props => props.theme.spacings.md};
+  overflow: hidden;
+  > * {
+    animation: ${DropdownAnimation} .4s;
+  }
+`
+
+
+const QuestionDropdown = ({ question, answer }) => {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <Dropdown>
+      <Question onClick={() => setOpen(!open)}>
+        <p>{question}</p>
+        <Icon open={open}/>
+      </Question>
+      {
+        open ? (
+          <Answer>
+            <RichText render={answer} htmlSerializer={htmlSerializer}/>
+          </Answer>
+        ): null
+      }
+    </Dropdown>
+  )
+};
+
+QuestionDropdown.propTypes = {
+  question: string.isRequired,
+  answer: richTextPropType.isRequired
+};
+
+const DropdownIcon = styled.div`
+  width: 26px;
+  position: relative;
+  margin: ${props => `0 -${props.theme.spacings.sm} 0 ${props.theme.spacings.sm}`}
+`
+
+const LeftLine = styled.span`
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 16px;
+  height: 2px;
+  background-color: ${props => props.theme.colors.background};
+  display: block;
+  transform: ${({ open }) => open ? 'translateX(7px) rotate(45deg)' : 'rotate(45deg)'};
+  transition: all .3s ease-in-out;
+`
+
+const RightLine = styled.span`
+  position: absolute;
+  top: 9px;
+  right: 0;
+  width: 16px;
+  height: 2px;
+  background-color: ${props => props.theme.colors.background};
+  display: block;
+  transform: ${({ open }) => open ? 'translateX(-3px) rotate(135deg)' : 'rotate(135deg)'};
+  transition: all .3s ease-in-out;
+`
+
+const Icon = ({ open }) => (
+  <DropdownIcon>
+    <LeftLine open={open} />
+    <RightLine open={open} />
+  </DropdownIcon>
+);
+
 export default MySlice;
+

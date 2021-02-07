@@ -69,5 +69,18 @@
         }
       }
     }
+  },
+  "FormMailing": {
+    "primary": {
+      "text": {
+        "config": {
+          "patternType": "PARAGRAPH_WITH_HEADING",
+          "blocks": 1
+        }
+      },
+      "apiRoute": {
+        "content": null
+      }
+    }
   }
 }

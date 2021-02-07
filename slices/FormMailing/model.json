@@ -1,0 +1,36 @@
+{
+  "id": "form_mailing",
+  "type": "SharedSlice",
+  "name": "FormMailing",
+  "description": "FormMailing",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "FormMailing",
+      "primary": {
+        "text": {
+          "config": {
+            "label": "Text above form",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "type": "StructuredText",
+            "multi": "paragraph,heading1,heading2,heading3,heading4,strong,em,hyperlink,image,embed,list-item,o-list-item"
+          },
+          "type": "StructuredText"
+        },
+        "apiRoute": {
+          "config": {
+            "label": "Api route",
+            "placeholder": "\"/api/subscribe'",
+            "type": "Text"
+          },
+          "type": "Text"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

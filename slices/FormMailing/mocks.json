@@ -1,0 +1,26 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "FormMailing",
+    "primary": {
+      "text": [
+        {
+          "type": "heading1",
+          "text": "Streamline magnetic action-items",
+          "spans": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Aliqua qui eu velit mollit nulla exercitation Lorem sint commodo.",
+          "spans": []
+        }
+      ],
+      "apiRoute": "visualize enterprise vortals"
+    },
+    "items": [],
+    "slice_type": "form_mailing"
+  }
+]

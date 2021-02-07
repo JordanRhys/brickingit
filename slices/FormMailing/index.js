@@ -1,38 +1,76 @@
-import React from 'react';
-import { array, shape } from 'prop-types';
+import React, { useState } from 'react';
+import { shape, string, func } from 'prop-types';
+import { richTextPropType, imagePropType } from '../../helpers/slice-prop-types';
+import { htmlSerializer, linkResolver } from '../../prismicKits';
 import { RichText } from 'prismic-reactjs';
+import { FlexRow, FlexColumn } from '../../components/containers';
+import { Input } from '../../components/inputs';
+import { PrimaryButton } from '../../components/buttons';
+import styled, { keyframes } from 'styled-components';
 
-const section = {
-  maxWidth: '600px',
-  margin: '4em auto',
-  textAlign: 'center',
+const MySlice = ({ slice }) => {
+  const [submitted, setSubmitted] = useState(false);
+  const [input, setInput] = useState({
+    email: ''
+  });
+
+  const handleChange = (e) => setInput({
+    ...input,
+    [e.target.name]: e.target.value
+  });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setInput({ email: '' });
+    setSubmitted(true);
+  }
+
+  return (
+    <FlexColumn width='50%'>
+      <RichText render={slice.primary.text} htmlSerializer={htmlSerializer} />
+
+      { submitted ? (
+        <PrimaryButton as='span'>
+          Subscribed &#10004;
+        </PrimaryButton>
+      ) : (
+        <Form handleSubmit={handleSubmit} handleChange={handleChange} data={input} />
+      )}
+    </FlexColumn>
+  );
 };
-
-const h2 = {
-  color: '#8592e0',
-};
-
-const MySlice = ({ slice }) => (
-  <section style={section}>
-    {
-      slice.primary.title ?
-      <RichText render={slice.primary.title}/>
-      : <h2 style={h2}>Template slice, update me!</h2>
-    }
-    {
-      slice.primary.description ?
-      <RichText render={slice.primary.description}/>
-      : <p>start by editing this slice from inside the SliceMachine builder!</p>
-    }
-  </section>
-);
 
 MySlice.propTypes = {
   slice: shape({
     primary: shape({
-      title: array.isRequired,
+      text: richTextPropType,
+      apiRoute: string.isRequired,
     }).isRequired,
   }).isRequired,
 };
 
+const Form = ({ handleSubmit, handleChange, data }) => (
+  <FlexColumn as='form' onSubmit={(e) => handleSubmit(e)}>
+    <Input
+      onChange={handleChange}
+      value={data.email}
+      name='email'
+      type='email'
+      placeholder='Email Address'
+    />
+    <PrimaryButton>
+      Subscribe
+    </PrimaryButton>
+  </FlexColumn>
+);
+
+Form.propTypes = {
+  handleSubmit: func.isRequired,
+  handleChange: func.isRequired,
+  data: shape({
+    email: string,
+  }).isRequired,
+}
+
 export default MySlice;
+

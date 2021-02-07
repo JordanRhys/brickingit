@@ -82,5 +82,15 @@
         "content": null
       }
     }
+  },
+  "FullwidthImage": {
+    "primary": {
+      "image": {
+        "content": null
+      },
+      "caption": {
+        "content": null
+      }
+    }
   }
 }

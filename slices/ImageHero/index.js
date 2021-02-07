@@ -1,36 +1,39 @@
 import React from 'react';
-import { array, shape } from 'prop-types';
+import { shape, string, object, bool } from 'prop-types';
+import { htmlSerializer } from '../../prismicKits';
+import { richTextPropType, imagePropType } from '../../helpers/slice-prop-types';
+import { FlexColumn, FlexRow } from '../../components/containers';
+import { PrimaryButton } from '../../components/buttons';
 import { RichText } from 'prismic-reactjs';
 
-const section = {
-  maxWidth: '600px',
-  margin: '4em auto',
-  textAlign: 'center',
-};
+const MySlice = ({ slice }) => {
+  const { text, buttonLink, buttonText, image, position } = slice.primary;
 
-const h2 = {
-  color: '#8592e0',
-};
+  return (
+    <FlexRow reverse={position}>
+      <img src={image.url} alt={image.alt} />
 
-const MySlice = ({ slice }) => (
-  <section style={section}>
-    {
-      slice.primary.title ?
-      <RichText render={slice.primary.title}/>
-      : <h2 style={h2}>Template slice, update me!</h2>
-    }
-    {
-      slice.primary.description ?
-      <RichText render={slice.primary.description}/>
-      : <p>start by editing this slice from inside the SliceMachine builder!</p>
-    }
-  </section>
-);
+      <FlexColumn as='div' withoutPadding centered>
+        <RichText render={text} htmlSerializer={htmlSerializer} />
+
+        {(buttonLink && buttonText) && (
+          <PrimaryButton>
+            {buttonText}
+          </PrimaryButton>
+        )}
+      </FlexColumn>
+    </FlexRow>
+  );
+}
 
 MySlice.propTypes = {
   slice: shape({
     primary: shape({
-      title: array.isRequired,
+      text: richTextPropType.isRequired,
+      buttonLink: object,
+      buttonText: string,
+      image: imagePropType.isRequired,
+      position: bool.isRequired
     }).isRequired,
   }).isRequired,
 };

@@ -59,5 +59,15 @@
         }
       }
     }
+  },
+  "FormContact": {
+    "primary": {
+      "text": {
+        "config": {
+          "patternType": "PARAGRAPH_WITH_HEADING",
+          "blocks": 1
+        }
+      }
+    }
   }
 }

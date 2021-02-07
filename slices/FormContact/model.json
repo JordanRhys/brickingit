@@ -1,0 +1,36 @@
+{
+  "id": "form_contact",
+  "type": "SharedSlice",
+  "name": "FormContact",
+  "description": "FormContact",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "FormContact",
+      "primary": {
+        "text": {
+          "config": {
+            "label": "Text above form",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "type": "StructuredText",
+            "multi": "paragraph,heading1,heading2,heading3,heading4,strong,em,hyperlink,image,embed,list-item,o-list-item"
+          },
+          "type": "StructuredText"
+        },
+        "apiRoute": {
+          "type": "Text",
+          "config": {
+            "label": "",
+            "id": "apiRoute",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

@@ -7,7 +7,9 @@ import { addDecorator } from '@storybook/react';
 const ThemeDecorator = storyFn => (
   <ThemeProvider theme={theme}>
     <GlobalStyle />
-    {storyFn()}
+    <div style={{width: '1000px', margin: '0 auto'}}>
+      {storyFn()}
+    </div>
   </ThemeProvider>
 )
 

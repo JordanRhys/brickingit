@@ -1,37 +1,60 @@
 import React from 'react';
-import { array, shape } from 'prop-types';
-import { RichText } from 'prismic-reactjs';
+import { shape, string, object, arrayOf } from 'prop-types';
+import { imagePropType } from '../../helpers/slice-prop-types';
+import styled from 'styled-components';
+import Slider from 'infinite-react-carousel';
 
-const section = {
-  maxWidth: '600px',
-  margin: '4em auto',
-  textAlign: 'center',
+const Slide = styled.div`
+  width: 100%;
+`
+
+const Img = styled.img`
+  width: 100%;
+`
+
+const Caption = styled.span`
+  width: 100%;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: ${props => props.theme.fonts.body};
+  font-size: ${props => props.theme.fontSizes.sm};
+`
+
+const StyledSlider = styled(Slider)`
+  color: ${props => props.theme.colors.body};
+`
+
+const MySlice = ({ slice }) => {
+  const settings = {
+    dots: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 5000
+  }
+
+  return (
+      <StyledSlider {...settings}>
+        {
+          slice.items.map(({ image, caption }) => (
+            <Slide key={image.url}>
+              <Img src={image.url} alt={image.alt} />
+              <Caption>{caption}</Caption>
+            </Slide>
+          ))
+        }
+      </StyledSlider>
+  );
 };
-
-const h2 = {
-  color: '#8592e0',
-};
-
-const MySlice = ({ slice }) => (
-  <section style={section}>
-    {
-      slice.primary.title ?
-      <RichText render={slice.primary.title}/>
-      : <h2 style={h2}>Template slice, update me!</h2>
-    }
-    {
-      slice.primary.description ?
-      <RichText render={slice.primary.description}/>
-      : <p>start by editing this slice from inside the SliceMachine builder!</p>
-    }
-  </section>
-);
 
 MySlice.propTypes = {
   slice: shape({
-    primary: shape({
-      title: array.isRequired,
-    }).isRequired,
+    primary: object.isRequired,
+    items: arrayOf(shape({
+      image: imagePropType.isRequired,
+      caption: string,
+    })).isRequired,
   }).isRequired,
 };
 

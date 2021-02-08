@@ -122,5 +122,15 @@
         "content": null
       }
     }
+  },
+  "ImageCarousel": {
+    "items": {
+      "image": {
+        "content": null
+      },
+      "caption": {
+        "content": null
+      }
+    }
   }
 }

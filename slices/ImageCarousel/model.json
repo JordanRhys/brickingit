@@ -1,0 +1,49 @@
+{
+  "id": "image_carousel",
+  "type": "SharedSlice",
+  "name": "ImageCarousel",
+  "description": "ImageCarousel",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ImageCarousel",
+      "primary": {},
+      "items": {
+        "image": {
+          "config": {
+            "label": "Image",
+            "type": "Image",
+            "constraint": {
+              "width": 1600,
+              "height": 1060
+            },
+            "thumbnails": [
+              {
+                "name": "medium",
+                "width": 800,
+                "height": 530
+              },
+              {
+                "name": "small",
+                "width": 400,
+                "height": 265
+              }
+            ]
+          },
+          "type": "Image"
+        },
+        "caption": {
+          "config": {
+            "label": "Optional Caption",
+            "placeholder": "",
+            "type": "Text"
+          },
+          "type": "Text"
+        }
+      }
+    }
+  ]
+}

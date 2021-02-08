@@ -9,3 +9,4 @@ export { default as ImageHero } from './ImageHero'
 export { default as ImageCarousel } from './ImageCarousel'
 
 export { default as MainFooter } from './MainFooter'
+export { default as MainNavigation } from './MainNavigation'

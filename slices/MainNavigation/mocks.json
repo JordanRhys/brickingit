@@ -1,0 +1,58 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "MainNavigation",
+    "primary": {
+      "logo": {
+        "dimensions": {
+          "width": null,
+          "height": null
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1515923152115-758a6b16f35e?w=null&h=null&fit=crop"
+      }
+    },
+    "items": [
+      {
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "linkText": "engineer transparent schemas"
+      },
+      {
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "linkText": "orchestrate rich relationships"
+      },
+      {
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "linkText": "reintermediate leading-edge models"
+      },
+      {
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "linkText": "strategize integrated content"
+      },
+      {
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "linkText": "reinvent integrated systems"
+      }
+    ],
+    "slice_type": "main_navigation"
+  }
+]

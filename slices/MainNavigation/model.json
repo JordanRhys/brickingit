@@ -1,0 +1,48 @@
+{
+  "id": "main_navigation",
+  "type": "SharedSlice",
+  "name": "MainNavigation",
+  "description": "MainNavigation",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "MainNavigation",
+      "primary": {
+        "logo": {
+          "config": {
+            "label": "Logo",
+            "type": "Image",
+            "constraint": {
+              "height": null,
+              "width": null
+            },
+            "thumbnails": []
+          },
+          "type": "Image"
+        }
+      },
+      "items": {
+        "link": {
+          "config": {
+            "label": "Link to",
+            "placeholder": "",
+            "type": "Link",
+            "allowTargetBlank": true
+          },
+          "type": "Link"
+        },
+        "linkText": {
+          "config": {
+            "label": "Link Text",
+            "placeholder": "",
+            "type": "Text"
+          },
+          "type": "Text"
+        }
+      }
+    }
+  ]
+}

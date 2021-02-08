@@ -1,37 +1,61 @@
 import React from 'react';
-import { array, shape } from 'prop-types';
-import { RichText } from 'prismic-reactjs';
+import { shape, arrayOf, object, string } from 'prop-types';
+import { imagePropType } from '../../helpers/slice-prop-types';
+import { FlexColumn, FlexRow } from '../../components/containers';
+import styled from 'styled-components';
 
-const section = {
-  maxWidth: '600px',
-  margin: '4em auto',
-  textAlign: 'center',
-};
+const Nav = styled.nav`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: ${props => props.theme.colors.background};
+  border-bottom: 1px solid ${props => props.theme.colors.primary};
+`
 
-const h2 = {
-  color: '#8592e0',
-};
+const Content = styled.div`
+  max-width: 1000px;
+  width: 100%;
+  padding: ${props => `${props.theme.spacings.sm} ${props.theme.spacings.md}`};
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`
+
+const Logo = styled.img`
+  height: 2rem;
+`
+
+const LinksList = styled.ul`
+  list-style: none;
+  > *:not(:last-child) {
+    margin-right: ${props => props.theme.spacings.md};
+  }
+`
 
 const MySlice = ({ slice }) => (
-  <section style={section}>
-    {
-      slice.primary.title ?
-      <RichText render={slice.primary.title}/>
-      : <h2 style={h2}>Template slice, update me!</h2>
-    }
-    {
-      slice.primary.description ?
-      <RichText render={slice.primary.description}/>
-      : <p>start by editing this slice from inside the SliceMachine builder!</p>
-    }
-  </section>
+  <Nav>
+    <Content>
+      <Logo src={slice.primary.logo.url} alt={slice.primary.logo.alt} />
+      <LinksList>
+        {
+          slice.items.map(({ link, linkText }) => (
+            <a href={link}>{linkText}</a>
+          ))
+        }
+      </LinksList>
+    </Content>
+  </Nav>
 );
 
 MySlice.propTypes = {
   slice: shape({
     primary: shape({
-      title: array.isRequired,
+      logo: imagePropType.isRequired,
     }).isRequired,
+    items: arrayOf(shape({
+      link: object.isRequired,
+      linkText: string.isRequired,
+    })).isRequired,
   }).isRequired,
 };
 

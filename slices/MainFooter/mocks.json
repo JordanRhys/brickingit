@@ -1,0 +1,77 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "MainFooter",
+    "primary": {
+      "legal": [
+        {
+          "type": "paragraph",
+          "text": "Lorem non in excepteur in pariatur.",
+          "spans": []
+        }
+      ]
+    },
+    "items": [
+      {
+        "column": [
+          {
+            "type": "heading3",
+            "text": "Envisioneer back-end vortals",
+            "spans": []
+          },
+          {
+            "type": "paragraph",
+            "text": "Ipsum do incididunt veniam voluptate et duis magna incididunt dolor nulla consequat.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "type": "heading3",
+            "text": "Empower global bandwidth",
+            "spans": []
+          },
+          {
+            "type": "paragraph",
+            "text": "Irure do deserunt enim ullamco exercitation labore nisi est consectetur nulla officia. Amet qui enim reprehenderit ut deserunt in minim.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "type": "heading3",
+            "text": "Drive virtual communities",
+            "spans": []
+          },
+          {
+            "type": "paragraph",
+            "text": "Aute veniam excepteur occaecat exercitation officia aliqua reprehenderit Lorem. Elit aliqua sit sunt aliquip in sit aliquip dolor velit labore voluptate nulla officia. Nostrud aute reprehenderit non duis elit exercitation voluptate consequat magna anim dolore.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "type": "heading3",
+            "text": "Integrate rich schemas",
+            "spans": []
+          },
+          {
+            "type": "paragraph",
+            "text": "Consequat eiusmod veniam in et eu dolor sit in irure sit nulla pariatur. Proident sint sit irure non elit pariatur officia sit mollit incididunt culpa anim tempor mollit. Irure reprehenderit consectetur eu tempor non enim commodo ex.",
+            "spans": []
+          }
+        ]
+      }
+    ],
+    "slice_type": "main_footer"
+  }
+]

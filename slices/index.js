@@ -7,3 +7,5 @@ export { default as FormMailing } from './FormMailing'
 export { default as FullwidthImage } from './FullwidthImage'
 export { default as ImageHero } from './ImageHero'
 export { default as ImageCarousel } from './ImageCarousel'
+
+export { default as MainFooter } from './MainFooter'

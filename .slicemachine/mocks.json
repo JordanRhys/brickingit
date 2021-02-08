@@ -122,5 +122,23 @@
         "content": null
       }
     }
+  },
+  "MainFooter": {
+    "items": {
+      "column": {
+        "config": {
+          "patternType": "PARAGRAPH_WITH_HEADING",
+          "blocks": 1
+        }
+      }
+    },
+    "primary": {
+      "legal": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
   }
 }

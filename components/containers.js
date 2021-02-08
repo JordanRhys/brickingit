@@ -10,7 +10,7 @@ export const FlexColumn = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  ${({ centered }) => `justify-content: center;`}
+  ${({ centered }) => centered ? `justify-content: center;` : ''}
   padding: ${({ withoutPadding, theme: { spacings } }) => withoutPadding ? spacings.none : spacings.md } 0;
   margin: 0 auto;
   > *:not(:last-child) {

@@ -153,5 +153,38 @@
         "content": null
       }
     }
+  },
+  "PricingCards": {
+    "primary": {
+      "text": {
+        "config": {
+          "patternType": "PARAGRAPH_WITH_HEADING",
+          "blocks": 1
+        }
+      },
+      "buttonLink": {},
+      "buttonText": {
+        "content": null
+      }
+    },
+    "items": {
+      "name": {
+        "content": null
+      },
+      "price": {},
+      "description": {
+        "config": {
+          "patternType": "_",
+          "blocks": 1
+        }
+      },
+      "buttonLink": {},
+      "buttonText": {
+        "content": null
+      },
+      "caption": {
+        "content": null
+      }
+    }
   }
 }

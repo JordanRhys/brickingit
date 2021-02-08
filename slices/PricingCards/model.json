@@ -1,0 +1,97 @@
+{
+  "id": "pricing_cards",
+  "type": "SharedSlice",
+  "name": "PricingCards",
+  "description": "PricingCards",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "PricingCards",
+      "primary": {
+        "text": {
+          "config": {
+            "label": "Text above cards",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "type": "StructuredText",
+            "multi": "paragraph,heading1,heading2,heading3,heading4,strong,em,hyperlink,image,embed,list-item,o-list-item"
+          },
+          "type": "StructuredText"
+        },
+        "buttonLink": {
+          "config": {
+            "label": "Button Link",
+            "placeholder": "",
+            "type": "Link",
+            "allowTargetBlank": true
+          },
+          "type": "Link"
+        },
+        "buttonText": {
+          "config": {
+            "label": "Button Text",
+            "placeholder": "",
+            "type": "Text"
+          },
+          "type": "Text"
+        }
+      },
+      "items": {
+        "name": {
+          "config": {
+            "label": "Product Name",
+            "placeholder": "",
+            "type": "Text"
+          },
+          "type": "Text"
+        },
+        "description": {
+          "config": {
+            "label": "Product Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "type": "StructuredText",
+            "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item"
+          },
+          "type": "StructuredText"
+        },
+        "caption": {
+          "config": {
+            "label": "Optional Caption",
+            "placeholder": "",
+            "type": "Text"
+          },
+          "type": "Text"
+        },
+        "price": {
+          "config": {
+            "label": "Price (in pence)",
+            "placeholder": "",
+            "type": "Number"
+          },
+          "type": "Number"
+        },
+        "buttonLink": {
+          "config": {
+            "label": "Button Link",
+            "placeholder": "",
+            "type": "Link",
+            "allowTargetBlank": true
+          },
+          "type": "Link"
+        },
+        "buttonText": {
+          "config": {
+            "label": "Button Text",
+            "placeholder": "",
+            "type": "Text"
+          },
+          "type": "Text"
+        }
+      }
+    }
+  ]
+}

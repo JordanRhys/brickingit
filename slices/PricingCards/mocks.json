@@ -1,0 +1,82 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "PricingCards",
+    "primary": {
+      "text": [
+        {
+          "type": "heading1",
+          "text": "Disintermediate synergistic systems",
+          "spans": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Est laboris tempor adipisicing consequat fugiat Lorem ad ut amet aliqua exercitation reprehenderit. Adipisicing sint eiusmod eiusmod. Eu ex consequat veniam nisi non laborum consequat nulla commodo.",
+          "spans": []
+        }
+      ],
+      "buttonLink": {
+        "link_type": "Web",
+        "url": "https://slicemachine.dev"
+      },
+      "buttonText": "empower magnetic applications"
+    },
+    "items": [
+      {
+        "name": "enhance plug-and-play architectures",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Ullamco occaecat fugiat incididunt Lorem voluptate duis commodo officia elit.",
+            "spans": []
+          }
+        ],
+        "caption": "revolutionize turn-key infomediaries",
+        "price": 6759,
+        "buttonLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "buttonText": "generate viral vortals"
+      },
+      {
+        "name": "visualize real-time platforms",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Laborum quis dolore adipisicing in consectetur aute ea quis laborum do Lorem nulla.",
+            "spans": []
+          }
+        ],
+        "caption": "revolutionize front-end e-services",
+        "price": 8221,
+        "buttonLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "buttonText": "enable bleeding-edge methodologies"
+      },
+      {
+        "name": "envisioneer cross-media ROI",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Enim labore velit ad non elit fugiat velit aliquip elit exercitation exercitation duis. Laboris deserunt et ea excepteur voluptate excepteur id culpa. Ex consectetur sit dolore tempor sunt aliqua duis sint sint non dolor.",
+            "spans": []
+          }
+        ],
+        "caption": "embrace synergistic supply-chains",
+        "price": 5116,
+        "buttonLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "buttonText": "innovate customized bandwidth"
+      }
+    ],
+    "slice_type": "pricing_cards"
+  }
+]

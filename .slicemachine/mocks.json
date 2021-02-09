@@ -186,5 +186,40 @@
         "content": null
       }
     }
+  },
+  "ProductVariants": {
+    "primary": {
+      "name": {
+        "content": null
+      },
+      "image": {
+        "content": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db"
+      },
+      "buttonLink": {},
+      "buttonText": {
+        "content": null
+      },
+      "description": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 2
+        }
+      }
+    },
+    "items": {
+      "variant": {
+        "content": null
+      },
+      "image": {
+        "content": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2"
+      },
+      "description": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "price": {}
+    }
   }
 }

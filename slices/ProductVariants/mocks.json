@@ -1,0 +1,141 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "ProductVariants",
+    "primary": {
+      "name": "scale holistic action-items",
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Irure aliqua amet exercitation magna ipsum elit minim est in incididunt voluptate cillum aliquip eu dolore. Anim ex Lorem eiusmod cupidatat voluptate pariatur et commodo duis eu est non est nulla. Exercitation consequat deserunt in Lorem culpa elit.",
+          "spans": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Consectetur esse nostrud aliquip et ipsum. Nisi in consequat exercitation sit.",
+          "spans": []
+        }
+      ],
+      "image": {
+        "dimensions": {
+          "width": 900,
+          "height": 500
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=900&h=500&fit=crop"
+      },
+      "buttonLink": {
+        "link_type": "Web",
+        "url": "https://slicemachine.dev"
+      },
+      "buttonText": "extend end-to-end action-items"
+    },
+    "items": [
+      {
+        "variant": "redefine front-end technologies",
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
+        },
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Pariatur est et amet cupidatat. Veniam dolore incididunt excepteur culpa quis voluptate veniam ea laboris ad. Et eiusmod officia tempor amet occaecat adipisicing.",
+            "spans": []
+          }
+        ],
+        "price": 96
+      },
+      {
+        "variant": "engage efficient e-services",
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
+        },
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Velit dolor ad aute duis.",
+            "spans": []
+          }
+        ],
+        "price": 6160
+      },
+      {
+        "variant": "synthesize seamless applications",
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
+        },
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Culpa veniam cillum ut sint eu amet pariatur ut dolore nostrud ullamco mollit. Fugiat labore veniam enim.",
+            "spans": []
+          }
+        ],
+        "price": 4800
+      },
+      {
+        "variant": "productize transparent e-services",
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
+        },
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "In duis id duis tempor voluptate aliqua quis nostrud et irure aliquip cupidatat.",
+            "spans": []
+          }
+        ],
+        "price": 9565
+      },
+      {
+        "variant": "innovate intuitive deliverables",
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
+        },
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Fugiat irure eiusmod nisi aute eu exercitation quis non cupidatat.",
+            "spans": []
+          }
+        ],
+        "price": 8849
+      }
+    ],
+    "slice_type": "product_variants"
+  }
+]

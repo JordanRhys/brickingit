@@ -1,37 +1,87 @@
 import React from 'react';
-import { array, shape } from 'prop-types';
+import { shape, arrayOf, object, string, number } from 'prop-types';
+import { richTextPropType } from '../../helpers/slice-prop-types';
+import { penceToPounds } from '../../helpers/currency';
+import { FlexColumn, FlexRow, Card } from '../../components/containers';
+import { htmlSerializer } from '../../prismicKits';
+import { PrimaryButton } from '../../components/buttons';
 import { RichText } from 'prismic-reactjs';
+import styled from 'styled-components';
 
-const section = {
-  maxWidth: '600px',
-  margin: '4em auto',
-  textAlign: 'center',
+const Caption = styled.span`
+  position: absolute;
+  top: 0;
+  left: ${props => props.theme.spacings.md};
+  right: ${props => props.theme.spacings.md};
+  padding: ${props => props.theme.spacings.sm};
+  border-radius: ${props => props.theme.borderRadius.sm};
+  margin-bottom: ${props => props.theme.spacings.md};
+  background-color: ${props => props.theme.colors.primary};
+  color: ${props => props.theme.colors.background};
+  transform: translateY(-50%);
+`
+
+const Price = styled.span`
+  font-size: ${props => props.theme.fontSizes.lg};
+  font-family: ${props => props.theme.fonts.heading};
+  font-weight: ${props => props.theme.fonts.heading};
+  color: ${props => props.theme.colors.primary};
+`
+
+const MySlice = ({ slice }) => {
+  const { primary, items } = slice;
+
+  const captions = items.map(item => item.caption);
+  const containsCaption = captions.some(caption => caption.length);
+
+  return (
+    <FlexColumn>
+      {
+        primary.text && (
+          <RichText render={primary.text} htmlSerializer={htmlSerializer} />
+        )
+      }
+
+      {
+        (primary.buttonLink && primary.buttonText) && (
+          <PrimaryButton>{primary.buttonText}</PrimaryButton>
+        )
+      }
+
+      <FlexRow as='div'>
+        {
+          items.map(item => (
+            <Card key={item.title} extraPadding={containsCaption}>
+              {item.caption && (
+                <Caption>{item.caption}</Caption>
+              )}
+              <h4>{item.name}</h4>
+              <Price>{penceToPounds(item.price)}</Price>
+              <RichText render={item.description} htmlSerializer={htmlSerializer} />
+                <PrimaryButton>{item.buttonText}</PrimaryButton>
+            </Card>
+          ))
+        }
+      </FlexRow>
+    </FlexColumn>
+  );
 };
-
-const h2 = {
-  color: '#8592e0',
-};
-
-const MySlice = ({ slice }) => (
-  <section style={section}>
-    {
-      slice.primary.title ?
-      <RichText render={slice.primary.title}/>
-      : <h2 style={h2}>Template slice, update me!</h2>
-    }
-    {
-      slice.primary.description ?
-      <RichText render={slice.primary.description}/>
-      : <p>start by editing this slice from inside the SliceMachine builder!</p>
-    }
-  </section>
-);
 
 MySlice.propTypes = {
   slice: shape({
     primary: shape({
-      title: array.isRequired,
+      text: richTextPropType,
+      buttonLink: object,
+      buttonText: string
     }).isRequired,
+    items: arrayOf(shape({
+      name: string.isRequired,
+      caption: string,
+      price: number.isRequired,
+      description: richTextPropType.isRequired,
+      buttonLink: object.isRequired,
+      buttonText: string.isRequired
+    })).isRequired
   }).isRequired,
 };
 

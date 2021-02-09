@@ -15,5 +15,5 @@ export const penceToPounds = (price) => {
     return `£${start.join('')}.${end.join('')}`;
   }
 
-  return '£0.' + string;
+  return '£0.' + string.join('');
 }

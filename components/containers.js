@@ -30,3 +30,22 @@ export const FlexRow = styled.section`
     margin-left: ${({ reverse, theme: { spacings } }) => reverse ? spacings.md : spacings.none };
   }
 `
+export const Card = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: ${props => props.theme.spacings.md};
+  ${({ extraPadding, theme }) => extraPadding ? `padding-top: ${theme.spacings.lg}; margin-top: ${theme.spacings.md};` : ''}
+  border-radius: ${props => props.theme.borderRadius.md};
+  background-color: #ffffff;
+  :not(:last-child) {
+    margin-right: ${props => props.theme.spacings.md};
+  }
+  > *:not(:last-child) {
+    margin-bottom: ${props => props.theme.spacings.md};
+  }
+  > *:last-child {
+    margin-top: auto;
+  }
+`

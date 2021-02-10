@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Header } from './typography';
+import { Header, Body } from './typography';
 
 export const FullWidth = styled.section`
   width: 100%;
@@ -20,6 +20,9 @@ export const FlexColumn = styled.section`
   ${Header} {
     color: ${props => props.theme.colors.primary};
   }
+  ${Body} {
+    color: ${props => props.theme.colors.body};
+  }
 `
 
 export const FlexRow = styled.section`
@@ -37,6 +40,9 @@ export const FlexRow = styled.section`
   }
   ${Header} {
     color: ${props => props.theme.colors.primary};
+  }
+  ${Body} {
+    color: ${props => props.theme.colors.body};
   }
 `
 export const Card = styled.div`
@@ -60,5 +66,8 @@ export const Card = styled.div`
   }
   ${Header} {
     color: ${props => props.theme.colors.primary};
+  }
+  ${Body} {
+    color: ${props => props.theme.colors.body};
   }
 `

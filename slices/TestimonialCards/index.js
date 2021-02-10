@@ -1,37 +1,59 @@
-import React from 'react';
-import { array, shape } from 'prop-types';
+import React, { useState } from 'react';
+import { shape, arrayOf, object, string, number } from 'prop-types';
+import { imagePropType, richTextPropType } from '../../helpers/slice-prop-types';
+import { penceToPounds } from '../../helpers/currency';
+import { FlexColumn, FlexRow, Card, FullWidth } from '../../components/containers';
+import { htmlSerializer } from '../../prismicKits';
+import { PrimaryButton, SmallPrimaryButton, SmallSecondaryButton } from '../../components/buttons';
 import { RichText } from 'prismic-reactjs';
+import styled from 'styled-components';
 
-const section = {
-  maxWidth: '600px',
-  margin: '4em auto',
-  textAlign: 'center',
+const Image = styled.img`
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+`
+
+const Name = styled.span`
+  font-family: ${props => props.theme.fonts.heading};
+  font-size: ${props => props.theme.fontSizes.md};
+  color: ${props => props.theme.colors.primary};
+  text-align: center;
+`
+
+const MySlice = ({ slice }) => {
+  const { primary, items } = slice;
+
+  return (
+    <FlexColumn>
+      { primary.text && (<RichText render={primary.text} htmlSerializer={htmlSerializer} />)}
+
+      <FlexRow withoutPadding>
+        {
+          items.map(({ image, name, text }) => (
+            <Card maxWidth='25%'>
+              <Image src={image.url} alt={image.alt} />
+              <Name>{name}</Name>
+              <RichText render={text} htmlSerializer={htmlSerializer} />
+            </Card>
+          ))
+        }
+      </FlexRow>
+    </FlexColumn>
+  );
 };
-
-const h2 = {
-  color: '#8592e0',
-};
-
-const MySlice = ({ slice }) => (
-  <section style={section}>
-    {
-      slice.primary.title ?
-      <RichText render={slice.primary.title}/>
-      : <h2 style={h2}>Template slice, update me!</h2>
-    }
-    {
-      slice.primary.description ?
-      <RichText render={slice.primary.description}/>
-      : <p>start by editing this slice from inside the SliceMachine builder!</p>
-    }
-  </section>
-);
 
 MySlice.propTypes = {
   slice: shape({
     primary: shape({
-      title: array.isRequired,
+      text: richTextPropType,
     }).isRequired,
+    items: arrayOf(shape({
+      image: imagePropType.isRequired,
+      name: string.isRequired,
+      text: richTextPropType.isRequired
+    })).isRequired,
   }).isRequired,
 };
 

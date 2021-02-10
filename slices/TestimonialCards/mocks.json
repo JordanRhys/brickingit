@@ -9,12 +9,12 @@
       "text": [
         {
           "type": "heading1",
-          "text": "Mesh value-added e-commerce",
+          "text": "Streamline integrated synergies",
           "spans": []
         },
         {
           "type": "paragraph",
-          "text": "Culpa adipisicing laboris quis ea occaecat. Lorem id enim ad do ullamco consectetur cupidatat culpa pariatur veniam nisi ut labore dolore. Nulla qui non reprehenderit pariatur exercitation irure.",
+          "text": "Fugiat velit amet enim Lorem cupidatat proident nostrud eiusmod voluptate. Aliqua fugiat culpa laborum amet amet non esse tempor excepteur est.",
           "spans": []
         }
       ]
@@ -23,18 +23,36 @@
       {
         "image": {
           "dimensions": {
-            "width": 900,
-            "height": 500
+            "width": 800,
+            "height": 800
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=800&h=800&fit=crop",
+          "medium": {
+            "dimensions": {
+              "width": 400,
+              "height": 400
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=400&h=400&fit=crop"
+          },
+          "small": {
+            "dimensions": {
+              "width": 200,
+              "height": 200
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=200&h=200&fit=crop"
+          }
         },
-        "name": "maximize cross-media channels",
+        "name": "engineer global supply-chains",
         "text": [
           {
             "type": "paragraph",
-            "text": "Consectetur adipisicing eiusmod adipisicing aute culpa minim esse minim.",
+            "text": "Excepteur deserunt ut ad aute ex Lorem. Anim in quis ut labore. Excepteur ullamco occaecat et sint aliqua ex culpa exercitation id.",
             "spans": []
           }
         ]
@@ -42,37 +60,36 @@
       {
         "image": {
           "dimensions": {
-            "width": 900,
-            "height": 500
+            "width": 800,
+            "height": 800
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=900&h=500&fit=crop"
-        },
-        "name": "matrix sexy partnerships",
-        "text": [
-          {
-            "type": "paragraph",
-            "text": "Occaecat veniam magna officia.",
-            "spans": []
+          "url": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=800&h=800&fit=crop",
+          "medium": {
+            "dimensions": {
+              "width": 400,
+              "height": 400
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=400&h=400&fit=crop"
+          },
+          "small": {
+            "dimensions": {
+              "width": 200,
+              "height": 200
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=200&h=200&fit=crop"
           }
-        ]
-      },
-      {
-        "image": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=900&h=500&fit=crop"
         },
-        "name": "architect plug-and-play portals",
+        "name": "unleash infomediaries",
         "text": [
           {
             "type": "paragraph",
-            "text": "Proident quis anim irure. Tempor est do mollit dolore esse do aliqua elit aute dolore dolor pariatur dolor.",
+            "text": "Minim minim deserunt anim voluptate qui.",
             "spans": []
           }
         ]

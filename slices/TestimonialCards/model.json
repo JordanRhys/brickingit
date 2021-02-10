@@ -25,10 +25,24 @@
       "items": {
         "image": {
           "config": {
-            "label": "",
+            "label": "Image",
             "type": "Image",
-            "constraint": {},
-            "thumbnails": []
+            "constraint": {
+              "width": 800,
+              "height": 800
+            },
+            "thumbnails": [
+              {
+                "name": "medium",
+                "width": 400,
+                "height": 400
+              },
+              {
+                "name": "small",
+                "width": 200,
+                "height": 200
+              }
+            ]
           },
           "type": "Image"
         },

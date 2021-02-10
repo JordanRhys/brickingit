@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Header } from './typography';
 
 export const FullWidth = styled.section`
   width: 100%;
@@ -16,6 +17,9 @@ export const FlexColumn = styled.section`
   > *:not(:last-child) {
     margin-bottom: ${({ gap, theme: { spacings } }) => gap ? gap : spacings.md };
   }
+  ${Header} {
+    color: ${props => props.theme.colors.primary};
+  }
 `
 
 export const FlexRow = styled.section`
@@ -30,6 +34,9 @@ export const FlexRow = styled.section`
       margin-right: ${ reverse ? spacings.none : spacings.md };
       margin-left: ${ reverse ? spacings.md : spacings.none };
     `}
+  }
+  ${Header} {
+    color: ${props => props.theme.colors.primary};
   }
 `
 export const Card = styled.div`
@@ -50,5 +57,8 @@ export const Card = styled.div`
   }
   > button:last-child {
     margin-top: auto;
+  }
+  ${Header} {
+    color: ${props => props.theme.colors.primary};
   }
 `

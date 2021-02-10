@@ -237,5 +237,29 @@
         }
       }
     }
+  },
+  "TestimonialCards": {
+    "primary": {
+      "text": {
+        "config": {
+          "patternType": "PARAGRAPH_WITH_HEADING",
+          "blocks": 1
+        }
+      }
+    },
+    "items": {
+      "image": {
+        "content": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61"
+      },
+      "name": {
+        "content": null
+      },
+      "text": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
   }
 }

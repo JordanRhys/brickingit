@@ -1,0 +1,56 @@
+{
+  "id": "testimonial_cards",
+  "type": "SharedSlice",
+  "name": "TestimonialCards",
+  "description": "TestimonialCards",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TestimonialCards",
+      "primary": {
+        "text": {
+          "config": {
+            "label": "Text above Cards",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "type": "StructuredText",
+            "multi": "paragraph,heading1,heading2,heading3,heading4,strong,em,hyperlink,image,embed,list-item,o-list-item"
+          },
+          "type": "StructuredText"
+        }
+      },
+      "items": {
+        "image": {
+          "config": {
+            "label": "",
+            "type": "Image",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "name": {
+          "config": {
+            "label": "Name",
+            "placeholder": "",
+            "type": "Text"
+          },
+          "type": "Text"
+        },
+        "text": {
+          "config": {
+            "label": "Text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "type": "StructuredText",
+            "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item"
+          },
+          "type": "StructuredText"
+        }
+      }
+    }
+  ]
+}

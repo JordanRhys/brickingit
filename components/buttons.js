@@ -1,7 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-const Template = styled.button`
+const ButtonTemplate = css`
   font-family: ${props => props.theme.fonts.heading};
   align-self: center;
   transition: all .5s;
@@ -11,32 +11,70 @@ const Template = styled.button`
   border-radius: ${props => props.theme.borderRadius.md};
 `
 
-const RegularTemplate = styled(Template)`
+// Colors
+const PrimaryTemplate = css`
+  color: ${props => props.theme.colors.background};
+  background-color: ${props => props.theme.colors.primary};
+`
+
+const SecondaryTemplate = css`
+  color: ${props => props.theme.colors.primary};
+  background-color: ${props => props.theme.colors.background};
+  border: 1px inset ${props => props.theme.colors.primary};
+`
+
+// Sizes
+const RegularTemplate = css`
   padding: ${props => `${props.theme.spacings.sm} ${props.theme.spacings.md}`};
   font-size: ${props => props.theme.fontSizes.md};
 `
 
-const SmallTemplate = styled(Template)`
-padding: ${props => `${props.theme.spacings.xs} ${props.theme.spacings.sm}`};
+const SmallTemplate = css`
+  padding: ${props => `${props.theme.spacings.xs} ${props.theme.spacings.sm}`};
 `
 
-export const PrimaryButton = styled(RegularTemplate)`
-  color: ${props => props.theme.colors.background};
-  background-color: ${props => props.theme.colors.primary};
+// Links
+const LinkTemplate = css`
+  text-decoration: none;
 `
 
-export const SecondaryButton = styled(RegularTemplate)`
-  color: ${props => props.theme.colors.primary};
-  background-color: ${props => props.theme.colors.background};
-  border: 1px inset ${props => props.theme.colors.primary};
-`
-export const SmallPrimaryButton = styled(SmallTemplate)`
-  color: ${props => props.theme.colors.background};
-  background-color: ${props => props.theme.colors.primary};
+// Regular Buttons
+export const PrimaryButton = styled.button`
+  ${ButtonTemplate}
+  ${RegularTemplate}
+  ${PrimaryTemplate}
 `
 
-export const SmallSecondaryButton = styled(SmallTemplate)`
-  color: ${props => props.theme.colors.primary};
-  background-color: ${props => props.theme.colors.background};
-  border: 1px inset ${props => props.theme.colors.primary};
+export const SecondaryButton = styled.button`
+  ${ButtonTemplate}
+  ${RegularTemplate}
+  ${SecondaryTemplate}
+`
+
+// Small Buttons
+export const SmallPrimaryButton = styled.button`
+  ${ButtonTemplate}
+  ${SmallTemplate}
+  ${PrimaryTemplate}
+`
+
+export const SmallSecondaryButton = styled.button`
+  ${ButtonTemplate}
+  ${SmallTemplate}
+  ${SecondaryTemplate}
+`
+
+// Link Buttons
+export const PrimaryLinkButton = styled.a`
+  ${ButtonTemplate}
+  ${RegularTemplate}
+  ${PrimaryTemplate}
+  ${LinkTemplate}
+`
+
+export const SecondaryLinkButton = styled.a`
+  ${ButtonTemplate}
+  ${RegularTemplate}
+  ${SecondaryTemplate}
+  ${LinkTemplate}
 `

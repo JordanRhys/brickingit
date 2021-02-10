@@ -1,0 +1,181 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "TestimonialBanner",
+    "primary": {},
+    "items": [
+      {
+        "image": {
+          "dimensions": {
+            "width": 1600,
+            "height": 1060
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1509670572852-5823184def8c?w=1600&h=1060&fit=crop",
+          "medium": {
+            "dimensions": {
+              "width": 800,
+              "height": 530
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1509670572852-5823184def8c?w=800&h=530&fit=crop"
+          },
+          "small": {
+            "dimensions": {
+              "width": 400,
+              "height": 265
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1509670572852-5823184def8c?w=400&h=265&fit=crop"
+          }
+        },
+        "name": "synthesize one-to-one platforms",
+        "text": [
+          {
+            "type": "heading1",
+            "text": "Reinvent 24/7 networks",
+            "spans": []
+          },
+          {
+            "type": "paragraph",
+            "text": "Deserunt voluptate quis quis. Eu voluptate mollit amet commodo sint in adipisicing minim minim incididunt.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "image": {
+          "dimensions": {
+            "width": 1600,
+            "height": 1060
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1509670572852-5823184def8c?w=1600&h=1060&fit=crop",
+          "medium": {
+            "dimensions": {
+              "width": 800,
+              "height": 530
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1509670572852-5823184def8c?w=800&h=530&fit=crop"
+          },
+          "small": {
+            "dimensions": {
+              "width": 400,
+              "height": 265
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1509670572852-5823184def8c?w=400&h=265&fit=crop"
+          }
+        },
+        "name": "disintermediate cross-platform methodologies",
+        "text": [
+          {
+            "type": "heading1",
+            "text": "Implement enterprise applications",
+            "spans": []
+          },
+          {
+            "type": "paragraph",
+            "text": "Dolore ex adipisicing quis ipsum Lorem voluptate Lorem Lorem.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "image": {
+          "dimensions": {
+            "width": 1600,
+            "height": 1060
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1509670572852-5823184def8c?w=1600&h=1060&fit=crop",
+          "medium": {
+            "dimensions": {
+              "width": 800,
+              "height": 530
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1509670572852-5823184def8c?w=800&h=530&fit=crop"
+          },
+          "small": {
+            "dimensions": {
+              "width": 400,
+              "height": 265
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1509670572852-5823184def8c?w=400&h=265&fit=crop"
+          }
+        },
+        "name": "leverage proactive synergies",
+        "text": [
+          {
+            "type": "heading1",
+            "text": "Strategize viral methodologies",
+            "spans": []
+          },
+          {
+            "type": "paragraph",
+            "text": "Adipisicing commodo tempor exercitation sit eiusmod. Deserunt est aliqua labore sint nisi proident laboris et irure.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "image": {
+          "dimensions": {
+            "width": 1600,
+            "height": 1060
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1509670572852-5823184def8c?w=1600&h=1060&fit=crop",
+          "medium": {
+            "dimensions": {
+              "width": 800,
+              "height": 530
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1509670572852-5823184def8c?w=800&h=530&fit=crop"
+          },
+          "small": {
+            "dimensions": {
+              "width": 400,
+              "height": 265
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1509670572852-5823184def8c?w=400&h=265&fit=crop"
+          }
+        },
+        "name": "monetize bleeding-edge experiences",
+        "text": [
+          {
+            "type": "heading1",
+            "text": "Drive robust e-business",
+            "spans": []
+          },
+          {
+            "type": "paragraph",
+            "text": "Ipsum quis aliqua velit. Velit exercitation tempor reprehenderit adipisicing dolor aute fugiat deserunt pariatur dolor consectetur ipsum aliquip proident occaecat.",
+            "spans": []
+          }
+        ]
+      }
+    ],
+    "slice_type": "testimonial_banner"
+  }
+]

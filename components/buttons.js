@@ -28,6 +28,7 @@ export const PrimaryButton = styled(RegularTemplate)`
 export const SecondaryButton = styled(RegularTemplate)`
   color: ${props => props.theme.colors.primary};
   background-color: ${props => props.theme.colors.background};
+  border: 1px inset ${props => props.theme.colors.primary};
 `
 export const SmallPrimaryButton = styled(SmallTemplate)`
   color: ${props => props.theme.colors.background};
@@ -37,4 +38,5 @@ export const SmallPrimaryButton = styled(SmallTemplate)`
 export const SmallSecondaryButton = styled(SmallTemplate)`
   color: ${props => props.theme.colors.primary};
   background-color: ${props => props.theme.colors.background};
+  border: 1px inset ${props => props.theme.colors.primary};
 `

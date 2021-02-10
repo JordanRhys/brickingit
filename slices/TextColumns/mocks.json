@@ -1,0 +1,69 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "TextColumns",
+    "primary": {},
+    "items": [
+      {
+        "column": [
+          {
+            "type": "heading1",
+            "text": "Recontextualize virtual metrics",
+            "spans": []
+          },
+          {
+            "type": "heading1",
+            "text": "Visualize world-class e-services",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "type": "heading1",
+            "text": "Leverage revolutionary paradigms",
+            "spans": []
+          },
+          {
+            "type": "heading1",
+            "text": "Productize viral e-tailers",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "type": "heading1",
+            "text": "Whiteboard web-enabled ROI",
+            "spans": []
+          },
+          {
+            "type": "heading1",
+            "text": "Enhance value-added blockchains",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "type": "heading1",
+            "text": "Cultivate visionary infomediaries",
+            "spans": []
+          },
+          {
+            "type": "heading1",
+            "text": "Synergize holistic blockchains",
+            "spans": []
+          }
+        ]
+      }
+    ],
+    "slice_type": "text_columns"
+  }
+]

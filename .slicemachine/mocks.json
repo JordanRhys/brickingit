@@ -261,5 +261,15 @@
         }
       }
     }
+  },
+  "TextColumns": {
+    "items": {
+      "column": {
+        "config": {
+          "patternType": "_",
+          "blocks": 2
+        }
+      }
+    }
   }
 }

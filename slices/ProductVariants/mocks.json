@@ -117,15 +117,6 @@
       },
       {
         "variant": "innovate intuitive deliverables",
-        "image": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
-        },
         "description": [
           {
             "type": "paragraph",

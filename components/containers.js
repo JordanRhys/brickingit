@@ -33,6 +33,7 @@ export const FlexRow = styled.section`
   }
 `
 export const Card = styled.div`
+  ${({ maxWidth }) => maxWidth ? `max-width: ${maxWidth};` : ''}
   position: relative;
   display: flex;
   flex-direction: column;
@@ -47,7 +48,7 @@ export const Card = styled.div`
   > *:not(:last-child) {
     margin-bottom: ${props => props.theme.spacings.md};
   }
-  > *:last-child {
+  > button:last-child {
     margin-top: auto;
   }
 `

@@ -34,23 +34,7 @@
           "url": "https://slicemachine.dev"
         },
         "buttonText": "implement killer methodologies",
-        "color": true
-      },
-      {
-        "buttonLink": {
-          "link_type": "Web",
-          "url": "https://slicemachine.dev"
-        },
-        "buttonText": "empower compelling e-services",
-        "color": true
-      },
-      {
-        "buttonLink": {
-          "link_type": "Web",
-          "url": "https://slicemachine.dev"
-        },
-        "buttonText": "reintermediate turn-key content",
-        "color": true
+        "color": false
       }
     ],
     "slice_type": "text_hero"

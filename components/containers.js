@@ -25,6 +25,16 @@ export const FlexColumn = styled.section`
   }
 `
 
+export const ContrastFlexColumn = styled(FlexColumn)`
+  background-color: ${props => props.theme.colors.primary};
+  ${Header} {
+    color: ${props => props.theme.colors.background};
+  }
+  ${Body} {
+    color: ${props => props.theme.colors.background};
+  }
+`
+
 export const FlexRow = styled.section`
   width: ${({ width }) => width ? width : '100%'};
   display: flex;
@@ -45,6 +55,17 @@ export const FlexRow = styled.section`
     color: ${props => props.theme.colors.body};
   }
 `
+
+export const ContrastFlexRow = styled(FlexRow)`
+  background-color: ${props => props.theme.colors.primary};
+  ${Header} {
+    color: ${props => props.theme.colors.background};
+  }
+  ${Body} {
+    color: ${props => props.theme.colors.background};
+  }
+`
+
 export const Card = styled.div`
   ${({ maxWidth }) => maxWidth ? `max-width: ${maxWidth};` : ''}
   position: relative;

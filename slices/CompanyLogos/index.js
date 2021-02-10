@@ -1,9 +1,10 @@
 import React from 'react';
 import { arrayOf, shape, object } from 'prop-types';
 import { richTextPropType, imagePropType } from '../../helpers/slice-prop-types';
-import { htmlSerializer } from '../../prismicKits';
+import { htmlSerializer, linkResolver, hrefResolver } from '../../prismicKits';
 import { RichText } from 'prismic-reactjs';
 import { FlexColumn, FlexRow } from '../../components/containers';
+import { Link } from '../../components/links';
 import styled from 'styled-components';
 
 const Image = styled.img`
@@ -23,9 +24,9 @@ const MySlice = ({ slice }) => (
     <FlexRow as='div' withoutPadding={true}>
       {slice.items.map(({image, link}) => (
         link ? (
-          <Anchor href={link} key={image.url}>
+          <Link link={link} Component={Anchor}>
             <Image src={image.url} alt={image.alt} />
-          </Anchor>
+          </Link>
         ) : (
           <Image src={image.url} alt={image.alt} key={image.url} />
         )

@@ -3,8 +3,10 @@ import { shape, string, object, bool } from 'prop-types';
 import { htmlSerializer } from '../../prismicKits';
 import { richTextPropType, imagePropType } from '../../helpers/slice-prop-types';
 import { FlexColumn, FlexRow } from '../../components/containers';
-import { PrimaryButton } from '../../components/buttons';
+import { PrimaryLinkButton } from '../../components/buttons';
 import { RichText } from 'prismic-reactjs';
+import { Link } from '../../components/links';
+
 
 const MySlice = ({ slice }) => {
   const { text, buttonLink, buttonText, image, position } = slice.primary;
@@ -17,9 +19,9 @@ const MySlice = ({ slice }) => {
         <RichText render={text} htmlSerializer={htmlSerializer} />
 
         {(buttonLink && buttonText) && (
-          <PrimaryButton>
+          <Link link={buttonLink} Component={PrimaryLinkButton}>
             {buttonText}
-          </PrimaryButton>
+          </Link>
         )}
       </FlexColumn>
     </FlexRow>

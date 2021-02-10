@@ -11,12 +11,22 @@
         "column": [
           {
             "type": "heading1",
-            "text": "Recontextualize virtual metrics",
+            "text": "Grow 24/7 initiatives",
+            "spans": []
+          },
+          {
+            "type": "paragraph",
+            "text": "Nulla commodo pariatur sunt amet deserunt aute aliqua ad eiusmod sint veniam. Laborum nisi et cillum aliquip reprehenderit adipisicing.",
             "spans": []
           },
           {
             "type": "heading1",
-            "text": "Visualize world-class e-services",
+            "text": "Incubate e-business eyeballs",
+            "spans": []
+          },
+          {
+            "type": "paragraph",
+            "text": "Nisi esse commodo enim est incididunt irure culpa adipisicing veniam.",
             "spans": []
           }
         ]
@@ -25,12 +35,22 @@
         "column": [
           {
             "type": "heading1",
-            "text": "Leverage revolutionary paradigms",
+            "text": "Revolutionize sticky infomediaries",
+            "spans": []
+          },
+          {
+            "type": "paragraph",
+            "text": "Laboris eu ex anim.",
             "spans": []
           },
           {
             "type": "heading1",
-            "text": "Productize viral e-tailers",
+            "text": "Synergize rich paradigms",
+            "spans": []
+          },
+          {
+            "type": "paragraph",
+            "text": "Dolore eu ipsum minim dolor commodo velit qui qui laboris anim.",
             "spans": []
           }
         ]
@@ -39,26 +59,22 @@
         "column": [
           {
             "type": "heading1",
-            "text": "Whiteboard web-enabled ROI",
+            "text": "Transition best-of-breed",
+            "spans": []
+          },
+          {
+            "type": "paragraph",
+            "text": "Consequat reprehenderit cupidatat nisi. Irure Lorem sint amet dolore consectetur mollit labore sit consequat aliquip cillum.",
             "spans": []
           },
           {
             "type": "heading1",
-            "text": "Enhance value-added blockchains",
-            "spans": []
-          }
-        ]
-      },
-      {
-        "column": [
-          {
-            "type": "heading1",
-            "text": "Cultivate visionary infomediaries",
+            "text": "Empower leading-edge convergence",
             "spans": []
           },
           {
-            "type": "heading1",
-            "text": "Synergize holistic blockchains",
+            "type": "paragraph",
+            "text": "Labore mollit nostrud ipsum reprehenderit laborum incididunt nulla cupidatat dolore occaecat eu. Esse id aliquip laboris eiusmod quis consectetur occaecat. Aute ipsum quis culpa.",
             "spans": []
           }
         ]

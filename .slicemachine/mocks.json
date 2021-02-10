@@ -266,7 +266,7 @@
     "items": {
       "column": {
         "config": {
-          "patternType": "_",
+          "patternType": "PARAGRAPH_WITH_HEADING",
           "blocks": 2
         }
       }

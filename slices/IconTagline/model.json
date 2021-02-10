@@ -1,0 +1,59 @@
+{
+  "id": "icon_tagline",
+  "type": "SharedSlice",
+  "name": "IconTagline",
+  "description": "IconTagline",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "IconTagline",
+      "primary": {},
+      "items": {
+        "icon": {
+          "config": {
+            "label": "Icon",
+            "type": "Image",
+            "constraint": {
+              "width": 200,
+              "height": 200
+            },
+            "thumbnails": [
+              {
+                "name": "medium",
+                "width": 100,
+                "height": 100
+              },
+              {
+                "name": "small",
+                "width": 50,
+                "height": 50
+              }
+            ]
+          },
+          "type": "Image"
+        },
+        "tagline": {
+          "config": {
+            "label": "Tagline",
+            "placeholder": "",
+            "type": "Text"
+          },
+          "type": "Text"
+        },
+        "text": {
+          "config": {
+            "label": "Text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "type": "StructuredText",
+            "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item"
+          },
+          "type": "StructuredText"
+        }
+      }
+    }
+  ]
+}

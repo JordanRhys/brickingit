@@ -290,5 +290,21 @@
         "content": true
       }
     }
+  },
+  "IconTagline": {
+    "items": {
+      "icon": {
+        "content": "https://images.unsplash.com/photo-1528475734108-88a7b30257bb"
+      },
+      "tagline": {
+        "content": "Tagline"
+      },
+      "text": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
   }
 }

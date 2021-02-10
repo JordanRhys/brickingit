@@ -26,8 +26,10 @@ export const FlexRow = styled.section`
   margin: 0 auto;
   padding: ${({ withoutPadding, theme: { spacings } }) => withoutPadding ? spacings.none : spacings.md } 0;
   > *:not(:last-child) {
-    margin-right: ${({ reverse, theme: { spacings } }) => reverse ? spacings.none : spacings.md };
-    margin-left: ${({ reverse, theme: { spacings } }) => reverse ? spacings.md : spacings.none };
+    ${({ withoutMargin, reverse, theme: { spacings }}) => withoutMargin ? '' : `
+      margin-right: ${ reverse ? spacings.none : spacings.md };
+      margin-left: ${ reverse ? spacings.md : spacings.none };
+    `}
   }
 `
 export const Card = styled.div`

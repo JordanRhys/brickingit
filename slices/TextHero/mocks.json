@@ -1,0 +1,58 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "TextHero",
+    "primary": {
+      "text": [
+        {
+          "type": "heading1",
+          "text": "Empower bricks-and-clicks e-tailers",
+          "spans": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Excepteur esse consequat dolor commodo laborum nisi id elit duis duis. Sit et do veniam labore nulla sit amet aliqua ad.",
+          "spans": []
+        }
+      ]
+    },
+    "items": [
+      {
+        "buttonLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "buttonText": "monetize B2C action-items",
+        "color": true
+      },
+      {
+        "buttonLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "buttonText": "implement killer methodologies",
+        "color": true
+      },
+      {
+        "buttonLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "buttonText": "empower compelling e-services",
+        "color": true
+      },
+      {
+        "buttonLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "buttonText": "reintermediate turn-key content",
+        "color": true
+      }
+    ],
+    "slice_type": "text_hero"
+  }
+]

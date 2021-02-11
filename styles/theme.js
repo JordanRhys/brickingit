@@ -26,7 +26,7 @@ export default {
   },
   lineHeights: {
     body: 1.25,
-    heading: 1.125,
+    heading: 1,
   },
   spacings: {
     none: 0,

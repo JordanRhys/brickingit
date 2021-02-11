@@ -36,7 +36,7 @@
     },
     "items": [
       {
-        "variant": "redefine front-end technologies",
+        "variant": "Backer",
         "image": {
           "dimensions": {
             "width": 900,
@@ -53,10 +53,10 @@
             "spans": []
           }
         ],
-        "price": 96
+        "price": 150
       },
       {
-        "variant": "engage efficient e-services",
+        "variant": "Basic",
         "image": {
           "dimensions": {
             "width": 900,
@@ -73,10 +73,10 @@
             "spans": []
           }
         ],
-        "price": 6160
+        "price": 750
       },
       {
-        "variant": "synthesize seamless applications",
+        "variant": "Ultimate",
         "image": {
           "dimensions": {
             "width": 900,
@@ -93,38 +93,7 @@
             "spans": []
           }
         ],
-        "price": 4800
-      },
-      {
-        "variant": "productize transparent e-services",
-        "image": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
-        },
-        "description": [
-          {
-            "type": "paragraph",
-            "text": "In duis id duis tempor voluptate aliqua quis nostrud et irure aliquip cupidatat.",
-            "spans": []
-          }
-        ],
-        "price": 9565
-      },
-      {
-        "variant": "innovate intuitive deliverables",
-        "description": [
-          {
-            "type": "paragraph",
-            "text": "Fugiat irure eiusmod nisi aute eu exercitation quis non cupidatat.",
-            "spans": []
-          }
-        ],
-        "price": 8849
+        "price": 1500
       }
     ],
     "slice_type": "product_variants"

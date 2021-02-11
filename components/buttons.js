@@ -30,7 +30,8 @@ const RegularTemplate = css`
 `
 
 const SmallTemplate = css`
-  padding: ${props => `${props.theme.spacings.xs} ${props.theme.spacings.sm}`};
+  padding: ${props => `${props.theme.spacings.sm} ${props.theme.spacings.md}`};
+  font-size: ${props => props.theme.fontSizes.sm};
 `
 
 // Links

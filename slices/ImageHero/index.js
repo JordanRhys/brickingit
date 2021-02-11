@@ -6,6 +6,11 @@ import { FlexColumn, FlexRow } from '../../components/containers';
 import { PrimaryLinkButton } from '../../components/buttons';
 import { RichText } from 'prismic-reactjs';
 import { Link } from '../../components/links';
+import styled from 'styled-components';
+
+const Image = styled.img`
+  width: 100%;
+`
 
 
 const MySlice = ({ slice }) => {
@@ -13,7 +18,9 @@ const MySlice = ({ slice }) => {
 
   return (
     <FlexRow reverse={position}>
-      <img src={image.url} alt={image.alt} />
+      <FlexColumn as='div' withoutPadding centered>
+        <Image src={image.url} alt={image.alt} />
+      </FlexColumn>
 
       <FlexColumn as='div' withoutPadding centered>
         <RichText render={text} htmlSerializer={htmlSerializer} />

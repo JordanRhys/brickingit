@@ -42,6 +42,7 @@ export const FlexRow = styled.section`
   justify-content: center;
   margin: 0 auto;
   padding: ${({ withoutPadding, theme: { spacings } }) => withoutPadding ? spacings.none : spacings.md } 0;
+  ${({ wrap }) => wrap ? 'flex-wrap: wrap;' : ''}
   > *:not(:last-child) {
     ${({ withoutMargin, reverse, theme: { spacings }}) => withoutMargin ? '' : `
       margin-right: ${ reverse ? spacings.none : spacings.md };

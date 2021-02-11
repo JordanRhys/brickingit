@@ -17,11 +17,11 @@ const MySlice = ({ slice }) => {
   return (
     <FlexRow width={image ? '100%' : '50%'}>
       { image ? (
-        <FlexColumn as='div' withoutPadding={true}>
+        <FlexColumn as='div' withoutPadding>
           <Image src={image.url} alt={image.alt} />
         </FlexColumn>
       ) : null }
-      <FlexColumn as='div' withoutPadding={true}>
+      <FlexColumn as='div' withoutPadding>
         <RichText render={text} htmlSerializer={htmlSerializer} />
         {
           slice.items.map(({question, answer}) =>
@@ -49,14 +49,15 @@ MySlice.propTypes = {
 const Dropdown = styled.div`
   width: 100%;
   background-color: ${props => props.theme.colors.primary};
-  color: ${props => props.theme.colors.background};
   border-radius: ${props => props.theme.borderRadius.md};
   transition: all 5s;
+  color: ${props => props.theme.colors.background};
 `
 
 const Question = styled.div`
   display: flex;
   justify-content: space-between;
+  font-family: ${props => props.theme.fonts.body};
   padding: ${props => props.theme.spacings.sm} ${props => props.theme.spacings.md};
   cursor: pointer;
 `
@@ -75,6 +76,9 @@ const DropdownAnimation = keyframes`
 const Answer = styled.div`
   padding: ${props => props.theme.spacings.sm} ${props => props.theme.spacings.md};
   overflow: hidden;
+  && > * {
+    color: ${props => props.theme.colors.background};
+  }
   > * {
     animation: ${DropdownAnimation} .4s;
   }

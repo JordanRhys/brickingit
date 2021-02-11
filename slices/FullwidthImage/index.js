@@ -2,14 +2,19 @@ import React from 'react';
 import { shape, string, } from 'prop-types';
 import { imagePropType } from '../../helpers/slice-prop-types';
 import { FlexColumn } from '../../components/containers';
+import { Subtle } from '../../components/typography';
+import styled from 'styled-components';
 
+const Image = styled.img`
+  width: 100%;
+`
 
 const MySlice = ({ slice }) => (
   <FlexColumn>
-    <img src={slice.primary.image.url} alt={slice.primary.image.alt}/>
+    <Image src={slice.primary.image.url} alt={slice.primary.image.alt}/>
 
     { slice.primary.caption && (
-      <span>{slice.primary.caption}</span>
+      <Subtle>{slice.primary.caption}</Subtle>
     )}
   </FlexColumn>
 );

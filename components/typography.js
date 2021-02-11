@@ -15,3 +15,11 @@ export const Body = styled.p`
   color: inherit;
   margin: 0;
 `
+
+export const Subtle = styled.span`
+  font-family: ${props => props.theme.fonts.body};
+  font-size: ${({ fontSize, theme: { fontSizes }}) => fontSize ? fontSizes[fontSize] : fontSizes.sm };
+  line-height: ${props => props.theme.lineHeights.body};
+  margin: 0;
+  color: ${props => props.theme.colors.subtle};
+`

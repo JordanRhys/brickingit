@@ -9,7 +9,7 @@
       "text": [
         {
           "type": "heading1",
-          "text": "Disintermediate synergistic systems",
+          "text": "Check out our most popular packages",
           "spans": []
         },
         {
@@ -22,11 +22,11 @@
         "link_type": "Web",
         "url": "https://slicemachine.dev"
       },
-      "buttonText": "empower magnetic applications"
+      "buttonText": "View all packages"
     },
     "items": [
       {
-        "name": "enhance plug-and-play architectures",
+        "name": "Backer",
         "description": [
           {
             "type": "paragraph",
@@ -34,16 +34,16 @@
             "spans": []
           }
         ],
-        "caption": "revolutionize turn-key infomediaries",
-        "price": 1234,
+        "caption": "",
+        "price": 150,
         "buttonLink": {
           "link_type": "Web",
           "url": "https://slicemachine.dev"
         },
-        "buttonText": "generate viral vortals"
+        "buttonText": "Purchase"
       },
       {
-        "name": "visualize real-time platforms",
+        "name": "Basic",
         "description": [
           {
             "type": "paragraph",
@@ -51,30 +51,30 @@
             "spans": []
           }
         ],
-        "caption": "revolutionize front-end e-services",
-        "price": 21,
+        "caption": "",
+        "price": 750,
         "buttonLink": {
           "link_type": "Web",
           "url": "https://slicemachine.dev"
         },
-        "buttonText": "enable bleeding-edge methodologies"
+        "buttonText": "Purchase"
       },
       {
-        "name": "envisioneer cross-media ROI",
+        "name": "Ultimate",
         "description": [
           {
             "type": "paragraph",
-            "text": "Enim labore velit ad non elit fugiat velit aliquip elit exercitation exercitation duis. Laboris deserunt et ea excepteur voluptate excepteur id culpa. Ex consectetur sit dolore tempor sunt aliqua duis sint sint non dolor.",
+            "text": "Enim labore velit ad non elit fugiat velit aliquip elit exercitation exercitation duis. Laboris deserunt et ea excepteur voluptate excepteur id culpa.",
             "spans": []
           }
         ],
-        "caption": "embrace synergistic supply-chains",
-        "price": 5116,
+        "caption": "Best Value",
+        "price": 1500,
         "buttonLink": {
           "link_type": "Web",
           "url": "https://slicemachine.dev"
         },
-        "buttonText": "innovate customized bandwidth"
+        "buttonText": "Purchase"
       }
     ],
     "slice_type": "pricing_cards"

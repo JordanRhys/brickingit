@@ -6,19 +6,22 @@ import { FlexColumn, FlexRow, Card } from '../../components/containers';
 import { htmlSerializer } from '../../prismicKits';
 import { PrimaryButton } from '../../components/buttons';
 import { RichText } from 'prismic-reactjs';
+import { Header } from '../../components/typography';
 import styled from 'styled-components';
 
 const Caption = styled.span`
   position: absolute;
   top: 0;
-  left: ${props => props.theme.spacings.md};
-  right: ${props => props.theme.spacings.md};
+  left: ${props => props.theme.spacings.lg};
+  right: ${props => props.theme.spacings.lg};
   padding: ${props => props.theme.spacings.sm};
   border-radius: ${props => props.theme.borderRadius.sm};
   margin-bottom: ${props => props.theme.spacings.md};
   background-color: ${props => props.theme.colors.primary};
   color: ${props => props.theme.colors.background};
   transform: translateY(-50%);
+  font-family: ${props => props.theme.fonts.body};
+  text-align: center;
 `
 
 const Price = styled.span`
@@ -26,6 +29,7 @@ const Price = styled.span`
   font-family: ${props => props.theme.fonts.heading};
   font-weight: ${props => props.theme.fonts.heading};
   color: ${props => props.theme.colors.primary};
+  text-align: center;
 `
 
 const MySlice = ({ slice }) => {
@@ -51,11 +55,11 @@ const MySlice = ({ slice }) => {
       <FlexRow as='div'>
         {
           items.map(item => (
-            <Card key={item.title} extraPadding={containsCaption}>
+            <Card key={item.title} extraPadding={containsCaption} maxWidth='25%'>
               {item.caption && (
                 <Caption>{item.caption}</Caption>
               )}
-              <h4>{item.name}</h4>
+              <Header fontSize='lg' style={{textAlign: 'center'}}>{item.name}</Header>
               <Price>{penceToPounds(item.price)}</Price>
               <RichText render={item.description} htmlSerializer={htmlSerializer} />
                 <PrimaryButton>{item.buttonText}</PrimaryButton>

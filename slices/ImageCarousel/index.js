@@ -1,6 +1,7 @@
 import React from 'react';
 import { shape, string, object, arrayOf } from 'prop-types';
 import { imagePropType } from '../../helpers/slice-prop-types';
+import { Subtle } from '../../components/typography';
 import styled from 'styled-components';
 import Slider from 'infinite-react-carousel';
 
@@ -18,8 +19,6 @@ const Caption = styled.span`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: ${props => props.theme.fonts.body};
-  font-size: ${props => props.theme.fontSizes.sm};
 `
 
 const StyledSlider = styled(Slider)`
@@ -40,7 +39,7 @@ const MySlice = ({ slice }) => {
           slice.items.map(({ image, caption }) => (
             <Slide key={image.url}>
               <Img src={image.url} alt={image.alt} />
-              <Caption>{caption}</Caption>
+              <Caption><Subtle>{caption}</Subtle></Caption>
             </Slide>
           ))
         }

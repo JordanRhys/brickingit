@@ -1,6 +1,7 @@
 export default {
   colors: {
-    body: '#070611',
+    body: '#110606',
+    subtle: '#4A4646',
     heading: '#B80F11',
     primary: '#D11013',
     secondary: '#059638',

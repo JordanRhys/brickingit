@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import { shape, arrayOf, object, string, number } from 'prop-types';
 import { imagePropType, richTextPropType } from '../../helpers/slice-prop-types';
 import { penceToPounds } from '../../helpers/currency';
-import { FlexColumn, FlexRow, Card } from '../../components/containers';
+import { FlexColumn, FlexRow } from '../../components/containers';
 import { htmlSerializer } from '../../prismicKits';
 import { PrimaryButton, SmallPrimaryButton, SmallSecondaryButton } from '../../components/buttons';
 import { RichText } from 'prismic-reactjs';
+import { Header } from '../../components/typography';
 import styled from 'styled-components';
 
 const Image = styled.img`
@@ -25,13 +26,13 @@ const MySlice = ({ slice }) => {
   return (
     <FlexRow>
       <FlexColumn withoutPadding>
-        <h1>{name}</h1>
+        <Header>{name}</Header>
         <RichText render={description} htmlSerializer={htmlSerializer} />
-        <span>{
-          selected === null ? `From ${penceToPounds(items[lowestPriceIndex].price)}` : `${penceToPounds(items[selected].price)}`
-        }</span>
+        <Header as='span' fontSize='md'>{
+          selected === null ? `Prices from: ${penceToPounds(items[lowestPriceIndex].price)}` : `${penceToPounds(items[selected].price)}`
+        }</Header>
 
-        <FlexRow withoutPadding>
+        <FlexRow withoutPadding wrap>
           {
             items.map((item, index) => (
               index === selected ? (

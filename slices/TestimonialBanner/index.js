@@ -95,7 +95,7 @@ const MySlice = ({ slice }) => {
         {
           slice.items.map(({ image, name, text }) => (
           <Background>
-            <FlexRow withoutPadding withoutMargin>
+            <FlexRow as='div' withoutPadding withoutMargin>
               <HalfWidth padding>
                 <RichText render={text} htmlSerializer={htmlSerializer} />
               </HalfWidth>

@@ -21,7 +21,7 @@ const HalfWidth = styled.div`
   object-fit: cover;
   color: ${props => props.theme.colors.background};
   ${({ padding, theme: { spacings }}) => padding ? `padding: ${spacings.md} ${spacings.lg};` : ''}
-  > * {
+  > :not(img) {
     padding-left: ${props => props.theme.spacings.sm};
   }
   ${Header}, ${Body} {
@@ -46,54 +46,6 @@ const Name = styled.span`
   line-height: ${props => props.theme.lineHeights.heading};
   text-align: center;
 `
-
-const DropdownIcon = styled.div`
-${({ rotate }) => rotate ? `transform: rotate(${ rotate });` : ''}
-  width: 26px;
-  height: 26px;
-  position: relative;
-  margin: ${props => `0 -${props.theme.spacings.sm} 0 ${props.theme.spacings.sm}`};
-  z-index: 10;
-`
-
-const LeftLine = styled.span`
-  position: absolute;
-  top: 9px;
-  left: 0;
-  width: 16px;
-  height: 2px;
-  background-color: ${props => props.theme.colors.background};
-  display: block;
-  transform: translateX(7px) rotate(45deg);
-  transition: all .3s ease-in-out;
-`
-
-const RightLine = styled.span`
-  position: absolute;
-  top: 9px;
-  right: 0;
-  width: 16px;
-  height: 2px;
-  background-color: ${props => props.theme.colors.background};
-  display: block;
-  transform: translateX(-3px) rotate(135deg);
-  transition: all .3s ease-in-out;
-`
-
-const BackIcon = () => (
-  <DropdownIcon rotate='-90deg'>
-    <LeftLine />
-    <RightLine />
-  </DropdownIcon>
-);
-
-// const NextIcon = () => (
-//   <DropdownIcon rotate='90deg'>
-//     <LeftLine />
-//     <RightLine />
-//   </DropdownIcon>
-// );
-
 
 const NextIcon = styled.button`
 position: absolute;
@@ -127,7 +79,7 @@ transform: rotate(45deg);
 `
 
 const PrevIcon = styled(NextIcon)`
-  transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(-180deg);
 `
 
 const MySlice = ({ slice }) => {

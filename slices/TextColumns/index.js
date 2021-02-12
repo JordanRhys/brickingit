@@ -15,9 +15,6 @@ const Column = styled.div`
   > *:not(:last-child) {
     margin-bottom: ${props => props.theme.spacings.md};
   }
-  > p {
-    text-align: justify;
-  }
 `
 
 const MySlice = ({ slice }) => (

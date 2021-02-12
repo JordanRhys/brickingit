@@ -5,22 +5,36 @@ const ButtonTemplate = css`
   font-family: ${props => props.theme.fonts.heading};
   align-self: center;
   transition: all .5s;
-  cursor: pointer;
   outline: none;
   border: none;
   border-radius: ${props => props.theme.borderRadius.md};
+  border: 2px solid ${props => props.theme.colors.primary};
+  transition: all .5s;
+  :not(span) {
+    cursor: pointer;
+  }
+  :not(span):hover {
+    transform: scale(1.05);
+  }
 `
 
 // Colors
 const PrimaryTemplate = css`
   color: ${props => props.theme.colors.background};
   background-color: ${props => props.theme.colors.primary};
+  :not(span):hover {
+    color: ${props => props.theme.colors.primary};
+    background-color: ${props => props.theme.colors.muted};
+  }
 `
 
 const SecondaryTemplate = css`
   color: ${props => props.theme.colors.primary};
   background-color: ${props => props.theme.colors.background};
-  border: 1px inset ${props => props.theme.colors.primary};
+  :not(span):hover {
+    color: ${props => props.theme.colors.primary};
+    background-color: ${props => props.theme.colors.muted};
+  }
 `
 
 // Sizes

@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
-import { shape, arrayOf, object, string, number } from 'prop-types';
+import React from 'react';
+import { shape, arrayOf, object, string } from 'prop-types';
 import { imagePropType, richTextPropType } from '../../helpers/slice-prop-types';
-import { penceToPounds } from '../../helpers/currency';
-import { FlexColumn, FlexRow, Card, FullWidth } from '../../components/containers';
+import { FlexRow } from '../../components/containers';
 import { htmlSerializer } from '../../prismicKits';
-import { PrimaryButton, SmallPrimaryButton, SmallSecondaryButton } from '../../components/buttons';
 import { RichText } from 'prismic-reactjs';
+import { Header, Body } from '../../components/typography';
 import styled from 'styled-components';
 import Slider from 'infinite-react-carousel';
 
@@ -25,6 +24,9 @@ const HalfWidth = styled.div`
   > * {
     padding-left: ${props => props.theme.spacings.sm};
   }
+  ${Header}, ${Body} {
+    color: ${props => props.theme.colors.background};
+  }
 `
 
 const Image = styled.img`
@@ -42,12 +44,102 @@ const Name = styled.span`
   font-family: ${props => props.theme.fonts.heading};
   font-size: ${props => props.theme.fontSizes.lg};
   line-height: ${props => props.theme.lineHeights.heading};
+  text-align: center;
+`
+
+const DropdownIcon = styled.div`
+${({ rotate }) => rotate ? `transform: rotate(${ rotate });` : ''}
+  width: 26px;
+  height: 26px;
+  position: relative;
+  margin: ${props => `0 -${props.theme.spacings.sm} 0 ${props.theme.spacings.sm}`};
+  z-index: 10;
+`
+
+const LeftLine = styled.span`
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 16px;
+  height: 2px;
+  background-color: ${props => props.theme.colors.background};
+  display: block;
+  transform: translateX(7px) rotate(45deg);
+  transition: all .3s ease-in-out;
+`
+
+const RightLine = styled.span`
+  position: absolute;
+  top: 9px;
+  right: 0;
+  width: 16px;
+  height: 2px;
+  background-color: ${props => props.theme.colors.background};
+  display: block;
+  transform: translateX(-3px) rotate(135deg);
+  transition: all .3s ease-in-out;
+`
+
+const BackIcon = () => (
+  <DropdownIcon rotate='-90deg'>
+    <LeftLine />
+    <RightLine />
+  </DropdownIcon>
+);
+
+// const NextIcon = () => (
+//   <DropdownIcon rotate='90deg'>
+//     <LeftLine />
+//     <RightLine />
+//   </DropdownIcon>
+// );
+
+
+const NextIcon = styled.button`
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+width: 1rem;
+height: 26px;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0 ${props => props.theme.spacings.md};
+cursor: pointer;
+`
+
+const TopLine = styled.span`
+position: absolute;
+top: 0;
+width: 2px;
+height: 16px;
+background-color: ${props => props.theme.colors.background};
+transform: rotate(-45deg);
+`
+const BottomLine = styled.span`
+position: absolute;
+bottom: 0;
+width: 2px;
+height: 16px;
+background-color: ${props => props.theme.colors.background};
+transform: rotate(45deg);
+`
+
+const PrevIcon = styled(NextIcon)`
+  transform: translateY(-50%) rotate(180deg);
 `
 
 const MySlice = ({ slice }) => {
 
+  const settings = {
+    dots: true,
+    nextArrow: <NextIcon><TopLine/><BottomLine/></NextIcon>,
+    prevArrow: <PrevIcon><TopLine/><BottomLine/></PrevIcon>
+  }
+
   return (
-      <Slider dots>
+      <Slider {...settings}>
         {
           slice.items.map(({ image, name, text }) => (
           <Background>

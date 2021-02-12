@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
-import { shape, arrayOf, object, string, number } from 'prop-types';
-import { imagePropType, richTextPropType } from '../../helpers/slice-prop-types';
-import { penceToPounds } from '../../helpers/currency';
-import { FlexColumn, FlexRow, Card, FullWidth } from '../../components/containers';
+import React from 'react';
+import { shape, arrayOf, object } from 'prop-types';
+import { richTextPropType } from '../../helpers/slice-prop-types';
+import { FlexRow } from '../../components/containers';
 import { htmlSerializer } from '../../prismicKits';
-import { PrimaryButton, SmallPrimaryButton, SmallSecondaryButton } from '../../components/buttons';
 import { RichText } from 'prismic-reactjs';
 import styled from 'styled-components';
 

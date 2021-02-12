@@ -29,7 +29,7 @@ const MySlice = ({ slice }) => {
     <FlexColumn>
       { primary.text && (<RichText render={primary.text} htmlSerializer={htmlSerializer} />)}
 
-      <FlexRow withoutPadding>
+      <FlexRow as='div'>
         {
           items.map(({ image, name, text }) => (
             <Card maxWidth='25%'>

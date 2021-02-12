@@ -1,23 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { shape, arrayOf, object, string, bool } from 'prop-types';
-import { imagePropType, richTextPropType } from '../../helpers/slice-prop-types';
-import { penceToPounds } from '../../helpers/currency';
-import { FlexColumn, FlexRow, Card, FullWidth } from '../../components/containers';
+import { richTextPropType } from '../../helpers/slice-prop-types';
+import { FlexColumn, FlexRow } from '../../components/containers';
 import { htmlSerializer } from '../../prismicKits';
-import { PrimaryButton, SecondaryButton } from '../../components/buttons';
+import { PrimaryLinkButton, SecondaryLinkButton } from '../../components/buttons';
 import { RichText } from 'prismic-reactjs';
-import styled from 'styled-components';
+import { Link } from '../../components/links';
 
 const MySlice = ({ slice }) => (
   <FlexColumn>
     <RichText render={slice.primary.text} htmlSerializer={htmlSerializer} />
-    <FlexRow withoutPadding>
+    <FlexRow as='div'>
       {
         slice.items.map(({ buttonLink, buttonText, color }) => (
           color ? (
-            <PrimaryButton>{buttonText}</PrimaryButton>
+            <Link link={buttonLink} Component={PrimaryLinkButton}>{buttonText}</Link>
           ) : (
-            <SecondaryButton>{buttonText}</SecondaryButton>
+            <Link link={buttonLink} Component={SecondaryLinkButton}>{buttonText}</Link>
           ))
         )
       }

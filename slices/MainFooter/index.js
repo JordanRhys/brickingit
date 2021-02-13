@@ -4,15 +4,25 @@ import { htmlSerializer } from '../../prismicKits';
 import { richTextPropType } from '../../helpers/slice-prop-types';
 import { FlexColumn, FlexRow } from '../../components/containers';
 import { RichText } from 'prismic-reactjs';
+import styled from 'styled-components';
+import { breakpoints } from '../../styles/breakpoints';
+
+const MinWidthColumn = styled(FlexColumn)`
+  min-width: 200px;
+
+  @media only screen and ${breakpoints.md} {
+    min-width: 0;
+  }
+`
 
 const MySlice = ({ slice }) => (
   <FlexColumn>
     <FlexRow withoutPadding>
       {
         slice.items.map(({ column }, index) => (
-          <FlexColumn key={index} withoutPadding>
+          <MinWidthColumn key={index} withoutPadding>
             <RichText render={column} htmlSerializer={htmlSerializer} />
-          </FlexColumn>
+          </MinWidthColumn>
         ))
       }
     </FlexRow>

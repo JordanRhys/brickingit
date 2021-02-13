@@ -1,4 +1,4 @@
-const sizes = {
+const size = {
   sm: '400px',
   md: '720px',
   lg: '1000px'

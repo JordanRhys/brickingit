@@ -17,7 +17,8 @@ export default {
     sm: '1rem',
     md: '1.25rem',
     lg: '1.5rem',
-    xl: '2rem',
+    xl: '1.75rem',
+    xxl: '2rem',
   },
   fontWeights: {
     thin: 100,

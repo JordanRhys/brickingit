@@ -54,9 +54,12 @@ export const FlexRow = styled.section`
   display: flex;
   flex-direction: ${({ reverse }) => reverse ? 'row-reverse' : 'row' };
   justify-content: center;
-  margin: 0 auto;
+  margin: -${props => props.theme.spacings.md} auto 0 auto;
   padding: ${({ withoutPadding, theme: { spacings } }) => withoutPadding ? spacings.none : spacings.md } 0;
-  ${({ wrap }) => wrap ? 'flex-wrap: wrap;' : ''}
+  flex-wrap: wrap;
+  > * {
+    margin-top: ${props => props.theme.spacings.md};
+  }
   > *:not(:last-child) {
     ${({ withoutMargin, reverse, theme: { spacings }}) => withoutMargin ? '' : `
       margin-right: ${ reverse ? spacings.none : spacings.md };
@@ -72,6 +75,7 @@ export const FlexRow = styled.section`
 
   @media only screen and ${breakpoints.lg} {
     width: ${({ width }) => width ? width : '100%'};
+    ${({ wrap }) => wrap ? 'flex-wrap: wrap;' : 'flex-wrap: nowrap;'}
   }
 `
 
@@ -86,7 +90,6 @@ export const ContrastFlexRow = styled(FlexRow)`
 `
 
 export const Card = styled.div`
-  ${({ maxWidth }) => maxWidth ? `max-width: ${maxWidth};` : ''}
   position: relative;
   display: flex;
   flex-direction: column;
@@ -109,5 +112,9 @@ export const Card = styled.div`
   }
   ${Body} {
     color: ${props => props.theme.colors.body};
+  }
+
+  @media only screen and ${breakpoints.lg} {
+    ${({ maxWidth }) => maxWidth ? `max-width: ${maxWidth};` : ''}
   }
 `

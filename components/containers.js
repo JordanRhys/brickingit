@@ -61,19 +61,13 @@ export const ContrastFlexColumn = styled(FlexColumn)`
 export const FlexRow = styled.section`
   width: 100%;
   display: flex;
-  flex-direction: ${({ reverse }) => reverse ? 'row-reverse' : 'row' };
+  flex-direction: column;
   justify-content: center;
   margin: -${props => props.theme.spacings.md} auto 0 auto;
   padding: ${({ withoutPadding, theme: { spacings } }) => withoutPadding ? spacings.none : spacings.md } 0;
   flex-wrap: wrap;
   > * {
     margin-top: ${props => props.theme.spacings.md};
-  }
-  > *:not(:last-child) {
-    ${({ withoutMargin, reverse, theme: { spacings }}) => withoutMargin ? '' : `
-      margin-right: ${ reverse ? spacings.none : spacings.md };
-      margin-left: ${ reverse ? spacings.md : spacings.none };
-    `}
   }
   ${Header} {
     color: ${props => props.theme.colors.primary};
@@ -82,7 +76,17 @@ export const FlexRow = styled.section`
     color: ${props => props.theme.colors.body};
   }
 
+  @media only screen and ${breakpoints.smmd} {
+    flex-direction: ${({ reverse }) => reverse ? 'row-reverse' : 'row' };
+  }
+
   @media only screen and ${breakpoints.md} {
+    > *:not(:last-child) {
+      ${({ withoutMargin, reverse, theme: { spacings }}) => withoutMargin ? '' : `
+        margin-right: ${ reverse ? spacings.none : spacings.md };
+        margin-left: ${ reverse ? spacings.md : spacings.none };
+      `}
+    }
     width: ${({ width }) => width ? width : '100%'};
     ${({ wrap }) => wrap ? 'flex-wrap: wrap;' : 'flex-wrap: nowrap;'}
   }
@@ -107,20 +111,25 @@ export const Card = styled.div`
   ${({ extraPadding, theme }) => extraPadding ? `padding-top: ${theme.spacings.lg}; margin-top: ${theme.spacings.md};` : ''}
   border-radius: ${props => props.theme.borderRadius.md};
   background-color: #ffffff;
-  :not(:last-child) {
-    margin-right: ${props => props.theme.spacings.md};
-  }
   > *:not(:last-child) {
     margin-bottom: ${props => props.theme.spacings.md};
   }
   > button:last-child {
     margin-top: auto;
   }
+  ${({ hasCaption, theme }) => hasCaption ? `margin-top: ${theme.spacings.lg}` : ''};
   ${Header} {
     color: ${props => props.theme.colors.primary};
   }
   ${Body} {
     color: ${props => props.theme.colors.body};
+  }
+
+  @media only screen and ${breakpoints.smmd} {
+    margin-top: 0px;
+    :not(:last-child) {
+      margin-right: ${props => props.theme.spacings.md};
+    }
   }
 
   @media only screen and ${breakpoints.lg} {

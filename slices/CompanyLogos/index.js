@@ -6,10 +6,19 @@ import { RichText } from 'prismic-reactjs';
 import { FlexColumn, FlexRow } from '../../components/containers';
 import { Link } from '../../components/links';
 import styled from 'styled-components';
+import { breakpoints } from '../../styles/breakpoints';
 
 const Image = styled.img`
-  height: 6rem;
+  height: 4rem;
   line-height: 0;
+
+  @media only screen and ${breakpoints.md} {
+    height: 5rem;
+  }
+
+  @media only screen and ${breakpoints.lg} {
+    height: 6rem;
+  }
 `
 
 const Anchor = styled.a`

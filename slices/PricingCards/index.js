@@ -55,7 +55,7 @@ const MySlice = ({ slice }) => {
       <FlexRow as='div'>
         {
           items.map(item => (
-            <Card key={item.title} extraPadding={containsCaption} maxWidth='25%'>
+            <Card key={item.title} extraPadding={containsCaption} maxWidth='25%' hasCaption={(item.caption)}>
               {item.caption && (
                 <Caption>{item.caption}</Caption>
               )}

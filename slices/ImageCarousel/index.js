@@ -15,7 +15,8 @@ const Img = styled.img`
 
 const Caption = styled.span`
   width: 100%;
-  height: 1.5rem;
+  height: ${props => props.theme.fontSizes.sm};
+  margin-top: ${props => props.theme.spacings.xs};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,6 +24,9 @@ const Caption = styled.span`
 
 const StyledSlider = styled(Slider)`
   color: ${props => props.theme.colors.body};
+  .carousel-dots {
+    margin-top: ${props => props.theme.spacings.xs};
+  }
 `
 
 const MySlice = ({ slice }) => {

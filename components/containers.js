@@ -34,8 +34,13 @@ export const FlexColumn = styled.section`
     color: ${props => props.theme.colors.body};
   }
 
-  @media only screen and ${breakpoints.lg} {
+  @media only screen and ${breakpoints.md} {
     width: ${({ width }) => width ? width : '100%'};
+    min-width: 75%;
+  }
+
+  @media only screen and ${breakpoints.lg} {
+    min-width: 50%;
   }
 `
 

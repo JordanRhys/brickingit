@@ -34,13 +34,17 @@ export const FlexColumn = styled.section`
     color: ${props => props.theme.colors.body};
   }
 
-  @media only screen and ${breakpoints.md} {
+  @media only screen and ${breakpoints.mdlg} {
     width: ${({ width }) => width ? width : '100%'};
-    min-width: 75%;
+    :only-child {
+      min-width: 75%;
+    }
   }
 
   @media only screen and ${breakpoints.lg} {
-    min-width: 50%;
+    :only-child {
+      min-width: 50%;
+    }
   }
 `
 
@@ -78,7 +82,7 @@ export const FlexRow = styled.section`
     color: ${props => props.theme.colors.body};
   }
 
-  @media only screen and ${breakpoints.lg} {
+  @media only screen and ${breakpoints.md} {
     width: ${({ width }) => width ? width : '100%'};
     ${({ wrap }) => wrap ? 'flex-wrap: wrap;' : 'flex-wrap: nowrap;'}
   }

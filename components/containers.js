@@ -1,5 +1,15 @@
 import styled from 'styled-components';
 import { Header, Body } from './typography';
+import { breakpoints } from '../styles/breakpoints';
+
+export const Outer = styled.main`
+  width: 100%;
+  margin: 0 auto;
+
+  @media only screen and ${breakpoints.lg} {
+    width: 1000px;
+  }
+`
 
 export const FullWidth = styled.section`
   width: 100%;
@@ -7,7 +17,7 @@ export const FullWidth = styled.section`
 `
 
 export const FlexColumn = styled.section`
-  width: ${({ width }) => width ? width : '100%'};
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,6 +33,10 @@ export const FlexColumn = styled.section`
   ${Body} {
     color: ${props => props.theme.colors.body};
   }
+
+  @media only screen and ${breakpoints.lg} {
+    width: ${({ width }) => width ? width : '100%'};
+  }
 `
 
 export const ContrastFlexColumn = styled(FlexColumn)`
@@ -36,7 +50,7 @@ export const ContrastFlexColumn = styled(FlexColumn)`
 `
 
 export const FlexRow = styled.section`
-  width: ${({ width }) => width ? width : '100%'};
+  width: 100%;
   display: flex;
   flex-direction: ${({ reverse }) => reverse ? 'row-reverse' : 'row' };
   justify-content: center;
@@ -54,6 +68,10 @@ export const FlexRow = styled.section`
   }
   ${Body} {
     color: ${props => props.theme.colors.body};
+  }
+
+  @media only screen and ${breakpoints.lg} {
+    width: ${({ width }) => width ? width : '100%'};
   }
 `
 

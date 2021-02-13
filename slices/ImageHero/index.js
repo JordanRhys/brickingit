@@ -7,9 +7,15 @@ import { PrimaryLinkButton } from '../../components/buttons';
 import { RichText } from 'prismic-reactjs';
 import { Link } from '../../components/links';
 import styled from 'styled-components';
+import { breakpoints } from '../../styles/breakpoints';
 
 const Image = styled.img`
   width: 100%;
+  margin-bottom: ${props => props.theme.spacings.md};
+
+  @media only screen and ${breakpoints.mdlg} {
+    margin-bottom: 0;
+  }
 `
 
 

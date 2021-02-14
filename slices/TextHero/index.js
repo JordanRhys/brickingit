@@ -6,9 +6,14 @@ import { htmlSerializer } from '../../prismicKits';
 import { PrimaryLinkButton, SecondaryLinkButton } from '../../components/buttons';
 import { RichText } from 'prismic-reactjs';
 import { Link } from '../../components/links';
+import styled from 'styled-components';
+
+const CenteredFlexColumn = styled(FlexColumn)`
+  text-align: center;
+`
 
 const MySlice = ({ slice }) => (
-  <FlexColumn>
+  <CenteredFlexColumn>
     <RichText render={slice.primary.text} htmlSerializer={htmlSerializer} />
     <FlexRow as='div'>
       {
@@ -21,7 +26,7 @@ const MySlice = ({ slice }) => (
         )
       }
     </FlexRow>
-  </FlexColumn>
+  </CenteredFlexColumn>
 );
 
 MySlice.propTypes = {

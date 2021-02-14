@@ -13,11 +13,11 @@ const Image = styled.img`
   line-height: 0;
 
   @media only screen and ${breakpoints.md} {
-    height: 5rem;
+    height: 4.5rem;
   }
 
   @media only screen and ${breakpoints.lg} {
-    height: 6rem;
+    height: 5rem;
   }
 `
 
@@ -25,12 +25,30 @@ const Anchor = styled.a`
   line-height: 0;
 `
 
+const Wrap = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -${props => props.theme.spacings.md};
+
+  > * {
+    margin-top: ${props => props.theme.spacings.md};
+    margin: ${props => `
+    ${props.theme.spacings.md}
+    ${props.theme.spacings.sm}
+    0
+    ${props.theme.spacings.sm}
+    ;`}
+  }n-right: ${props => props.theme.spacings.md};
+  }
+`
+
 const MySlice = ({ slice }) => (
   <FlexColumn>
     { slice.primary.text && (
       <RichText render={slice.primary.text} htmlSerializer={htmlSerializer} />
     )}
-    <FlexRow as='div' withoutPadding={true}>
+    <Wrap>
       {slice.items.map(({image, link}) => (
         link ? (
           <Link link={link} Component={Anchor}>
@@ -40,7 +58,7 @@ const MySlice = ({ slice }) => (
           <Image src={image.url} alt={image.alt} key={image.url} />
         )
       ))}
-    </FlexRow>
+    </Wrap>
   </FlexColumn>
 );
 

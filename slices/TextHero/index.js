@@ -19,9 +19,9 @@ const MySlice = ({ slice }) => (
       {
         slice.items.map(({ buttonLink, buttonText, color }) => (
           color ? (
-            <Link link={buttonLink} Component={PrimaryLinkButton}>{buttonText}</Link>
+            <Link link={buttonLink} Component={PrimaryLinkButton} key={buttonText}>{buttonText}</Link>
           ) : (
-            <Link link={buttonLink} Component={SecondaryLinkButton}>{buttonText}</Link>
+            <Link link={buttonLink} Component={SecondaryLinkButton} key={buttonText}>{buttonText}</Link>
           ))
         )
       }

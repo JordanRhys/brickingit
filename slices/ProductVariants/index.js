@@ -32,7 +32,7 @@ const MySlice = ({ slice }) => {
           selected === null ? `Prices from: ${penceToPounds(items[lowestPriceIndex].price)}` : `${penceToPounds(items[selected].price)}`
         }</Header>
 
-        <FlexRow withoutPadding wrap>
+        <FlexRow withoutPadding wrap style={{ flexDirection: 'row'}}>
           {
             items.map((item, index) => (
               index === selected ? (

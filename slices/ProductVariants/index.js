@@ -4,9 +4,10 @@ import { imagePropType, richTextPropType } from '../../helpers/slice-prop-types'
 import { penceToPounds } from '../../helpers/currency';
 import { FlexColumn, FlexRow } from '../../components/containers';
 import { htmlSerializer } from '../../prismicKits';
-import { PrimaryButton, SmallPrimaryButton, SmallSecondaryButton } from '../../components/buttons';
+import { PrimaryLinkButton, SmallPrimaryButton, SmallSecondaryButton } from '../../components/buttons';
 import { RichText } from 'prismic-reactjs';
 import { Header } from '../../components/typography';
+import { Link } from '../../components/links';
 import styled from 'styled-components';
 
 const Image = styled.img`
@@ -62,7 +63,13 @@ const MySlice = ({ slice }) => {
           ) : null
         }
 
-        <PrimaryButton>Checkout</PrimaryButton>
+        {
+          selected !== null ? (
+            <Link link={buttonLink} Component={PrimaryLinkButton}>
+              {buttonText}
+            </Link>
+          ) : null
+        }
       </FlexColumn>
       <FlexColumn withoutPadding>
         <Image src={selectedImage.url} alt={selectedImage.alt} />
@@ -74,7 +81,7 @@ const MySlice = ({ slice }) => {
 MySlice.propTypes = {
   slice: shape({
     primary: shape({
-      name: richTextPropType.isRequired,
+      name: string.isRequired,
       description: richTextPropType,
       image: imagePropType.isRequired,
       buttonLink: object.isRequired,

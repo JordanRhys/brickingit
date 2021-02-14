@@ -7,13 +7,54 @@ import { RichText } from 'prismic-reactjs';
 import { Header, Body } from '../../components/typography';
 import styled from 'styled-components';
 import Slider from 'infinite-react-carousel';
+import { breakpoints } from '../../styles/breakpoints';
 
-const Background = styled.section`
-  background-color: ${props => props.theme.colors.primary}
+const StyledSlider = styled(Slider)`
+  .carousel-dots {
+    display: none;
+    pointer-events: none;
+
+    * {
+      display: none;
+      pointer-events: none;
+    }
+
+    @media only screen and ${breakpoints.md} {
+      display: inherit;
+      pointer-events: all;
+
+      * {
+        display: inline-block;
+        pointer-events: all;
+      }
+
+    }
+  }
 `
 
-const HalfWidth = styled.div`
-  width: 50%;
+const Background = styled.section`
+  background-color: ${props => props.theme.colors.primary};
+  .carousel-dots {
+    display: none;
+  }
+`
+
+const Container = styled.div`
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  flex-direction: column-reverse;
+
+
+  @media only screen and ${breakpoints.md} {
+    flex-direction: row;
+    height: auto;
+  }
+`
+
+const HalfContainer = styled.div`
+  width: 100%;
+  height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,12 +68,18 @@ const HalfWidth = styled.div`
   ${Header}, ${Body} {
     color: ${props => props.theme.colors.background};
   }
+
+  @media only screen and ${breakpoints.md} {
+    width: 50%;
+    height: auto;
+  }
 `
 
 const Image = styled.img`
   width: 100%;
   height: 100%;
   opacity: 0.75;
+  object-fit: cover;
 `
 
 const Name = styled.span`
@@ -50,7 +97,7 @@ const Name = styled.span`
 const NextIcon = styled.button`
 position: absolute;
 top: 50%;
-transform: translateY(-50%);
+transform: translate(-.25rem,-50%) scale(1.5);
 width: 1rem;
 height: 26px;
 color: white;
@@ -59,6 +106,10 @@ align-items: center;
 justify-content: center;
 padding: 0 ${props => props.theme.spacings.md};
 cursor: pointer;
+
+@media only screen and ${breakpoints.md} {
+  transform: translateY(-50%);
+}
 `
 
 const TopLine = styled.span`
@@ -79,7 +130,11 @@ transform: rotate(45deg);
 `
 
 const PrevIcon = styled(NextIcon)`
-  transform: translateY(-50%) rotate(-180deg);
+  transform: translate(.25rem,-50%) rotate(-180deg) scale(1.5);
+
+  @media only screen and ${breakpoints.md} {
+    transform: translateY(-50%) rotate(-180deg);
+  }
 `
 
 const MySlice = ({ slice }) => {
@@ -91,23 +146,23 @@ const MySlice = ({ slice }) => {
   }
 
   return (
-      <Slider {...settings}>
+      <StyledSlider {...settings}>
         {
           slice.items.map(({ image, name, text }) => (
           <Background>
-            <FlexRow as='div' withoutPadding withoutMargin>
-              <HalfWidth padding>
+            <Container>
+              <HalfContainer padding>
                 <RichText render={text} htmlSerializer={htmlSerializer} />
-              </HalfWidth>
-              <HalfWidth>
+              </HalfContainer>
+              <HalfContainer>
                 <Image src={image.url} alt={image.alt}/>
                 <Name>{name}</Name>
-              </HalfWidth>
-            </FlexRow>
+              </HalfContainer>
+            </Container>
           </Background>
           ))
         }
-      </Slider>
+      </StyledSlider>
   );
 };
 
@@ -116,7 +171,7 @@ MySlice.propTypes = {
     primary: object.isRequired,
     items: arrayOf(shape({
       image: imagePropType.isRequired,
-      name: string.isRequired,
+      name: string,
       text: richTextPropType.isRequired,
     })).isRequired
   }).isRequired,

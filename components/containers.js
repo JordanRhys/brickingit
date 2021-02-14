@@ -31,6 +31,7 @@ export const FlexColumn = styled.section`
     color: ${props => props.theme.colors.primary};
   }
   ${Body} {
+    width: 100%;
     color: ${props => props.theme.colors.body};
   }
 
@@ -76,17 +77,18 @@ export const FlexRow = styled.section`
     color: ${props => props.theme.colors.body};
   }
 
+  > *:not(:last-child) {
+    ${({ withoutMargin, reverse, theme: { spacings }}) => withoutMargin ? '' : `
+      margin-right: ${ reverse ? spacings.none : spacings.md };
+      margin-left: ${ reverse ? spacings.md : spacings.none };
+    `}
+  }
+
   @media only screen and ${breakpoints.smmd} {
     flex-direction: ${({ reverse }) => reverse ? 'row-reverse' : 'row' };
   }
 
   @media only screen and ${breakpoints.md} {
-    > *:not(:last-child) {
-      ${({ withoutMargin, reverse, theme: { spacings }}) => withoutMargin ? '' : `
-        margin-right: ${ reverse ? spacings.none : spacings.md };
-        margin-left: ${ reverse ? spacings.md : spacings.none };
-      `}
-    }
     width: ${({ width }) => width ? width : '100%'};
     ${({ wrap }) => wrap ? 'flex-wrap: wrap;' : 'flex-wrap: nowrap;'}
   }

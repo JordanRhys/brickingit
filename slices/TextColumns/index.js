@@ -5,13 +5,19 @@ import { FlexRow } from '../../components/containers';
 import { htmlSerializer } from '../../prismicKits';
 import { RichText } from 'prismic-reactjs';
 import styled from 'styled-components';
+import { breakpoints } from '../../styles/breakpoints';
 
 const Column = styled.div`
-  max-width: 50%;
+  width: 100%;
   flex: 1;
   padding: 0 ${props => props.theme.spacings.sm};
   > *:not(:last-child) {
     margin-bottom: ${props => props.theme.spacings.md};
+  }
+
+  @media only screen and ${breakpoints.smmd} {
+    width: auto;
+    max-width: 50%;
   }
 `
 

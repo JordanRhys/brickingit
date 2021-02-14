@@ -52,6 +52,7 @@ const Dropdown = styled.div`
   border-radius: ${props => props.theme.borderRadius.md};
   transition: all 5s;
   color: ${props => props.theme.colors.background};
+  font-weight: 600;
 `
 
 const Question = styled.div`

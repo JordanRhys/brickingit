@@ -4,7 +4,8 @@ import { richTextPropType } from '../../helpers/slice-prop-types';
 import { penceToPounds } from '../../helpers/currency';
 import { FlexColumn, FlexRow, Card } from '../../components/containers';
 import { htmlSerializer } from '../../prismicKits';
-import { PrimaryButton } from '../../components/buttons';
+import { PrimaryLinkButton } from '../../components/buttons';
+import { Link } from '../../components/links';
 import { RichText } from 'prismic-reactjs';
 import { Header } from '../../components/typography';
 import styled from 'styled-components';
@@ -32,6 +33,10 @@ const Price = styled.span`
   text-align: center;
 `
 
+const BottomAlignedPrimaryLinkButton = styled(PrimaryLinkButton)`
+  margin-top: auto;
+`
+
 const MySlice = ({ slice }) => {
   const { primary, items } = slice;
 
@@ -48,7 +53,9 @@ const MySlice = ({ slice }) => {
 
       {
         (primary.buttonLink && primary.buttonText) && (
-          <PrimaryButton>{primary.buttonText}</PrimaryButton>
+          <Link link={primary.buttonLink} Component={PrimaryLinkButton}>
+            {primary.buttonText}
+          </Link>
         )
       }
 
@@ -62,7 +69,9 @@ const MySlice = ({ slice }) => {
               <Header fontSize='lg' style={{textAlign: 'center'}}>{item.name}</Header>
               <Price>{penceToPounds(item.price)}</Price>
               <RichText render={item.description} htmlSerializer={htmlSerializer} />
-                <PrimaryButton>{item.buttonText}</PrimaryButton>
+              <Link link={item.buttonLink} Component={BottomAlignedPrimaryLinkButton} style={{ marginTop: 'auto' }}>
+                {item.buttonText}
+              </Link>
             </Card>
           ))
         }

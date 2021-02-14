@@ -77,11 +77,13 @@ export const FlexRow = styled.section`
     color: ${props => props.theme.colors.body};
   }
 
-  > *:not(:last-child) {
-    ${({ withoutMargin, reverse, theme: { spacings }}) => withoutMargin ? '' : `
-      margin-right: ${ reverse ? spacings.none : spacings.md };
-      margin-left: ${ reverse ? spacings.md : spacings.none };
-    `}
+  @media only screen and ${breakpoints.smmd} {
+    > *:not(:last-child) {
+      ${({ withoutMargin, reverse, theme: { spacings }}) => withoutMargin ? '' : `
+        margin-right: ${ reverse ? spacings.none : spacings.md };
+        margin-left: ${ reverse ? spacings.md : spacings.none };
+      `}
+    }
   }
 
   @media only screen and ${breakpoints.smmd} {

@@ -26,7 +26,9 @@ const MySlice = ({ slice }) => (
         ))
       }
     </FlexRow>
-    <RichText render={slice.primary.legal} htmlSerializer={htmlSerializer} />
+    <div style={{ textAlign: 'center' }}>
+      <RichText render={slice.primary.legal} htmlSerializer={htmlSerializer} />
+    </div>
   </FlexColumn>
 );
 

@@ -22,13 +22,15 @@ const Image = styled.img`
 const MySlice = ({ slice }) => {
   const { text, buttonLink, buttonText, image, position } = slice.primary;
 
+  console.log('primary', slice.primary);
+
   return (
     <FlexRow reverse={position}>
       <FlexColumn as='div' withoutPadding centered>
         <Image src={image.url} alt={image.alt} />
       </FlexColumn>
 
-      <FlexColumn as='div' withoutPadding centered>
+      <FlexColumn as='div' withoutPadding centered style={{ textAlign: 'center' }}>
         <RichText render={text} htmlSerializer={htmlSerializer} />
 
         {(buttonLink && buttonText) && (

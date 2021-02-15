@@ -32,6 +32,12 @@ const Column = styled.div`
 const Icon = styled.img`
   width: 3rem;
   height: 3rem;
+  object-fit: contain;
+  object-position: center;
+
+  @media only screen and ${breakpoints.md} {
+    object-position: left;
+  }
 `
 
 const Tagline = styled.span`

@@ -13,7 +13,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1491947153227-33d59da6c448?w=800&h=600&fit=crop",
+        "url": "https://images.prismic.io/bricking-it/59712488-b425-41bf-8a69-0dba48c97bff_2.png?auto=compress,format",
         "medium": {
           "dimensions": {
             "width": 600,
@@ -21,7 +21,7 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1491947153227-33d59da6c448?w=600&h=450&fit=crop"
+          "url": "https://images.prismic.io/bricking-it/59712488-b425-41bf-8a69-0dba48c97bff_2.png?auto=compress,format"
         },
         "small": {
           "dimensions": {
@@ -30,19 +30,19 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1491947153227-33d59da6c448?w=400&h=300&fit=crop"
+          "url": "https://images.prismic.io/bricking-it/59712488-b425-41bf-8a69-0dba48c97bff_2.png?auto=compress,format"
         }
       },
       "position": true,
       "text": [
         {
           "type": "heading1",
-          "text": "Generate cross-media paradigms",
+          "text": "Turn anything into bricks",
           "spans": []
         },
         {
           "type": "paragraph",
-          "text": "Duis reprehenderit minim consectetur aliquip do quis. Dolore ea ut fugiat cillum qui eu reprehenderit.",
+          "text": "Bricking It is an app that scans absolutely anything and intelligently converts it to a brick model with building instructions.",
           "spans": []
         }
       ],
@@ -50,7 +50,7 @@
         "link_type": "Web",
         "url": "https://slicemachine.dev"
       },
-      "buttonText": "drive next-generation schemas"
+      "buttonText": "Check it in action"
     },
     "items": [],
     "slice_type": "image_hero"

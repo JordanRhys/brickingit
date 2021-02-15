@@ -22,7 +22,7 @@ const Content = styled.div`
 `
 
 const Logo = styled.img`
-  height: 2rem;
+  height: 4rem;
 `
 
 const LinksList = styled.ul`

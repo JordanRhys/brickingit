@@ -1,14 +1,14 @@
 import React from 'react';
 import { shape, arrayOf, object, string } from 'prop-types';
 import { imagePropType } from '../../helpers/slice-prop-types';
-import { FlexColumn, FlexRow } from '../../components/containers';
 import styled from 'styled-components';
+import { Link } from '../../components/links';
 
 const Nav = styled.nav`
   width: 100%;
   display: flex;
   align-items: center;
-  background-color: ${props => props.theme.colors.background};
+  background-color: ${props => props.theme.colors.primary};
   border-bottom: 1px solid ${props => props.theme.colors.primary};
 `
 
@@ -32,6 +32,19 @@ const LinksList = styled.ul`
   }
 `
 
+const Anchor = styled.a`
+
+  :active,
+  :link,
+  :visited {
+    color: ${props => props.theme.colors.background};
+    text-decoration: none;
+    font-family: ${props => props.theme.fonts.heading};
+    font-size: ${props => props.theme.fontSizes.md};
+    letter-spacing: 1px;
+  }
+`
+
 const MySlice = ({ slice }) => (
   <Nav>
     <Content>
@@ -39,7 +52,7 @@ const MySlice = ({ slice }) => (
       <LinksList>
         {
           slice.items.map(({ link, linkText }) => (
-            <a href={link}>{linkText}</a>
+            <Link link={link} Component={Anchor}>{linkText}</Link>
           ))
         }
       </LinksList>

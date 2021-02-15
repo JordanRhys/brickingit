@@ -13,29 +13,29 @@
             "width": 200,
             "height": 200
           },
-          "alt": "Placeholder image",
+          "alt": "Phone icon",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1528475734108-88a7b30257bb?w=200&h=200&fit=crop",
+          "url": "https://images.prismic.io/bricking-it/519ce95e-0c4c-4499-a278-4523896cf4d3_Phone+Icon.png?auto=compress,format",
           "medium": {
             "dimensions": {
               "width": 100,
               "height": 100
             },
-            "alt": "Placeholder image",
+            "alt": "Phone icon",
             "copyright": null,
-            "url": "https://images.unsplash.com/photo-1528475734108-88a7b30257bb?w=100&h=100&fit=crop"
+            "url": "https://images.prismic.io/bricking-it/519ce95e-0c4c-4499-a278-4523896cf4d3_Phone+Icon.png?auto=compress,format"
           },
           "small": {
             "dimensions": {
               "width": 50,
               "height": 50
             },
-            "alt": "Placeholder image",
+            "alt": "Phone icon",
             "copyright": null,
-            "url": "https://images.unsplash.com/photo-1528475734108-88a7b30257bb?w=50&h=50&fit=crop"
+            "url": "https://images.prismic.io/bricking-it/519ce95e-0c4c-4499-a278-4523896cf4d3_Phone+Icon.png?auto=compress,format"
           }
         },
-        "tagline": "Tagline",
+        "tagline": "Scan the object",
         "text": [
           {
             "type": "paragraph",
@@ -50,29 +50,29 @@
             "width": 200,
             "height": 200
           },
-          "alt": "Placeholder image",
+          "alt": "Magic icon",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1528475734108-88a7b30257bb?w=200&h=200&fit=crop",
+          "url": "https://images.prismic.io/bricking-it/6426bf76-5344-4c42-b0c6-f7b7db16a4da_Magic+Icon.png?auto=compress,format",
           "medium": {
             "dimensions": {
               "width": 100,
               "height": 100
             },
-            "alt": "Placeholder image",
+            "alt": "Magic icon",
             "copyright": null,
-            "url": "https://images.unsplash.com/photo-1528475734108-88a7b30257bb?w=100&h=100&fit=crop"
+            "url": "https://images.prismic.io/bricking-it/6426bf76-5344-4c42-b0c6-f7b7db16a4da_Magic+Icon.png?auto=compress,format"
           },
           "small": {
             "dimensions": {
               "width": 50,
               "height": 50
             },
-            "alt": "Placeholder image",
+            "alt": "Magic icon",
             "copyright": null,
-            "url": "https://images.unsplash.com/photo-1528475734108-88a7b30257bb?w=50&h=50&fit=crop"
+            "url": "https://images.prismic.io/bricking-it/6426bf76-5344-4c42-b0c6-f7b7db16a4da_Magic+Icon.png?auto=compress,format"
           }
         },
-        "tagline": "Tagline",
+        "tagline": "Wait for the magic",
         "text": [
           {
             "type": "paragraph",
@@ -87,29 +87,29 @@
             "width": 200,
             "height": 200
           },
-          "alt": "Placeholder image",
+          "alt": "Brick icon",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1528475734108-88a7b30257bb?w=200&h=200&fit=crop",
+          "url": "https://images.prismic.io/bricking-it/29f240ca-f59d-4475-acdf-4dfe14baada0_Brick+Icon.png?auto=compress,format",
           "medium": {
             "dimensions": {
               "width": 100,
               "height": 100
             },
-            "alt": "Placeholder image",
+            "alt": "Brick icon",
             "copyright": null,
-            "url": "https://images.unsplash.com/photo-1528475734108-88a7b30257bb?w=100&h=100&fit=crop"
+            "url": "https://images.prismic.io/bricking-it/29f240ca-f59d-4475-acdf-4dfe14baada0_Brick+Icon.png?auto=compress,format"
           },
           "small": {
             "dimensions": {
               "width": 50,
               "height": 50
             },
-            "alt": "Placeholder image",
+            "alt": "Brick icon",
             "copyright": null,
-            "url": "https://images.unsplash.com/photo-1528475734108-88a7b30257bb?w=50&h=50&fit=crop"
+            "url": "https://images.prismic.io/bricking-it/29f240ca-f59d-4475-acdf-4dfe14baada0_Brick+Icon.png?auto=compress,format"
           }
         },
-        "tagline": "Tagline",
+        "tagline": "Build it",
         "text": [
           {
             "type": "paragraph",

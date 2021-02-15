@@ -35,16 +35,16 @@
             "url": "https://images.unsplash.com/photo-1509670572852-5823184def8c?w=400&h=265&fit=crop"
           }
         },
-        "name": "synthesize one-to-one platforms",
+        "name": "Bricking It",
         "text": [
           {
             "type": "heading1",
-            "text": "Reinvent 24/7 networks",
+            "text": "Turn anything into bricks",
             "spans": []
           },
           {
             "type": "paragraph",
-            "text": "Deserunt voluptate quis quis. Eu voluptate mollit amet commodo sint in adipisicing minim minim incididunt.",
+            "text": "Bricking It is an app that scans absolutely anything and intelligently converts it to a brick model with building instructions.",
             "spans": []
           }
         ]

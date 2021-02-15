@@ -3,9 +3,9 @@ export default {
     body: '#110606',
     subtle: '#4A4646',
     heading: '#B80F11',
-    primary: '#D11013',
+    primary: '#1E5AA8',
     secondary: '#059638',
-    muted: '#F9BDBE',
+    muted: '#4861AC',
     background: '#EFF0F2',
   },
   fonts: {

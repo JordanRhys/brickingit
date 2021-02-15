@@ -8,6 +8,8 @@ export const Outer = styled.main`
 
   @media only screen and ${breakpoints.lg} {
     width: 1000px;
+    border-left: 1px solid ${props => props.theme.colors.primary};
+    border-right: 1px solid ${props => props.theme.colors.primary};
   }
 `
 

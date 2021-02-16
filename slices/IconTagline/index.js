@@ -4,8 +4,10 @@ import { imagePropType, richTextPropType } from '../../helpers/slice-prop-types'
 import { FlexRow } from '../../components/containers';
 import { htmlSerializer } from '../../prismicKits';
 import { RichText } from 'prismic-reactjs';
-import styled from 'styled-components';
+import { Header } from '../../components/typography';
+import styled, { ThemeProvider } from 'styled-components';
 import { breakpoints } from '../../styles/breakpoints';
+import contrastTheme from '../../styles/contrastTheme';
 
 const Column = styled.div`
   min-width: 200px;
@@ -36,31 +38,29 @@ const Icon = styled.img`
   object-position: center;
 
   @media only screen and ${breakpoints.md} {
-    object-position: left;
+    object-position: left bottom;
   }
 `
 
-const Tagline = styled.span`
-  font-family: ${props => props.theme.fonts.heading};
+const Tagline = styled(Header)`
   font-size: ${props => props.theme.fontSizes.md};
-  font-weight: ${props => props.theme.fontWeights.heading};
-  line-height: ${props => props.theme.lineHeights.heading};
-  color: ${props => props.theme.colors.primary};
   margin-top: ${props => props.theme.spacings.xs};
 `
 
 const MySlice = ({ slice }) => (
-  <FlexRow>
-    {
-      slice.items.map(({ icon, tagline, text }, index) => (
-        <Column key={index}>
-          <Icon src={icon.url} alt={icon.alt} />
-          <Tagline>{tagline}</Tagline>
-          <RichText render={text} htmlSerializer={htmlSerializer} />
-        </Column>
-      ))
-    }
-  </FlexRow>
+  <ThemeProvider theme={contrastTheme}>
+    <FlexRow>
+      {
+        slice.items.map(({ icon, tagline, text }, index) => (
+          <Column key={index}>
+            <Icon src={icon.url} alt={icon.alt} />
+            <Tagline as='span'>{tagline}</Tagline>
+            <RichText render={text} htmlSerializer={htmlSerializer} />
+          </Column>
+        ))
+      }
+    </FlexRow>
+  </ThemeProvider>
 );
 
 MySlice.propTypes = {

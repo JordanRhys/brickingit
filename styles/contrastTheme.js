@@ -4,11 +4,15 @@ const oldColors = theme.colors;
 
 const colors = {
   ...oldColors,
-  primary: colors.background,
-  heading: colors.primary,
-  body: colors.primary
+  background: oldColors.primary,
+  primary: oldColors.background,
+  heading: oldColors.background,
+  body: oldColors.background,
 };
 
-const contrastTheme = {...theme, colors};
+const contrastTheme = {
+  ...theme,
+  colors,
+};
 
 export default contrastTheme;

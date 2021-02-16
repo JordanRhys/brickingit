@@ -9,10 +9,11 @@
       "text": [
         {
           "type": "heading1",
-          "text": "We have worked with",
+          "text": "As seen on",
           "spans": []
         }
-      ]
+      ],
+      "contrast": true
     },
     "items": [
       {
@@ -23,7 +24,7 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.prismic.io/bricking-it/6dd93cfc-2a89-4e6f-9904-be4f7a1a5581_BrickingIt.png?auto=compress,format"
+          "url": "https://images.prismic.io/bricking-it/4bf373ac-86ef-448b-89e1-54e3ad723174_Quikstart.png?auto=compress,format"
         },
         "link": {
           "link_type": "Web",

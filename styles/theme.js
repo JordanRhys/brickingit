@@ -5,7 +5,7 @@ export default {
     heading: '#B80F11',
     primary: '#1E5AA8',
     secondary: '#059638',
-    muted: '#4861AC',
+    muted: '#ABD9FF',
     background: '#EFF0F2',
   },
   fonts: {

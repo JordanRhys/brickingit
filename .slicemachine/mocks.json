@@ -16,6 +16,9 @@
           "patternType": "_",
           "blocks": 1
         }
+      },
+      "contrast": {
+        "content": true
       }
     },
     "items": {

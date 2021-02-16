@@ -24,6 +24,11 @@ export default {
     thin: 100,
     body: 400,
     bold: 700,
+    heading: 700,
+  },
+  letterSpacings: {
+    body: '0px',
+    heading: '1px',
   },
   lineHeights: {
     body: 1.25,

@@ -8,8 +8,6 @@ export const Outer = styled.main`
 
   @media only screen and ${breakpoints.lg} {
     width: 1000px;
-    border-left: 1px solid ${props => props.theme.colors.primary};
-    border-right: 1px solid ${props => props.theme.colors.primary};
   }
 `
 
@@ -19,6 +17,7 @@ export const FullWidth = styled.section`
 `
 
 export const FlexColumn = styled.section`
+  background-color: ${props => props.theme.colors.background};
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -62,12 +61,13 @@ export const ContrastFlexColumn = styled(FlexColumn)`
 `
 
 export const FlexRow = styled.section`
+  background-color: ${props => props.theme.colors.background};
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: -${props => props.theme.spacings.md} auto 0 auto;
-  padding: ${({ withoutPadding, theme: { spacings } }) => withoutPadding ? spacings.none : spacings.md } 0;
+  padding: ${({ withoutPadding, theme: { spacings } }) => withoutPadding ? spacings.none : spacings.md } ${props => props.theme.spacings.md};
   flex-wrap: wrap;
   > * {
     margin-top: ${props => props.theme.spacings.md};

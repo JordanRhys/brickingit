@@ -15,6 +15,7 @@ const BannerTemplate = styled.div`
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
+  z-index: 100;
 `
 
 // width: ${({ position }) => position === 'bottom' ? '100%' : '25%' };

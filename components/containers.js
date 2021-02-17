@@ -66,7 +66,7 @@ export const FlexRow = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: -${props => props.theme.spacings.md} auto 0 auto;
+  margin: 0 auto;
   padding: ${({ withoutPadding, theme: { spacings } }) => withoutPadding ? spacings.none : spacings.md } ${props => props.theme.spacings.md};
   flex-wrap: wrap;
   > * {

@@ -12,8 +12,9 @@ import { breakpoints } from '../../styles/breakpoints';
 
 const Image = styled.img`
   max-height: 4rem;
-  max-width: 8rem;
+  width: 8rem;
   line-height: 0;
+  margin: ${props => props.theme.spacings.md};
 
   @media only screen and ${breakpoints.md} {
     max-height: 4.5rem;
@@ -34,20 +35,19 @@ const Anchor = styled.a`
 `
 
 const Wrap = styled.div`
+  width: 75%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: -${props => props.theme.spacings.md};
 
   > * {
-    margin-top: ${props => props.theme.spacings.md};
     margin: ${props => `
     ${props.theme.spacings.md}
     ${props.theme.spacings.sm}
     0
     ${props.theme.spacings.sm}
     ;`}
-  }n-right: ${props => props.theme.spacings.md};
   }
 `
 
@@ -60,7 +60,7 @@ const MySlice = ({ slice }) => (
       <Wrap>
         {slice.items.map(({image, link}) => (
           link ? (
-            <Link link={link} Component={Anchor}>
+            <Link link={link} Component={Anchor} key={image.url}>
               <Image src={image.url} alt={image.alt} />
             </Link>
           ) : (

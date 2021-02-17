@@ -17,6 +17,7 @@ const Column = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: ${props => props.theme.spacings.md};
   margin-bottom: ${props => props.theme.spacings.md};
   > *:not(:last-child) {
     margin-bottom: ${props => props.theme.spacings.sm};

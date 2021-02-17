@@ -6,6 +6,9 @@
           "patternType": "PARAGRAPH_WITH_HEADING",
           "blocks": 1
         }
+      },
+      "contrast": {
+        "content": true
       }
     }
   },

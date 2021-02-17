@@ -9,30 +9,16 @@
       "text": [
         {
           "type": "heading1",
-          "text": "Brand mission-critical platforms",
-          "spans": []
-        },
-        {
-          "type": "heading2",
-          "text": "Brand mission-critical platforms",
-          "spans": []
-        },
-        {
-          "type": "heading3",
-          "text": "Brand mission-critical platforms",
-          "spans": []
-        },
-        {
-          "type": "heading4",
-          "text": "Brand mission-critical platforms",
+          "text": "Revolutionize proactive interfaces",
           "spans": []
         },
         {
           "type": "paragraph",
-          "text": "Labore veniam consequat enim. Nisi occaecat voluptate nostrud reprehenderit veniam.",
+          "text": "Aliqua cillum consequat reprehenderit velit ea velit do officia duis id incididunt ullamco enim ipsum.",
           "spans": []
         }
-      ]
+      ],
+      "contrast": true
     },
     "items": [],
     "slice_type": "simple_text"

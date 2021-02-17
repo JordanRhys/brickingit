@@ -52,7 +52,7 @@ const MySlice = ({ slice }) => (
       <LinksList>
         {
           slice.items.map(({ link, linkText }) => (
-            <Link link={link} Component={Anchor}>{linkText}</Link>
+            <Link link={link} Component={Anchor} key={linkText}>{linkText}</Link>
           ))
         }
       </LinksList>

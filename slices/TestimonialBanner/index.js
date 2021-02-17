@@ -1,12 +1,12 @@
 import React from 'react';
 import { shape, arrayOf, object, string } from 'prop-types';
 import { imagePropType, richTextPropType } from '../../helpers/slice-prop-types';
-import { FlexRow } from '../../components/containers';
 import { htmlSerializer } from '../../prismicKits';
 import { RichText } from 'prismic-reactjs';
 import { Header, Body } from '../../components/typography';
 import styled from 'styled-components';
 import Slider from 'infinite-react-carousel';
+import 'infinite-react-carousel/lib/carousel/style.css';
 import { breakpoints } from '../../styles/breakpoints';
 
 const StyledSlider = styled(Slider)`

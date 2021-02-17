@@ -4,6 +4,7 @@ import { imagePropType } from '../../helpers/slice-prop-types';
 import { Subtle } from '../../components/typography';
 import styled from 'styled-components';
 import Slider from 'infinite-react-carousel';
+import 'infinite-react-carousel/lib/carousel/style.css';
 
 const Slide = styled.div`
   width: 100%;

@@ -25,7 +25,7 @@
         "description": [
           {
             "type": "paragraph",
-            "text": "Ullamco occaecat fugiat incididunt Lorem voluptate duis commodo officia elit.",
+            "text": "Get your name included in the credits.",
             "spans": []
           }
         ],
@@ -42,7 +42,12 @@
         "description": [
           {
             "type": "paragraph",
-            "text": "Laborum quis dolore adipisicing in consectetur aute ea quis laborum do Lorem nulla.",
+            "text": "Get your name included in the credits.",
+            "spans": []
+          },
+          {
+            "type": "paragraph",
+            "text": "Get entry to the beta and a single licence of the final release.",
             "spans": []
           }
         ],
@@ -59,7 +64,12 @@
         "description": [
           {
             "type": "paragraph",
-            "text": "Enim labore velit ad non elit fugiat velit aliquip elit exercitation exercitation duis. Laboris deserunt et ea excepteur voluptate excepteur id culpa.",
+            "text": "Get your name included in the credits.",
+            "spans": []
+          },
+          {
+            "type": "paragraph",
+            "text": "Get entry to the beta and a family licence of the final release.",
             "spans": []
           }
         ],

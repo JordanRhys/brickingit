@@ -5,11 +5,14 @@ import styled from 'styled-components';
 import { Link } from '../../components/links';
 
 const Nav = styled.nav`
+  position: sticky;
+  top: 0;
   width: 100%;
   display: flex;
   align-items: center;
-  background-color: ${props => props.theme.colors.primary};
-  border-bottom: 1px solid ${props => props.theme.colors.primary};
+  background-color: #ffffff;
+  z-index: 100;
+  border-bottom: 4px solid ${props => props.theme.colors.primary};
 `
 
 const Content = styled.div`
@@ -37,10 +40,10 @@ const Anchor = styled.a`
   :active,
   :link,
   :visited {
-    color: ${props => props.theme.colors.background};
+    color: ${props => props.theme.colors.primary};
     text-decoration: none;
     font-family: ${props => props.theme.fonts.heading};
-    font-size: ${props => props.theme.fontSizes.md};
+    font-size: ${props => props.theme.fontSizes.lg};
     letter-spacing: 1px;
   }
 `

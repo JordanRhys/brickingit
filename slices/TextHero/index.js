@@ -15,7 +15,7 @@ const CenteredFlexColumn = styled(FlexColumn)`
 const MySlice = ({ slice }) => (
   <CenteredFlexColumn>
     <RichText render={slice.primary.text} htmlSerializer={htmlSerializer} />
-    <FlexRow as='div'>
+    <FlexRow as='div' withoutPadding>
       {
         slice.items.map(({ buttonLink, buttonText, color }) => (
           color ? (

@@ -1,7 +1,7 @@
 [
   {
-    "id": "default-slice",
-    "name": "Default slice",
+    "id": "testimonial-banner",
+    "name": "default",
     "docURL": "...",
     "version": "sktwi1xtmkfgx8626",
     "description": "TestimonialBanner",
@@ -15,7 +15,7 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1509670572852-5823184def8c?w=1600&h=1060&fit=crop",
+          "url": "https://images.prismic.io/bricking-it/7b548a2d-a3bb-413b-98a9-96918c0a1dc7_person2.jpg?auto=compress,format",
           "medium": {
             "dimensions": {
               "width": 800,
@@ -23,7 +23,7 @@
             },
             "alt": "Placeholder image",
             "copyright": null,
-            "url": "https://images.unsplash.com/photo-1509670572852-5823184def8c?w=800&h=530&fit=crop"
+            "url": "https://images.prismic.io/bricking-it/7b548a2d-a3bb-413b-98a9-96918c0a1dc7_person2.jpg?auto=compress,format"
           },
           "small": {
             "dimensions": {
@@ -32,19 +32,19 @@
             },
             "alt": "Placeholder image",
             "copyright": null,
-            "url": "https://images.unsplash.com/photo-1509670572852-5823184def8c?w=400&h=265&fit=crop"
+            "url": "https://images.prismic.io/bricking-it/7b548a2d-a3bb-413b-98a9-96918c0a1dc7_person2.jpg?auto=compress,format"
           }
         },
-        "name": "Bricking It",
+        "name": "Makayla Vance - Creative Designer at Brickhub",
         "text": [
           {
-            "type": "heading1",
-            "text": "Turn anything into bricks",
+            "type": "heading2",
+            "text": "Intuitive, Interactive, Ingenious",
             "spans": []
           },
           {
             "type": "paragraph",
-            "text": "Bricking It is an app that scans absolutely anything and intelligently converts it to a brick model with building instructions.",
+            "text": "Easy to use and gets the build right every time.",
             "spans": []
           }
         ]
@@ -57,7 +57,7 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1509670572852-5823184def8c?w=1600&h=1060&fit=crop",
+          "url": "https://images.prismic.io/bricking-it/c8f0441e-77ae-45e9-bfb5-5932c76fbd22_person+3.jpg?auto=compress,format",
           "medium": {
             "dimensions": {
               "width": 800,
@@ -65,7 +65,7 @@
             },
             "alt": "Placeholder image",
             "copyright": null,
-            "url": "https://images.unsplash.com/photo-1509670572852-5823184def8c?w=800&h=530&fit=crop"
+            "url": "https://images.prismic.io/bricking-it/c8f0441e-77ae-45e9-bfb5-5932c76fbd22_person+3.jpg?auto=compress,format"
           },
           "small": {
             "dimensions": {
@@ -74,19 +74,19 @@
             },
             "alt": "Placeholder image",
             "copyright": null,
-            "url": "https://images.unsplash.com/photo-1509670572852-5823184def8c?w=400&h=265&fit=crop"
+            "url": "https://images.prismic.io/bricking-it/c8f0441e-77ae-45e9-bfb5-5932c76fbd22_person+3.jpg?auto=compress,format"
           }
         },
-        "name": "disintermediate cross-platform methodologies",
+        "name": "Marek Donovan - Venture Builder at Quikstart",
         "text": [
           {
-            "type": "heading1",
-            "text": "Implement enterprise applications",
+            "type": "heading2",
+            "text": "Brilliantly innovative",
             "spans": []
           },
           {
             "type": "paragraph",
-            "text": "Dolore ex adipisicing quis ipsum Lorem voluptate Lorem Lorem.",
+            "text": "A fantastic concept that integrates the real world and the love of bricks.",
             "spans": []
           }
         ]
@@ -99,7 +99,7 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1509670572852-5823184def8c?w=1600&h=1060&fit=crop",
+          "url": "https://images.prismic.io/bricking-it/75b1d231-f9c7-4a52-b3e4-07a0882fe969_person1.jpg?auto=compress,format",
           "medium": {
             "dimensions": {
               "width": 800,
@@ -107,7 +107,7 @@
             },
             "alt": "Placeholder image",
             "copyright": null,
-            "url": "https://images.unsplash.com/photo-1509670572852-5823184def8c?w=800&h=530&fit=crop"
+            "url": "https://images.prismic.io/bricking-it/75b1d231-f9c7-4a52-b3e4-07a0882fe969_person1.jpg?auto=compress,format"
           },
           "small": {
             "dimensions": {
@@ -116,61 +116,19 @@
             },
             "alt": "Placeholder image",
             "copyright": null,
-            "url": "https://images.unsplash.com/photo-1509670572852-5823184def8c?w=400&h=265&fit=crop"
+            "url": "https://images.prismic.io/bricking-it/75b1d231-f9c7-4a52-b3e4-07a0882fe969_person1.jpg?auto=compress,format"
           }
         },
-        "name": "leverage proactive synergies",
+        "name": "Gino Garza - Co-founder at Brick Brothers",
         "text": [
           {
-            "type": "heading1",
-            "text": "Strategize viral methodologies",
+            "type": "heading2",
+            "text": "Groundbreaking",
             "spans": []
           },
           {
             "type": "paragraph",
-            "text": "Adipisicing commodo tempor exercitation sit eiusmod. Deserunt est aliqua labore sint nisi proident laboris et irure.",
-            "spans": []
-          }
-        ]
-      },
-      {
-        "image": {
-          "dimensions": {
-            "width": 1600,
-            "height": 1060
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1509670572852-5823184def8c?w=1600&h=1060&fit=crop",
-          "medium": {
-            "dimensions": {
-              "width": 800,
-              "height": 530
-            },
-            "alt": "Placeholder image",
-            "copyright": null,
-            "url": "https://images.unsplash.com/photo-1509670572852-5823184def8c?w=800&h=530&fit=crop"
-          },
-          "small": {
-            "dimensions": {
-              "width": 400,
-              "height": 265
-            },
-            "alt": "Placeholder image",
-            "copyright": null,
-            "url": "https://images.unsplash.com/photo-1509670572852-5823184def8c?w=400&h=265&fit=crop"
-          }
-        },
-        "name": "monetize bleeding-edge experiences",
-        "text": [
-          {
-            "type": "heading1",
-            "text": "Drive robust e-business",
-            "spans": []
-          },
-          {
-            "type": "paragraph",
-            "text": "Ipsum quis aliqua velit. Velit exercitation tempor reprehenderit adipisicing dolor aute fugiat deserunt pariatur dolor consectetur ipsum aliquip proident occaecat.",
+            "text": "The next step in bringing bricks to life.",
             "spans": []
           }
         ]

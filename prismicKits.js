@@ -72,13 +72,13 @@ export const htmlSerializer = function(type, element, content, children, key) {
       return React.createElement(Header, propsWithUniqueKey({ fontSize: 'xxl' }, key), children);
 
     case Elements.heading2: // Heading 2
-      return React.createElement(Header, propsWithUniqueKey({ fontSize: 'xl' }, key), children);
+      return React.createElement(Header, propsWithUniqueKey({ fontSize: 'xl', as: 'h2' }, key), children);
 
     case Elements.heading3: // Heading 3
-      return React.createElement(Header, propsWithUniqueKey({ fontSize: 'lg' }, key), children);
+      return React.createElement(Header, propsWithUniqueKey({ fontSize: 'lg', as: 'h3' }, key), children);
 
     case Elements.heading4: // Heading 4
-      return React.createElement(Header, propsWithUniqueKey({ fontSize: 'md' }, key), children);
+      return React.createElement(Header, propsWithUniqueKey({ fontSize: 'md', as: 'h4' }, key), children);
 
     case Elements.heading5: // Heading 5
       return React.createElement(Header, propsWithUniqueKey(props, key), children);

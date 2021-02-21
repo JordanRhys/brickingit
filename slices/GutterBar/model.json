@@ -1,0 +1,43 @@
+{
+  "id": "gutter_bar",
+  "type": "SharedSlice",
+  "name": "GutterBar",
+  "description": "GutterBar",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "GutterBar",
+      "primary": {
+        "gutter": {
+          "config": {
+            "label": "Gutter",
+            "placeholder": "",
+            "options": [
+              "sm",
+              "md",
+              "lg"
+            ],
+            "type": "Select",
+            "default_value": "sm"
+          },
+          "type": "Select"
+        },
+        "color": {
+          "config": {
+            "label": "Colour",
+            "placeholder": "",
+            "placeholder_false": "Background",
+            "placeholder_true": "Primary",
+            "default_value": true,
+            "type": "Boolean"
+          },
+          "type": "Boolean"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

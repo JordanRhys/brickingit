@@ -1,7 +1,7 @@
 [
   {
-    "id": "default-slice",
-    "name": "Default slice",
+    "id": "testimonial-cards",
+    "name": "default",
     "docURL": "...",
     "version": "sktwi1xtmkfgx8626",
     "description": "TestimonialCards",
@@ -9,12 +9,7 @@
       "text": [
         {
           "type": "heading1",
-          "text": "Streamline integrated synergies",
-          "spans": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Fugiat velit amet enim Lorem cupidatat proident nostrud eiusmod voluptate. Aliqua fugiat culpa laborum amet amet non esse tempor excepteur est.",
+          "text": "Check out our initial testers",
           "spans": []
         }
       ]
@@ -28,7 +23,7 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=800&h=800&fit=crop",
+          "url": "https://images.prismic.io/bricking-it/7b548a2d-a3bb-413b-98a9-96918c0a1dc7_person2.jpg?auto=compress,format",
           "medium": {
             "dimensions": {
               "width": 400,
@@ -36,7 +31,7 @@
             },
             "alt": "Placeholder image",
             "copyright": null,
-            "url": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=400&h=400&fit=crop"
+            "url": "https://images.prismic.io/bricking-it/7b548a2d-a3bb-413b-98a9-96918c0a1dc7_person2.jpg?auto=compress,format"
           },
           "small": {
             "dimensions": {
@@ -45,14 +40,19 @@
             },
             "alt": "Placeholder image",
             "copyright": null,
-            "url": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=200&h=200&fit=crop"
+            "url": "https://images.prismic.io/bricking-it/7b548a2d-a3bb-413b-98a9-96918c0a1dc7_person2.jpg?auto=compress,format"
           }
         },
-        "name": "engineer global supply-chains",
+        "name": "Brickhub",
         "text": [
           {
             "type": "paragraph",
-            "text": "Excepteur deserunt ut ad aute ex Lorem. Anim in quis ut labore. Excepteur ullamco occaecat et sint aliqua ex culpa exercitation id.",
+            "text": "Intuitive, interactive and ingenious.",
+            "spans": []
+          },
+          {
+            "type": "paragraph",
+            "text": "Easy to use and gets the build right every time.",
             "spans": []
           }
         ]
@@ -65,7 +65,7 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=800&h=800&fit=crop",
+          "url": "https://images.prismic.io/bricking-it/75b1d231-f9c7-4a52-b3e4-07a0882fe969_person1.jpg?auto=compress,format",
           "medium": {
             "dimensions": {
               "width": 400,
@@ -73,7 +73,7 @@
             },
             "alt": "Placeholder image",
             "copyright": null,
-            "url": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=400&h=400&fit=crop"
+            "url": "https://images.prismic.io/bricking-it/75b1d231-f9c7-4a52-b3e4-07a0882fe969_person1.jpg?auto=compress,format"
           },
           "small": {
             "dimensions": {
@@ -82,14 +82,19 @@
             },
             "alt": "Placeholder image",
             "copyright": null,
-            "url": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=200&h=200&fit=crop"
+            "url": "https://images.prismic.io/bricking-it/75b1d231-f9c7-4a52-b3e4-07a0882fe969_person1.jpg?auto=compress,format"
           }
         },
-        "name": "unleash infomediaries",
+        "name": "Brick Brothers",
         "text": [
           {
             "type": "paragraph",
-            "text": "Minim minim deserunt anim voluptate qui.",
+            "text": "Groundbreaking.",
+            "spans": []
+          },
+          {
+            "type": "paragraph",
+            "text": "The next step in bring bricks to life.",
             "spans": []
           }
         ]

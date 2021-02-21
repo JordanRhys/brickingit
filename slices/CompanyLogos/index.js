@@ -6,23 +6,19 @@ import { RichText } from 'prismic-reactjs';
 import { FlexColumn } from '../../components/containers';
 import { Link } from '../../components/links';
 import styled, { ThemeProvider } from 'styled-components';
-import theme from '../../styles/theme';
 import contrastTheme from '../../styles/contrastTheme';
 import { breakpoints } from '../../styles/breakpoints';
 
 const Image = styled.img`
-  max-height: 4rem;
-  width: 8rem;
+  width: 100%;
+  max-height: 3rem;
+  flex: 1;
   line-height: 0;
-  margin: ${props => props.theme.spacings.md};
+  margin: 0 ${props => props.theme.spacings.md};
+  object-fit: contain;
 
   @media only screen and ${breakpoints.md} {
-    max-height: 4.5rem;
-    max-width: 9rem;
-  }
-
-  @media only screen and ${breakpoints.lg} {
-    max-height: 5rem;
+    max-height: 4rem;
     max-width: 10rem;
   }
 `
@@ -30,29 +26,26 @@ const Image = styled.img`
 const Anchor = styled.a`
   line-height: 0;
   display: flex;
+  flex: 1 0;
   align-items: center;
   justify-content: center;
+  margin: ${props => props.theme.spacings.md};
 `
 
 const Wrap = styled.div`
-  width: 75%;
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
-  margin-top: -${props => props.theme.spacings.md};
+  margin-bottom: ${props => props.theme.spacings.sm};
 
   > * {
-    margin: ${props => `
-    ${props.theme.spacings.md}
-    ${props.theme.spacings.sm}
-    0
-    ${props.theme.spacings.sm}
-    ;`}
+    margin: ${props => `0 ${props.theme.spacings.sm};`}
   }
 `
 
 const MySlice = ({ slice }) => (
-  <ThemeProvider theme={slice.primary.contrast ? contrastTheme : theme}>
+  <ThemeProvider theme={contrastTheme}>
     <FlexColumn>
       { slice.primary.text && (
         <RichText render={slice.primary.text} htmlSerializer={htmlSerializer} />

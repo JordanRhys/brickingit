@@ -5,9 +5,12 @@ import { breakpoints } from '../styles/breakpoints';
 export const Outer = styled.main`
   width: 100%;
   margin: 0 auto;
+  positon: relative;
 
   @media only screen and ${breakpoints.lg} {
     width: 1000px;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.2);
+
   }
 `
 

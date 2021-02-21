@@ -2,40 +2,66 @@ import React from 'react';
 import { shape, arrayOf } from 'prop-types';
 import { htmlSerializer } from '../../prismicKits';
 import { richTextPropType } from '../../helpers/slice-prop-types';
-import { FlexColumn, FlexRow } from '../../components/containers';
+import { FlexColumn } from '../../components/containers';
 import { RichText } from 'prismic-reactjs';
 import styled, { ThemeProvider } from 'styled-components';
 import contrastTheme from '../../styles/contrastTheme';
 import { breakpoints } from '../../styles/breakpoints';
 
-const MinWidthColumn = styled(FlexColumn)`
-  min-width: 200px;
+const Column = styled.div`
+  display: flex;
+  flex-direction: column;
   text-align: left;
 
   > * {
     width: 100%;
   }
 
-  @media only screen and ${breakpoints.md} {
-    min-width: 0;
+  > *:not(:last-child) {
+    margin-bottom: ${props => props.theme.spacings.sm};
+  }
+`
+
+const Columns = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: row-wrap;
+  padding: ${props => props.theme.spacings.sm};
+
+  > * {
+    padding: 0 ${props => props.theme.spacings.sm};
+    width: 50%;
+  }
+`
+
+const Legal = styled.span`
+  text-align: center;
+  font-size: ${props => props.theme.fontSizes.xs};
+  color: ${props => props.theme.colors.primary};
+  font-family: ${props => props.theme.fonts.body};
+  padding: ${props => props.theme.spacings.md};
+
+  @media only screen and ${breakpoints.lg} {
+    font-size: ${props => props.theme.fontSizes.sm};
   }
 `
 
 const MySlice = ({ slice }) => (
   <ThemeProvider theme={contrastTheme}>
-    <FlexColumn>
-      <FlexRow withoutPadding>
+    <FlexColumn as='div'>
+      <Columns>
         {
           slice.items.map(({ column }, index) => (
-            <MinWidthColumn key={index} withoutPadding>
+            <Column key={index} withoutPadding>
               <RichText render={column} htmlSerializer={htmlSerializer} />
-            </MinWidthColumn>
+            </Column>
           ))
         }
-      </FlexRow>
-      <div style={{ textAlign: 'center' }}>
-        <RichText render={slice.primary.legal} htmlSerializer={htmlSerializer} />
-      </div>
+      </Columns>
+      <Legal>
+        {RichText.asText(slice.primary.legal)}
+      </Legal>
     </FlexColumn>
   </ThemeProvider>
 );

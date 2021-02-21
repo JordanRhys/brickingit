@@ -4,6 +4,7 @@ import { richTextPropType } from '../../helpers/slice-prop-types';
 import { htmlSerializer, linkResolver } from '../../prismicKits';
 import { RichText } from 'prismic-reactjs';
 import styled from 'styled-components';
+import { breakpoints } from '../../styles/breakpoints';
 
 const BannerTemplate = styled.div`
   position: fixed;
@@ -17,10 +18,6 @@ const BannerTemplate = styled.div`
   box-sizing: border-box;
   z-index: 100;
 `
-
-// width: ${({ position }) => position === 'bottom' ? '100%' : '25%' };
-// ${({ position, theme }) => position === 'bottomLeft' ? `left: 0; margin-left: ${theme.spacings.sm}` : ''}
-// ${({ position, theme }) => position === 'bottomRight' ? `right: 0; margin-right: ${theme.spacings.sm}` : ''}
 
 const Banner = styled(BannerTemplate)`
   bottom: 0;
@@ -43,14 +40,27 @@ const Banner = styled(BannerTemplate)`
       case 'bottom':
       default: {
         return `
-        width: 100%;
+        width: 98%;
         left: 0;
         right: 0;
+        margin: 0 auto;
+
+        @media only screen and ${breakpoints.lg} {
+          width: 99%;
+        }
+
+        @media only screen and ${breakpoints.lg} {
+          width: 1000px;
+        }
         `
       }
     }
   }}
   margin-bottom: ${props => props.theme.spacings.sm};
+`
+
+const Padding = styled.div`
+  padding: 0 ${props => props.theme.spacings.sm};
 `
 
 const CloseIcon = styled.button`
@@ -75,9 +85,9 @@ const MySlice = ({ slice }) => {
   if (open) {
     return (
       <Banner position={position}>
-        <div>
+        <Padding>
           <RichText render={disclaimer} linkResolver={linkResolver} htmlSerializer={htmlSerializer} />
-        </div>
+        </Padding>
         <CloseIcon onClick={handleClick}>&#10005;</CloseIcon>
       </Banner>
     );

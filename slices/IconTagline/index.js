@@ -11,7 +11,6 @@ import contrastTheme from '../../styles/contrastTheme';
 
 const Column = styled.div`
   min-width: 200px;
-  max-width: 300px;
   flex: 1 1;
   display: flex;
   flex-direction: column;
@@ -28,7 +27,6 @@ const Column = styled.div`
     max-width: 50%;
     align-items: stretch;
     text-align: left;
-    margin-bottom: 0;
   }
 `
 

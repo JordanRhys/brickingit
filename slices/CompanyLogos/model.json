@@ -40,7 +40,7 @@
             "type": "Image",
             "constraint": {
               "height": 200,
-              "width": 400
+              "width": null
             },
             "thumbnails": []
           },

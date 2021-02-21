@@ -1,7 +1,7 @@
 [
   {
-    "id": "default-slice",
-    "name": "Default slice",
+    "id": "text-hero",
+    "name": "default",
     "docURL": "...",
     "version": "sktwi1xtmkfgx8626",
     "description": "TextHero",
@@ -9,12 +9,12 @@
       "text": [
         {
           "type": "heading1",
-          "text": "Empower bricks-and-clicks e-tailers",
+          "text": "Turn anything into bricks",
           "spans": []
         },
         {
           "type": "paragraph",
-          "text": "Excepteur esse consequat dolor commodo laborum nisi id elit duis duis. Sit et do veniam labore nulla sit amet aliqua ad.",
+          "text": "BrickingIt is an app that scans absolutely anything and turns it into a brick model with instructions.",
           "spans": []
         }
       ]
@@ -25,7 +25,7 @@
           "link_type": "Web",
           "url": "https://slicemachine.dev"
         },
-        "buttonText": "monetize B2C action-items",
+        "buttonText": "How it works",
         "color": true
       },
       {
@@ -33,7 +33,7 @@
           "link_type": "Web",
           "url": "https://slicemachine.dev"
         },
-        "buttonText": "implement killer methodologies",
+        "buttonText": "Download the app",
         "color": false
       }
     ],

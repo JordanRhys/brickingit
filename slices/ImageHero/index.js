@@ -22,8 +22,6 @@ const Image = styled.img`
 const MySlice = ({ slice }) => {
   const { text, buttonLink, buttonText, image, position } = slice.primary;
 
-  console.log('primary', slice.primary);
-
   return (
     <FlexRow reverse={position}>
       <FlexColumn as='div' withoutPadding centered>

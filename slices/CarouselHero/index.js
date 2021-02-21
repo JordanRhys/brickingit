@@ -31,8 +31,6 @@ const StyledFlexColumn = styled(FlexColumn)`
 const MySlice = ({ slice }) => {
   const { text, buttonLink, buttonText, position } = slice.primary;
 
-  console.log('primary', slice.primary);
-
   return (
     <FlexRow reverse={position}>
       <FlexColumn as='div' withoutPadding centered>

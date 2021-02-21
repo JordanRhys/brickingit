@@ -3,7 +3,6 @@ import { shape, string, object, arrayOf } from 'prop-types';
 import { imagePropType } from '../../helpers/slice-prop-types';
 import { Subtle } from '../../components/typography';
 import styled from 'styled-components';
-import 'infinite-react-carousel/lib/carousel/style.css';
 import { breakpoints } from '../../styles/breakpoints';
 import Carousel from '../../components/carousel';
 

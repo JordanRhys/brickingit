@@ -4,9 +4,10 @@ export default {
     subtle: '#4A4646',
     heading: '#B80F11',
     primary: '#1E5AA8',
-    secondary: '#059638',
+    secondary: '#4B84E7',
     muted: '#ABD9FF',
-    background: '#EFF0F2',
+    background: '#faf7f7',
+    outside: '#faf7f7'
   },
   fonts: {
     body: '"Source Sans Pro", sans-serif',

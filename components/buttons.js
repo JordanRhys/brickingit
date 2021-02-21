@@ -8,7 +8,7 @@ const ButtonTemplate = css`
   outline: none;
   border: none;
   border-radius: ${props => props.theme.borderRadius.md};
-  border: 2px solid ${props => props.theme.colors.primary};
+  border: 2px solid ${props => props.theme.colors.secondary};
   transition: all .5s;
   :not(span) {
     cursor: pointer;
@@ -21,10 +21,11 @@ const ButtonTemplate = css`
 // Colors
 const PrimaryTemplate = css`
   color: ${props => props.theme.colors.background};
-  background-color: ${props => props.theme.colors.primary};
+  background-color: ${props => props.theme.colors.secondary};
   :not(span):hover {
     color: ${props => props.theme.colors.primary};
     background-color: ${props => props.theme.colors.muted};
+    border: 2px solid ${props => props.theme.colors.muted};
   }
 `
 

@@ -6,12 +6,18 @@ import { FlexColumn } from '../../components/containers';
 import { htmlSerializer } from '../../prismicKits';
 import { ThemeProvider } from 'styled-components';
 import contrastTheme from '../../styles/contrastTheme';
+import styled from 'styled-components';
+
+const PaddedColumn = styled(FlexColumn)`
+  padding-left: ${props => props.theme.spacings.md};
+  padding-right: ${props => props.theme.spacings.md};
+`
 
 const MySlice = ({ slice, theme }) => (
   <ThemeProvider theme={slice.primary.contrast ? contrastTheme : theme}>
-    <FlexColumn>
+    <PaddedColumn>
       <RichText render={slice.primary.text} htmlSerializer={htmlSerializer}/>
-    </FlexColumn>
+    </PaddedColumn>
   </ThemeProvider>
 );
 

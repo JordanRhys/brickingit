@@ -4,8 +4,8 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 import { createResolver } from "next-slicezone/resolver";
 
 export default class extends Document {
-  static async getInitialProps(ctx) {
-    const initialProps = await Document.getInitialProps(ctx);
+  static async getStaticProps(ctx) {
+    const initialProps = await Document.getStaticProps(ctx);
     await createResolver();
     return { ...initialProps };
   }

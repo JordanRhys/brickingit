@@ -17,21 +17,10 @@
             "label": "Icon",
             "type": "Image",
             "constraint": {
-              "width": 200,
-              "height": 200
+              "width": null,
+              "height": null
             },
-            "thumbnails": [
-              {
-                "name": "medium",
-                "width": 100,
-                "height": 100
-              },
-              {
-                "name": "small",
-                "width": 50,
-                "height": 50
-              }
-            ]
+            "thumbnails": []
           },
           "type": "Image"
         },

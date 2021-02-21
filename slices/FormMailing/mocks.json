@@ -1,20 +1,15 @@
 [
   {
-    "id": "default-slice",
-    "name": "Default slice",
+    "id": "form-mailing",
+    "name": "default",
     "docURL": "...",
     "version": "sktwi1xtmkfgx8626",
     "description": "FormMailing",
     "primary": {
       "text": [
         {
-          "type": "heading1",
-          "text": "Join the mailing list",
-          "spans": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Aliqua qui eu velit mollit nulla exercitation Lorem sint commodo.",
+          "type": "heading2",
+          "text": "Want to join our mailing list?",
           "spans": []
         }
       ],

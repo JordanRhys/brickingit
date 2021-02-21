@@ -1,7 +1,7 @@
 [
   {
-    "id": "default-slice",
-    "name": "Default slice",
+    "id": "image-carousel",
+    "name": "default",
     "docURL": "...",
     "version": "sktwi1xtmkfgx8626",
     "description": "ImageCarousel",
@@ -45,7 +45,7 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1600&h=1060&fit=crop",
+          "url": "https://images.unsplash.com/photo-1493217465235-252dd9c0d632?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80",
           "medium": {
             "dimensions": {
               "width": 800,
@@ -53,7 +53,7 @@
             },
             "alt": "Placeholder image",
             "copyright": null,
-            "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=530&fit=crop"
+            "url": "https://images.unsplash.com/photo-1493217465235-252dd9c0d632?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80"
           },
           "small": {
             "dimensions": {
@@ -62,10 +62,10 @@
             },
             "alt": "Placeholder image",
             "copyright": null,
-            "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=265&fit=crop"
+            "url": "https://images.unsplash.com/photo-1493217465235-252dd9c0d632?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80"
           }
         },
-        "caption": "deliver seamless architectures"
+        "caption": "Blue bricks"
       },
       {
         "image": {
@@ -75,7 +75,7 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=1600&h=1060&fit=crop",
+          "url": "https://images.unsplash.com/photo-1516641051054-9df6a1aad654?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2000&q=80",
           "medium": {
             "dimensions": {
               "width": 800,
@@ -83,7 +83,7 @@
             },
             "alt": "Placeholder image",
             "copyright": null,
-            "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=800&h=530&fit=crop"
+            "url": "https://images.unsplash.com/photo-1516641051054-9df6a1aad654?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2000&q=80"
           },
           "small": {
             "dimensions": {
@@ -92,40 +92,10 @@
             },
             "alt": "Placeholder image",
             "copyright": null,
-            "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=400&h=265&fit=crop"
+            "url": "https://images.unsplash.com/photo-1516641051054-9df6a1aad654?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2000&q=80"
           }
         },
-        "caption": "incubate frictionless vortals"
-      },
-      {
-        "image": {
-          "dimensions": {
-            "width": 1600,
-            "height": 1060
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=1600&h=1060&fit=crop",
-          "medium": {
-            "dimensions": {
-              "width": 800,
-              "height": 530
-            },
-            "alt": "Placeholder image",
-            "copyright": null,
-            "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=800&h=530&fit=crop"
-          },
-          "small": {
-            "dimensions": {
-              "width": 400,
-              "height": 265
-            },
-            "alt": "Placeholder image",
-            "copyright": null,
-            "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=400&h=265&fit=crop"
-          }
-        },
-        "caption": "morph leading-edge communities"
+        "caption": "Yellow plate"
       }
     ],
     "slice_type": "image_carousel"

@@ -1,7 +1,7 @@
 [
   {
-    "id": "default-slice",
-    "name": "Default slice",
+    "id": "faq_section",
+    "name": "default",
     "docURL": "...",
     "version": "sktwi1xtmkfgx8626",
     "description": "FaqSection",
@@ -9,12 +9,7 @@
       "text": [
         {
           "type": "heading2",
-          "text": "Utilize bricks-and-clicks supply-chains",
-          "spans": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Consequat pariatur veniam quis incididunt duis id cupidatat ea ipsum ullamco anim laborum. Est officia eiusmod pariatur proident duis nostrud duis laborum.",
+          "text": "About us",
           "spans": []
         }
       ],
@@ -25,7 +20,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.prismic.io/bricking-it/59712488-b425-41bf-8a69-0dba48c97bff_2.png?auto=compress,format",
+        "url": "https://images.prismic.io/bricking-it/ac0c80fd-83cd-46cc-9112-47bb79a6914d_side+by+side.png?auto=compress,format",
         "medium": {
           "dimensions": {
             "width": 600,
@@ -33,7 +28,7 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.prismic.io/bricking-it/59712488-b425-41bf-8a69-0dba48c97bff_2.png?auto=compress,format"
+          "url": "https://images.prismic.io/bricking-it/ac0c80fd-83cd-46cc-9112-47bb79a6914d_side+by+side.png?auto=compress,format"
         },
         "small": {
           "dimensions": {
@@ -42,27 +37,27 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.prismic.io/bricking-it/59712488-b425-41bf-8a69-0dba48c97bff_2.png?auto=compress,format"
+          "url": "https://images.prismic.io/bricking-it/ac0c80fd-83cd-46cc-9112-47bb79a6914d_side+by+side.png?auto=compress,format"
         }
       }
     },
     "items": [
       {
-        "question": "What is BrickingIt?",
+        "question": "Where did BrickingIt start?",
         "answer": [
           {
             "type": "paragraph",
-            "text": "Eu sint qui ad sunt pariatur sit est ex ut dolor id Lorem.",
+            "text": "BrickingIt started when a brick fanatic wanted to rebuild their favourite items. Teaming up with a programmer they planned to create the ambitious application.",
             "spans": []
           }
         ]
       },
       {
-        "question": "Why use BrickingIt?",
+        "question": "How does it work?",
         "answer": [
           {
             "type": "paragraph",
-            "text": "Reprehenderit exercitation eiusmod laboris ex irure fugiat incididunt excepteur ullamco ad elit mollit aliqua voluptate. Proident excepteur labore minim nulla incididunt. Esse culpa cupidatat minim exercitation ullamco in sunt id eu ipsum quis.",
+            "text": "The app uses your phone camera to record a video which is then intelligently transformed into a 3D model. Paired with machine learning techniques, we compare your video to real life objects to see whether they are mechanical or organic to produce a more realistic model. Using common brick building combinations, your model is developed from the ground up with instructions available straight from the app.",
             "spans": []
           }
         ]

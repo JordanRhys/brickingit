@@ -1,20 +1,15 @@
 [
   {
-    "id": "default-slice",
-    "name": "Default slice",
+    "id": "pricing-cards",
+    "name": "default",
     "docURL": "...",
     "version": "sktwi1xtmkfgx8626",
     "description": "PricingCards",
     "primary": {
       "text": [
         {
-          "type": "heading1",
+          "type": "heading2",
           "text": "Check out our most popular packages",
-          "spans": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Est laboris tempor adipisicing consequat fugiat Lorem ad ut amet aliqua exercitation reprehenderit. Adipisicing sint eiusmod eiusmod. Eu ex consequat veniam nisi non laborum consequat nulla commodo.",
           "spans": []
         }
       ],

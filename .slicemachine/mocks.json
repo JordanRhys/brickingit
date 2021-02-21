@@ -312,5 +312,35 @@
         }
       }
     }
+  },
+  "GutterBar": {
+    "primary": {
+      "gutter": {},
+      "color": {
+        "content": true
+      }
+    }
+  },
+  "CarouselHero": {
+    "primary": {
+      "position": {
+        "content": true
+      },
+      "text": {
+        "config": {
+          "patternType": "PARAGRAPH_WITH_HEADING",
+          "blocks": 1
+        }
+      },
+      "buttonLink": {},
+      "buttonText": {
+        "content": null
+      }
+    },
+    "items": {
+      "image": {
+        "content": null
+      }
+    }
   }
 }

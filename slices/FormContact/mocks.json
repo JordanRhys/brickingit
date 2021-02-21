@@ -1,20 +1,15 @@
 [
   {
-    "id": "default-slice",
-    "name": "Default slice",
+    "id": "form_contact",
+    "name": "default",
     "docURL": "...",
     "version": "sktwi1xtmkfgx8626",
     "description": "FormContact",
     "primary": {
       "text": [
         {
-          "type": "heading1",
+          "type": "heading2",
           "text": "Drop us a message",
-          "spans": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Ad cupidatat dolore fugiat dolore irure ullamco. Consectetur voluptate esse do nulla ad id aliquip qui irure elit aliqua qui.",
           "spans": []
         }
       ],

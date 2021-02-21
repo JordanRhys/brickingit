@@ -1,0 +1,68 @@
+{
+  "id": "carousel_hero",
+  "type": "SharedSlice",
+  "name": "CarouselHero",
+  "description": "CarouselHero",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "CarouselHero",
+      "primary": {
+        "position": {
+          "config": {
+            "label": "Carousel Position",
+            "placeholder": "",
+            "placeholder_false": "Left",
+            "placeholder_true": "Right",
+            "default_value": true,
+            "type": "Boolean"
+          },
+          "type": "Boolean"
+        },
+        "text": {
+          "config": {
+            "label": "Hero Text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "type": "StructuredText",
+            "multi": "paragraph,heading1,heading2,heading3,heading4,strong,em,hyperlink,list-item,o-list-item"
+          },
+          "type": "StructuredText"
+        },
+        "buttonLink": {
+          "config": {
+            "label": "Button Link",
+            "placeholder": "",
+            "type": "Link",
+            "allowTargetBlank": true
+          },
+          "type": "Link"
+        },
+        "buttonText": {
+          "config": {
+            "label": "Button Text",
+            "placeholder": "",
+            "type": "Text"
+          },
+          "type": "Text"
+        }
+      },
+      "items": {
+        "image": {
+          "config": {
+            "label": "Carousel Image",
+            "type": "Image",
+            "constraint": {
+              "width": 1000
+            },
+            "thumbnails": []
+          },
+          "type": "Image"
+        }
+      }
+    }
+  ]
+}

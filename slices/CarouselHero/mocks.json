@@ -1,0 +1,65 @@
+[
+  {
+    "id": "carousel-hero",
+    "name": "default",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "CarouselHero",
+    "primary": {
+      "position": true,
+      "text": [
+        {
+          "type": "heading1",
+          "text": "Turn anything into bricks",
+          "spans": []
+        },
+        {
+          "type": "paragraph",
+          "text": "BrickingIt is an app that scans absolutely anything and turns it into a brick model with instructions.",
+          "spans": []
+        }
+      ],
+      "buttonLink": {
+        "link_type": "Web",
+        "url": "https://slicemachine.dev"
+      },
+      "buttonText": "How it works"
+    },
+    "items": [
+      {
+        "image": {
+          "dimensions": {
+            "width": 1000,
+            "height": 750
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.prismic.io/bricking-it/ab074ae8-aa50-4fb2-bdde-393b220fefe0_angle1.png?auto=compress,format"
+        }
+      },
+      {
+        "image": {
+          "dimensions": {
+            "width": 1000,
+            "height": 750
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.prismic.io/bricking-it/d7d95cb8-edec-4954-b429-5975bc594e12_angle2.png?auto=compress,format"
+        }
+      },
+      {
+        "image": {
+          "dimensions": {
+            "width": 1000,
+            "height": 750
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.prismic.io/bricking-it/105f7b1d-617b-45fb-8501-a3a925c79f1d_angle3.png?auto=compress,format"
+        }
+      }
+    ],
+    "slice_type": "carousel_hero"
+  }
+]

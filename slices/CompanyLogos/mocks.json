@@ -1,7 +1,7 @@
 [
   {
-    "id": "default-slice",
-    "name": "Default slice",
+    "id": "company-logos",
+    "name": "default",
     "docURL": "...",
     "version": "sktwi1xtmkfgx8626",
     "description": "CompanyLogos",
@@ -19,23 +19,8 @@
       {
         "image": {
           "dimensions": {
-            "width": 400,
-            "height": 200
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.prismic.io/bricking-it/4bf373ac-86ef-448b-89e1-54e3ad723174_Quikstart.png?auto=compress,format"
-        },
-        "link": {
-          "link_type": "Web",
-          "url": "https://slicemachine.dev"
-        }
-      },
-      {
-        "image": {
-          "dimensions": {
-            "width": 400,
-            "height": 200
+            "width": 385,
+            "height": 208
           },
           "alt": "Placeholder image",
           "copyright": null,
@@ -49,8 +34,23 @@
       {
         "image": {
           "dimensions": {
-            "width": 400,
-            "height": 200
+            "width": 723,
+            "height": 106
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.prismic.io/bricking-it/4bf373ac-86ef-448b-89e1-54e3ad723174_Quikstart.png?auto=compress,format"
+        },
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      {
+        "image": {
+          "dimensions": {
+            "width": 315,
+            "height": 215
           },
           "alt": "Placeholder image",
           "copyright": null,

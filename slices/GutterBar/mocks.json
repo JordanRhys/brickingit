@@ -1,0 +1,15 @@
+[
+  {
+    "id": "gutter-bar",
+    "name": "default",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "GutterBar",
+    "primary": {
+      "gutter": "lg",
+      "color": true
+    },
+    "items": [],
+    "slice_type": "gutter_bar"
+  }
+]

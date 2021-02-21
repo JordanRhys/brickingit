@@ -60,7 +60,7 @@ transform: rotate(45deg);
 
 const NextIcon = styled(Icon)`
   right: 0;
-  transform: translate(-.25rem,-50%) scale(1.5);
+  transform: translate(0rem,-50%) scale(1.5);
 `
 
 

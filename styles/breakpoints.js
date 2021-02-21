@@ -3,7 +3,7 @@ const size = {
   smmd: '540px',
   md: '700px',
   mdlg: '800px',
-  lg: '1000px'
+  lg: '1200px'
 }
 
 export const breakpoints = {

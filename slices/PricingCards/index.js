@@ -8,7 +8,9 @@ import { PrimaryLinkButton } from '../../components/buttons';
 import { Link } from '../../components/links';
 import { RichText } from 'prismic-reactjs';
 import { Header } from '../../components/typography';
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
+import contrastTheme from '../../styles/contrastTheme';
+import theme from '../../styles/theme';
 
 const Caption = styled.span`
   position: absolute;
@@ -18,7 +20,7 @@ const Caption = styled.span`
   padding: ${props => props.theme.spacings.sm};
   border-radius: ${props => props.theme.borderRadius.sm};
   margin-bottom: ${props => props.theme.spacings.md};
-  background-color: ${props => props.theme.colors.primary};
+  background-color: ${props => props.theme.colors.secondary};
   color: ${props => props.theme.colors.background};
   transform: translateY(-50%);
   font-family: ${props => props.theme.fonts.body};
@@ -37,6 +39,14 @@ const BottomAlignedPrimaryLinkButton = styled(PrimaryLinkButton)`
   margin-top: auto;
 `
 
+const ContrastButton = styled(PrimaryLinkButton)`
+  background-color: ${props => props.theme.colors.primary};
+
+  && :hover {
+    color: ${props => props.theme.colors.background};
+  }
+`
+
 const MySlice = ({ slice }) => {
   const { primary, items } = slice;
 
@@ -44,39 +54,43 @@ const MySlice = ({ slice }) => {
   const containsCaption = captions.some(caption => caption.length);
 
   return (
-    <FlexColumn>
-      {
-        primary.text && (
-          <RichText render={primary.text} htmlSerializer={htmlSerializer} />
-        )
-      }
-
-      {
-        (primary.buttonLink && primary.buttonText) && (
-          <Link link={primary.buttonLink} Component={PrimaryLinkButton}>
-            {primary.buttonText}
-          </Link>
-        )
-      }
-
-      <FlexRow as='div'>
+    <ThemeProvider theme={contrastTheme}>
+      <FlexColumn>
         {
-          items.map(item => (
-            <Card key={item.title} extraPadding={containsCaption} maxWidth='25%' hasCaption={(item.caption)}>
-              {item.caption && (
-                <Caption>{item.caption}</Caption>
-              )}
-              <Header fontSize='lg' style={{textAlign: 'center'}}>{item.name}</Header>
-              <Price>{penceToPounds(item.price)}</Price>
-              <RichText render={item.description} htmlSerializer={htmlSerializer} />
-              <Link link={item.buttonLink} Component={BottomAlignedPrimaryLinkButton} style={{ marginTop: 'auto' }}>
-                {item.buttonText}
-              </Link>
-            </Card>
-          ))
+          primary.text && (
+            <RichText render={primary.text} htmlSerializer={htmlSerializer} />
+          )
         }
-      </FlexRow>
-    </FlexColumn>
+
+        {
+          (primary.buttonLink && primary.buttonText) && (
+            <Link link={primary.buttonLink} Component={ContrastButton}>
+              {primary.buttonText}
+            </Link>
+          )
+        }
+
+        <FlexRow as='div'>
+          <ThemeProvider theme={theme}>
+            {
+              items.map(item => (
+                <Card key={item.title} extraPadding={containsCaption} maxWidth='25%' hasCaption={(item.caption)}>
+                  {item.caption && (
+                    <Caption>{item.caption}</Caption>
+                  )}
+                  <Header fontSize='lg' style={{textAlign: 'center'}}>{item.name}</Header>
+                  <Price>{penceToPounds(item.price)}</Price>
+                  <RichText render={item.description} htmlSerializer={htmlSerializer} />
+                  <Link link={item.buttonLink} Component={BottomAlignedPrimaryLinkButton} style={{ marginTop: 'auto' }}>
+                    {item.buttonText}
+                  </Link>
+                </Card>
+              ))
+            }
+          </ThemeProvider>
+        </FlexRow>
+      </FlexColumn>
+    </ThemeProvider>
   );
 };
 

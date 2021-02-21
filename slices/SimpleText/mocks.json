@@ -1,7 +1,7 @@
 [
   {
-    "id": "default-slice",
-    "name": "Default slice",
+    "id": "simple-text",
+    "name": "default",
     "docURL": "...",
     "version": "sktwi1xtmkfgx8626",
     "description": "SimpleText",
@@ -9,12 +9,12 @@
       "text": [
         {
           "type": "heading1",
-          "text": "Revolutionize proactive interfaces",
+          "text": "Turn anything into bricks",
           "spans": []
         },
         {
           "type": "paragraph",
-          "text": "Aliqua cillum consequat reprehenderit velit ea velit do officia duis id incididunt ullamco enim ipsum.",
+          "text": "BrickingIt is an app that scans absolutely anything and turns it into a brick model with instructions.",
           "spans": []
         }
       ],

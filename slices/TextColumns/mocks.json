@@ -1,7 +1,7 @@
 [
   {
-    "id": "default-slice",
-    "name": "Default slice",
+    "id": "text-columns",
+    "name": "default",
     "docURL": "...",
     "version": "sktwi1xtmkfgx8626",
     "description": "TextColumns",
@@ -10,23 +10,13 @@
       {
         "column": [
           {
-            "type": "heading1",
-            "text": "Grow 24/7 initiatives",
+            "type": "heading2",
+            "text": "Where did BrickingIt start?",
             "spans": []
           },
           {
             "type": "paragraph",
-            "text": "Nulla commodo pariatur sunt amet deserunt aute aliqua ad eiusmod sint veniam. Laborum nisi et cillum aliquip reprehenderit adipisicing.",
-            "spans": []
-          },
-          {
-            "type": "heading1",
-            "text": "Incubate e-business eyeballs",
-            "spans": []
-          },
-          {
-            "type": "paragraph",
-            "text": "Nisi esse commodo enim est incididunt irure culpa adipisicing veniam.",
+            "text": "BrickingIt started when a brick fanatic wanted to rebuild their favourite items. Teaming up with a programmer they planned to create the ambitious application.",
             "spans": []
           }
         ]
@@ -34,47 +24,13 @@
       {
         "column": [
           {
-            "type": "heading1",
-            "text": "Revolutionize sticky infomediaries",
+            "type": "heading2",
+            "text": "How does it work?",
             "spans": []
           },
           {
             "type": "paragraph",
-            "text": "Laboris eu ex anim.",
-            "spans": []
-          },
-          {
-            "type": "heading1",
-            "text": "Synergize rich paradigms",
-            "spans": []
-          },
-          {
-            "type": "paragraph",
-            "text": "Dolore eu ipsum minim dolor commodo velit qui qui laboris anim.",
-            "spans": []
-          }
-        ]
-      },
-      {
-        "column": [
-          {
-            "type": "heading1",
-            "text": "Transition best-of-breed",
-            "spans": []
-          },
-          {
-            "type": "paragraph",
-            "text": "Consequat reprehenderit cupidatat nisi. Irure Lorem sint amet dolore consectetur mollit labore sit consequat aliquip cillum.",
-            "spans": []
-          },
-          {
-            "type": "heading1",
-            "text": "Empower leading-edge convergence",
-            "spans": []
-          },
-          {
-            "type": "paragraph",
-            "text": "Labore mollit nostrud ipsum reprehenderit laborum incididunt nulla cupidatat dolore occaecat eu. Esse id aliquip laboris eiusmod quis consectetur occaecat. Aute ipsum quis culpa.",
+            "text": "The app uses your phone camera to record a video which is then intelligently transformed into a 3D model. Paired with machine learning techniques, we compare your video to real life objects to see whether they are mechanical or organic to produce a more realistic model. Using common brick building combinations, your model is developed from the ground up with instructions available straight from the app.",
             "spans": []
           }
         ]
